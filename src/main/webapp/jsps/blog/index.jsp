@@ -27,10 +27,9 @@
 
 	<p>На этой страницы будут излагаться статьи в порядке их написания</p>
 	
-	<div class="article-previev">
+	<div class="article-preview">
         	<h3>Аренда виртуального сервера</h3>
         	<p>Краткий пошаговый гайд по аренде сервера... <a href="arenda-vps.jsp"><b>читать</b></a></p>
-
 	</div>
 
         <div id="footer">
