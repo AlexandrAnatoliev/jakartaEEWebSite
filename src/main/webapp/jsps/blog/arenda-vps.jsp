@@ -32,7 +32,7 @@
 
         <h3>Создание сервера</h3>
 
-    <p>Переходим на официальный сайт <b>TimeWeb</b> по <a href="https://timeweb.com/ru/?i=112465">ссылке</a>.</p>
+    <p>Переходим на официальный сайт <b>TimeWeb</b> по <a href="https://timeweb.com/ru/?i=112465" target="_blank">ссылке</a>.</p>
 
     <img alt="Вход на сайт TimeWeb" src="../../images/arenda-vps/picture1.png" class="large">
 
