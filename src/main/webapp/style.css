@@ -10,7 +10,8 @@ h1, h3{
     padding: 10px;}
 
 h1 {
-    margin-top: 3em;}
+    margin-top: 3em;
+    letter-spacing: 0.1em;}
 
 p {
     padding: 10px;
@@ -61,6 +62,9 @@ img.large {
 
 .article-preview p {
     	color: black;}
+
+.article-preview h3 {
+	letter-spacing: 0.1em;}
 
 .center {
     text-align: center;}

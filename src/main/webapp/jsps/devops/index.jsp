@@ -25,13 +25,13 @@
         </div>
         
         <div id="top">
-            <h1>DevOps и devTools</h1>
+            <h1>DEVOPS И DEVTOOLS</h1>
         </div>
 
 	<p>На этой странице статьи будут сгруппированы по содержанию</p>
 
 	<div id="linux" class="article-preview">
-		<h3>Linux</h3>
+		<h3>LINUX</h3>
         	<p>Аренда виртуального сервера... <a href="../blog/arenda-vps.jsp"><b>читать</b></a></p>
 	</div>
 
