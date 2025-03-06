@@ -12,6 +12,7 @@
         <title>java practice: projects</title>
 
         <meta name="description" content="Практика java на реальных проектах">
+	<meta name="robots" content="nofollow">
 
     </head>
 
@@ -25,7 +26,7 @@
         </div>
         
         <div id="top">
-            <h1>Projects page</h1>
+            <h1>PROJECT PAGE</h1>
         </div>
 
         <h3>Классический текст Lorem Ipsum, используемый с XVI века</h3>

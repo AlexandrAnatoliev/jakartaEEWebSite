@@ -6,7 +6,9 @@
     <head>
         
         <style type="text/css">
-			<%@include file="../../style.css" %>      	
+		<%@include file="../../style.css" %>      	
+		body p {
+			text-align: center;}
         </style>
         
         <title>java practice: arenda-vps</title>
@@ -25,7 +27,7 @@
         </div>
 
         <div id="top">
-            <h1>Aрендa виртуального сервера (VPS)</h1>
+            <h1>АРЕНДА ВИРТУАЛЬНОГО СЕРВЕРА (VPS)</h1>
         </div>
 
         <h3>Создание сервера</h3>
