@@ -23,6 +23,10 @@ img.large {
     width: 620px;
     height: 400px;
     display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #777777;
     margin: 0px auto;}
 
 #header {
@@ -32,9 +36,10 @@ img.large {
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    background-color: #aeaca8;
     border-radius: 10px;
     padding-top: 1em;
+    background-color: #efefef;
+    box-shadow: 5px 5px 5px #777777;
     padding-bottom: 1em;}
 
 #header a {
@@ -48,23 +53,25 @@ img.large {
 #footer {
     text-align: right;
     border-width: 2px;
-    background-color: #aeaca8;
+    background-color: #efefef;
     border-style: solid;
     padding: 10px;
+    box-shadow: 5px 5px 5px #777777;
     border-radius: 10px;}
 
 .article-preview {
 	border-style: solid;
 	border-width: 2px;
-	background-color: rgb(114, 193, 240);
+	background-color: rgb(140, 202, 242);
 	border-radius: 10px;
+    	box-shadow: 5px 5px 5px #777777;
 	margin: 10px;}
-
-.article-preview p {
-    	color: black;}
 
 .article-preview h3 {
 	letter-spacing: 0.1em;}
+
+.article-preview p {
+	color: black;}
 
 .center {
     text-align: center;}

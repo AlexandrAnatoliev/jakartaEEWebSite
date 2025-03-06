@@ -6,7 +6,9 @@
     <head>
         
         <style type="text/css">
-			<%@include file="../../style.css" %>      	
+		<%@include file="../../style.css" %>      	
+		body p {
+			text-align: center;}
         </style>
         
         <title>java practice: arenda-vps</title>
