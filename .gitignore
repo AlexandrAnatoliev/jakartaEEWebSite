@@ -1,2 +1,3 @@
 local-tomcat-10.1.34-comp/
 local-tomcat-10.1.34-vps/
+*.class
