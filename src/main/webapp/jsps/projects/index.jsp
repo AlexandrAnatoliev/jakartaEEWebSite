@@ -20,9 +20,9 @@
 
         <div id="header">
             / <a href="/webapp/home"><b>главная</b></a> /
-            <a href="../blog/index.jsp"><b>блог</b></a> /            
-            <a href="index.jsp"><b><span class="iamhere">проекты</span></b></a> /
-      		<a href="../devops/index.jsp"><b>devOps</b></a> /
+            <a href="/webapp/blog"><b>блог</b></a> /            
+            <a href="/webapp/projects"><b><span class="iamhere">проекты</span></b></a> /
+      		<a href="/webapp/devops"><b>devOps</b></a> /
         </div>
         
         <div id="top">

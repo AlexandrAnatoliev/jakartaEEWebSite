@@ -20,9 +20,9 @@
 
         <div id="header">
             	/ <a href="/webapp/home"><b>главная</b></a> /
-            	<a href="../blog/index.jsp"><b>блог</b></a> /            
-  		<a href="../projects/index.jsp"><b>проекты</b></a> /
-            	<a href="index.jsp"><b><span class="iamhere">devOps</span></b></a> /
+            	<a href="/webapp/blog"><b>блог</b></a> /            
+  		<a href="/webapp/projects"><b>проекты</b></a> /
+            	<a href="/webapp/devops"><b><span class="iamhere">devOps</span></b></a> /
         </div>
         
         <div id="top">
@@ -34,7 +34,7 @@
 	<div id="linux" class="article-preview">
 		<h3>LINUX</h3>
 		
-		<ul><li>Аренда виртуального сервера... <a href="../blog/arenda-vps.jsp"><b>читать</b></a></li></ul>
+		<ul><li>Аренда виртуального сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp"><b>читать</b></a></li></ul>
 	</div>
 
         <div id="footer">
