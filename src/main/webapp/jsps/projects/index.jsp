@@ -12,20 +12,21 @@
         <title>java practice: projects</title>
 
         <meta name="description" content="Практика java на реальных проектах">
+	<meta name="robots" content="nofollow">
 
     </head>
 
     <body>
 
         <div id="header">
-            / <a href="../../index.jsp"><b>главная</b></a> /
-            <a href="../blog/index.jsp"><b>блог</b></a> /            
-            <a href="index.jsp"><b><span class="iamhere">проекты</span></b></a> /
-      		<a href="../devops/index.jsp"><b>devOps</b></a> /
+            / <a href="/webapp/home"><b>главная</b></a> /
+            <a href="/webapp/blog"><b>блог</b></a> /            
+            <a href="/webapp/projects"><b><span class="iamhere">проекты</span></b></a> /
+      		<a href="/webapp/devops"><b>devOps</b></a> /
         </div>
         
         <div id="top">
-            <h1>Projects page</h1>
+            <h1>PROJECT PAGE</h1>
         </div>
 
         <h3>Классический текст Lorem Ipsum, используемый с XVI века</h3>

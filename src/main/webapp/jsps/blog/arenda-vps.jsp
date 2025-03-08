@@ -6,7 +6,9 @@
     <head>
         
         <style type="text/css">
-			<%@include file="../../style.css" %>      	
+		<%@include file="../../style.css" %>      	
+		body p {
+			text-align: center;}
         </style>
         
         <title>java practice: arenda-vps</title>
@@ -18,19 +20,19 @@
     <body>
 
        	<div id="header">
-            / <a href="../../index.jsp"><b>главная</b></a> /
-            <a href="index.jsp"><b><span class="iamhere">блог</span></b></a> /
-            <a href="../projects/index.jsp"><b>проекты</b></a> /
-      		<a href="../devops/index.jsp"><b>devOps</b></a> /
+            / <a href="/webapp/home"><b>главная</b></a> /
+            <a href="/webapp/blog"><b><span class="iamhere">блог</span></b></a> /
+            <a href="/webapp/projects"><b>проекты</b></a> /
+      		<a href="/webapp/devops"><b>devOps</b></a> /
         </div>
 
         <div id="top">
-            <h1>Aрендa виртуального сервера (VPS)</h1>
+            <h1>АРЕНДА ВИРТУАЛЬНОГО СЕРВЕРА (VPS)</h1>
         </div>
 
         <h3>Создание сервера</h3>
 
-    <p>Переходим на официальный сайт <b>TimeWeb</b> по <a href="https://timeweb.com/ru/?i=112465">ссылке</a>.</p>
+    <p>Переходим на официальный сайт <b>TimeWeb</b> по <a href="https://timeweb.com/ru/?i=112465" target="_blank">ссылке</a>.</p>
 
     <img alt="Вход на сайт TimeWeb" src="../../images/arenda-vps/picture1.png" class="large">
 
