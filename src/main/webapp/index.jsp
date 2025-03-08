@@ -17,10 +17,10 @@
 	<body>
 
 		<div id="header">
-		/ <a href="index.jsp"><b> <span class="iamhere">главная</span></b></a> /
-		<a href="jsps/blog/index.jsp"><b>блог</b></a> /
-    		<a href="jsps/projects/index.jsp"><b>проекты</b></a> /
-      		<a href="jsps/devops/index.jsp"><b>devOps</b></a> /
+		/ <a href="/webapp/home"><b> <span class="iamhere">главная</span></b></a> /
+		<a href="/webapp/blog"><b>блог</b></a> /
+    		<a href="/webapp/projects"><b>проекты</b></a> /
+      		<a href="/webapp/devops"><b>devOps</b></a> /
     	</div>
 
         <div id="top">
@@ -36,7 +36,7 @@
 
         <div id="logos" align="center">
           <p>
-            <a href="jsps/devops/index.jsp#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
+            <a href="/webapp/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
             <a href="jsps/devops/index.jsp"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
           </p>
         </div>

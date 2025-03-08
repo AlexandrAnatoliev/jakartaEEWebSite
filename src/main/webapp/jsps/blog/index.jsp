@@ -15,10 +15,10 @@
     <body>
 
         <div id="header">
-            / <a href="../../index.jsp"><b>главная</b></a> /
-            <a href="index.jsp"><b><span class="iamhere">блог</span></b></a> /
-            <a href="../projects/index.jsp"><b>проекты</b></a> /
-      		<a href="../devops/index.jsp"><b>devOps</b></a> /
+            / <a href="/webapp/home"><b>главная</b></a> /
+            <a href="/webapp/blog"><b><span class="iamhere">блог</span></b></a> /
+            <a href="/webapp/projects"><b>проекты</b></a> /
+      		<a href="/webapp/devops"><b>devOps</b></a> /
         </div>
 
         <div id="top">
@@ -29,7 +29,7 @@
 	
 	<div class="article-preview">
         	<h3>Аренда виртуального сервера</h3>
-        	<p>Краткий пошаговый гайд по аренде сервера... <a href="arenda-vps.jsp"><b>читать</b></a></p>
+        	<p>Краткий пошаговый гайд по аренде сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp"><b>читать</b></a></p>
 	</div>
 
         <div id="footer">
