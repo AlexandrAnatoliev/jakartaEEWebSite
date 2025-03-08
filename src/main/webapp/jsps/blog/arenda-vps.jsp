@@ -20,7 +20,7 @@
     <body>
 
        	<div id="header">
-            / <a href="../../index.jsp"><b>главная</b></a> /
+            / <a href="/webapp/home"><b>главная</b></a> /
             <a href="index.jsp"><b><span class="iamhere">блог</span></b></a> /
             <a href="../projects/index.jsp"><b>проекты</b></a> /
       		<a href="../devops/index.jsp"><b>devOps</b></a> /
