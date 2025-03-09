@@ -32,9 +32,10 @@
 	<p>На этой странице статьи будут сгруппированы по содержанию</p>
 
 	<div id="linux" class="article-preview">
-		<h3>LINUX</h3>
+		<h4>LINUX</h4>
 		
 		<ul><li>Аренда виртуального сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp"><b>читать</b></a></li></ul>
+		<ul><li>Подключение по ssh к виртуальному серверу... <a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></li></ul>
 	</div>
 
         <div id="footer">
