@@ -70,7 +70,9 @@ img.large {
 .article-preview h3 {
 	letter-spacing: 0.1em;}
 
-.article-preview p {
+.article-preview p, .article-preview li {
+    	font-family: Gergia, Times, serif;
+    	font-size: 1.1em;
 	color: black;}
 
 .center {
