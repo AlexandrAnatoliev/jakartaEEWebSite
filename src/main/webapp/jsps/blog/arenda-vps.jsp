@@ -11,7 +11,7 @@
 			text-align: center;}
         </style>
         
-        <title>java practice: arenda-vps</title>
+        <title>java practice: аренда vps</title>
 
         <meta name="description" content="Краткий гайд по аренде виртуального сервера (VPS)">
 
@@ -88,6 +88,12 @@
 
 	<p>Вводим логин (<b>root</b>) и пароль (копируем из дашборда)
 </p>
+
+	<div class="article-preview">
+        	<h4>Навигация по статьям</h4>
+		<ul><li><b>Аренда виртуального сервера</b></li></ul>
+		<ul><li>Подключение по ssh к виртуальному серверу... <a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></li></ul>
+	</div>
 
         <div id="footer">
             / <a href="#top"><b>наверх</b></a> /
