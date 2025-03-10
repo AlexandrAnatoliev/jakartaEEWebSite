@@ -99,9 +99,10 @@ img.large {
     border-width: 0px;
     border-bottom-width: 2px;}
 
-.code {
+.vimcode {
 	background-color: #300a24;
 	border-style: solid;
+    	border-width: 0px;
 	color: white;
     	box-shadow: 5px 5px 5px #777777;
     	font-family: Courier, Courier New;
