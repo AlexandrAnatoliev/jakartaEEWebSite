@@ -32,7 +32,7 @@
 	
 	<p>Введите команду вида:</p>
 
-	<div class="code">
+	<div class="vimcode">
 		ssh root@ip_адрес_сервера
 	</div>
 
@@ -42,7 +42,7 @@
 
 	<div class="article-preview">
         	<h4>Навигация по статьям</h4>
-		<ul><li>Аренда виртуального сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp"><b>читать</b></a></li></ul>
+		<ul><li><a href="/webapp/jsps/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
 		<ul><li><b>Подключение по ssh к виртуальному серверу</b></li></ul>
 	</div>
 
