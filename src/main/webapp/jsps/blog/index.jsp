@@ -28,6 +28,11 @@
 	<p>На этой странице будут излагаться статьи в порядке их написания</p>
 	
 	<div class="article-preview">
+        	<h4>Основные команды linux терминала</h4>
+		<p>Основные команды linux терминала, необходимые пользователю... <a href="/webapp/jsps/blog/komandy-linux-terminala.jsp"><b>читать</b></a></p>
+	</div>
+
+	<div class="article-preview">
         	<h4>Подключение по ssh к виртуальному серверу</h4>
 		<p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
 	</div>
