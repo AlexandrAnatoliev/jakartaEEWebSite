@@ -138,6 +138,164 @@
 		vim	
 	</div>
 
+        <h3>Взаимодействие между командами</h3>
+
+	<div class="vimcode">
+		| (pipe)	
+	</div>
+
+	<div class="vimcode">
+		> (redirection)	
+	</div>
+
+	<div class="vimcode">
+		xargs	
+	</div>
+
+	<div class="vimcode">
+		sort	
+	</div>
+
+	<div class="vimcode">
+		>> (appending)	
+	</div>
+
+        <h3>Разрешения файлов и папок linux</h3>
+
+	<div class="vimcode">
+		chown
+	</div>
+
+	<div class="vimcode">
+		chmod
+	</div>
+
+	<div class="vimcode">
+		chmod u+x	
+	</div>
+
+	<div class="vimcode">
+		chmod 755	
+	</div>
+
+	<div class="vimcode">
+		chgrp
+	</div>
+
+        <h3>Работа с пользователями</h3>
+
+	<div class="vimcode">
+		useradd
+	</div>
+
+	<div class="vimcode">
+		passwd
+	</div>
+
+	<div class="vimcode">
+		whoami
+	</div>
+
+	<div class="vimcode">
+		groudadd
+	</div>
+
+	<div class="vimcode">
+		usermod
+	</div>
+
+	<h3>Мониторинг linux систем</h3>
+
+	<div class="vimcode">
+		free
+	</div>
+
+	<div class="vimcode">
+		df
+	</div>
+
+	<div class="vimcode">
+		du
+	</div>
+
+	<h3>Работа по http</h3>
+
+	<div class="vimcode">
+		curl
+	</div>
+
+	<div class="vimcode">
+		wget
+	</div>
+
+	<div class="vimcode">
+		tar
+	</div>
+
+	<h3>Администрирование linux</h3>
+
+	<div class="vimcode">
+		path
+	</div>
+
+	<div class="vimcode">
+		bashrc
+	</div>
+
+	<div class="vimcode">
+		systemctl
+	</div>
+
+	<div class="vimcode">
+		cron
+	</div>
+
+	<div class="vimcode">
+		environment variables
+	</div>
+
+	<h3>Скрипты linux</h3>
+
+	<div class="vimcode">
+		bash shell
+	</div>
+
+	<div class="vimcode">
+		for
+	</div>
+
+	<div class="vimcode">
+		while
+	</div>
+
+	<div class="vimcode">
+		if
+	</div>
+
+	<div class="vimcode">
+		$
+	</div>
+
+	<h3>Сети в linux</h3>
+
+	<div class="vimcode">
+		hostname
+	</div>
+
+	<div class="vimcode">
+		ifconfig
+	</div>
+
+	<div class="vimcode">
+		ufw
+	</div>
+
+	<div class="article-preview">
+        	<h4>Навигация по статьям</h4>
+		<ul><li><a href="/webapp/jsps/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
+		<ul><li><b><a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></b></li></ul>
+		<ul><li><b>Основные команды linux терминала</b></li></ul>
+	</div>
         <div id="footer">
             / <a href="#top"><b>наверх</b></a> /
         </div>
