@@ -1,64 +1,73 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <style type="text/css">
-		<%@include file="../../style.css" %>      	
-        </style>
+  <head>
+    <style type="text/css">
+		  <%@include file="../../style.css" %>      	
+    </style>
+    <title>java practice: команды linux терминала</title>
+    <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
+  </head>
 
-        <title>java practice: команды linux терминала</title>
-        <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
-    </head>
+  <body>
 
-    <body>
+    <div id="header">
+      / <a href="/webapp/home"><b>главная</b></a> /
+      <a href="/webapp/blog"><b><span class="iamhere">блог</span></b></a> /
+      <a href="/webapp/projects"><b>проекты</b></a> /
+      <a href="/webapp/devops"><b>devOps</b></a> /
+    </div>
 
-       	<div id="header">
-            / <a href="/webapp/home"><b>главная</b></a> /
-            <a href="/webapp/blog"><b><span class="iamhere">блог</span></b></a> /
-            <a href="/webapp/projects"><b>проекты</b></a> /
-      		<a href="/webapp/devops"><b>devOps</b></a> /
-        </div>
+    <div id="top">
+      <h1>ОСНОВНЫЕ КОМАНДЫ LINUX ТЕРМИНАЛА</h1>
+    </div>
 
-        <div id="top">
-            <h1>ОСНОВНЫЕ КОМАНДЫ LINUX ТЕРМИНАЛА</h1>
-        </div>
-
-    	<p>После того как Вы арендовали виртуальный сервер...</p>
+    <p>После того как Вы арендовали виртуальный сервер...</p>
 	
-	<div class="article-preview">
-        	<h4>Аренда виртуального сервера</h4>
-        	<p>Краткий пошаговый гайд по аренде сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp"><b>читать</b></a></p>
-	</div>
+	  <div class="article-preview">
+      <h4>Аренда виртуального сервера</h4>
+      <p>Краткий пошаговый гайд по аренде сервера... <a href="/webapp/jsps/blog/arenda-vps.jsp">
+      <b>читать</b></a></p>
+	  </div>
 
-	<p>...Вы можете пользоваться консолью, предоставляемой сайтом...</p>
+	  <p>...Вы можете пользоваться консолью, предоставляемой сайтом...</p>
 
-	<img alt="Консоль vps сервера" src="../../images/arenda-vps/picture13.png" class="large">
+	  <img alt="Консоль vps сервера" src="../../images/arenda-vps/picture13.png" class="large">
 
-	<p>...или ssh-клиентом с Вашего компьютера</p>
+	  <p>...или ssh-клиентом с Вашего компьютера</p>
 
-	<div class="article-preview">
-        	<h4>Подключение по ssh к виртуальному серверу</h4>
-		<p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
-	</div>
+	  <div class="article-preview">
+      <h4>Подключение по ssh к виртуальному серверу</h4>
+		  <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
+	  </div>
 	
-	<p>В любом случае будет полезно знать несколько команд linux терминала</p>
+	  <p>В любом случае будет полезно знать несколько команд linux терминала</p>
 
-        <h3>Установка программ</h3>
+    <h3>Установка программ</h3>
 
-	<div class="vimcode">
-		apt update
-	</div>
+	  <div class="vimcode">
+		  apt update [package]
+	  </div>
 
-	<div class="vimcode">
-		apt install
-	</div>
+	  <p>Эта команда синхронизирует внутреннюю базу данных о пакетах с их источникамия,
+    т.е. по сути ищет их обновления. Может выручить, если что-то вчера еще работало, а сегодня уже нет.</p>
+
+	  <div class="vimcode">
+		  apt upgrade [package]
+	  </div>
+
+	  <p>Обновляет указанный пакет. Без параметров обновляет все установленные пакеты.</p>
+
+	  <div class="vimcode">
+		  apt install [package]
+	  </div>
 	
-	<div class="vimcode">
-		-y
-	</div>
+  <p>Программа <b>apt</b> ищет указанный пакет, читает служебную информацию о нем,
+  при необходимости решает зависимости (т.е. устанавливает все другие пакеты, 
+  необходимые для работы программ, устанавливаемого пакета), а затем устанавливает сам пакет.</p>
 
-        <h3>Ориентация на сервере</h3>
+  <h3>Ориентация на сервере</h3>
 
 	<div class="vimcode">
 		mv
