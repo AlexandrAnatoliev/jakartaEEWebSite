@@ -70,48 +70,71 @@
   <h3>Ориентация на сервере</h3>
 
 	<div class="vimcode">
-		mv
+		mv [file] [./path/to/dir/]
 	</div>
 
+  <p>Переместить <b>file</b> в директорию <b>dir</b>.</p>
+
 	<div class="vimcode">
-		cd
+		cd [./path/to/dir/]
 	</div>
+
+  <p>Перейти в директорию <b>dir</b>, без аргументов - в домашнюю директорию.</p>
 	
 	<div class="vimcode">
-		mkdir	
+		mkdir [./path/to/dir/]
 	</div>
 
-	<div class="vimcode">
-		rm	
-	</div>
+  <p>Создать директорию <b>dir</b>.</p>
 
 	<div class="vimcode">
-		ls ll	
+		rm [file]
 	</div>
+	
+  <p>Удалить <b>file</b>.</p>
+
+	<div class="vimcode">
+		ls
+	</div>
+
+  <p>Показать список файлов и каталогов (содержимое текущей территории).</p>
 
 	<div class="vimcode">
 		pwd	
 	</div>
 
-	<div class="vimcode">
-		cp	
-	</div>
+  <p>Возвращает полный путь к тому месту, где мы находимся. Полный путь работает из любого места.</p>
 
 	<div class="vimcode">
-		.	
+		cp [file] [./path/to/dir/]
 	</div>
 
-	<div class="vimcode">
-		~	
-	</div>
+  <p>Скопировать <b>file</b> в директорию <b>dir</b>.</p>
 
 	<div class="vimcode">
-		..	
+		.
 	</div>
 
+  <p>Указывает на текущий каталог.</p>
+
 	<div class="vimcode">
-		history	
+		..
 	</div>
+
+  <p>Указывает на каталог уровнем выше.</p>
+
+	<div class="vimcode">
+		~
+	</div>
+
+  <p>Обозначает домашнюю директорию.</p>
+
+	<div class="vimcode">
+		history
+	</div>
+
+  <p>Выводит историю введенных пользователем команд. Как правило, пользуются стрелками <b>вверх</b>
+   и <b>вниз</b>, чтобы не вводить длинную команду заново, а просто вызвать ее из истории.</p>
 
         <h3>Просмотр файлов</h3>
 
