@@ -22,7 +22,9 @@
        	<div id="header">
             / <a href="/webapp/home"><b>главная</b></a> /
             <a href="/webapp/blog"><b><span class="iamhere">блог</span></b></a> /
+	    <!--
             <a href="/webapp/projects"><b>проекты</b></a> /
+	    -->
       		<a href="/webapp/devops"><b>devOps</b></a> /
         </div>
 
@@ -93,6 +95,7 @@
         	<h4>Навигация по статьям</h4>
 		<ul><li><b>Аренда виртуального сервера</b></li></ul>
 		<ul><li><a href="/webapp/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li></ul>
+		<ul><li><a href="/webapp/jsps/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li></ul>
 	</div>
 
         <div id="footer">
