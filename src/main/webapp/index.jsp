@@ -19,7 +19,9 @@
 		<div id="header">
 		/ <a href="/webapp/home"><b> <span class="iamhere">главная</span></b></a> /
 		<a href="/webapp/blog"><b>блог</b></a> /
+		<!--
     		<a href="/webapp/projects"><b>проекты</b></a> /
+		-->
       		<a href="/webapp/devops"><b>devOps</b></a> /
     	</div>
 
