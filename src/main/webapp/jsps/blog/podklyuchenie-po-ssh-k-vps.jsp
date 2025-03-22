@@ -46,6 +46,7 @@
         	<h4>Навигация по статьям</h4>
 		<ul><li><a href="/webapp/jsps/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
 		<ul><li><b>Подключение по ssh к виртуальному серверу</b></li></ul>
+		<ul><li><a href="/webapp/jsps/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li></ul>
 	</div>
 
         <div id="footer">
