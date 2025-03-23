@@ -1,35 +1,34 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
-    <head>
+  <head>
     
-        <style>
-            <%@include file="../../style.css"%>
-        </style>
+    <style>
+      <%@include file="/style.css"%>
+    </style>
 
-        <title>java practice: projects</title>
+    <title>java practice: projects</title>
 
-        <meta name="description" content="Практика java на реальных проектах">
-	<meta name="robots" content="nofollow">
+    <meta name="description" content="Практика java на реальных проектах">
+	  <meta name="robots" content="nofollow">
 
-    </head>
+  </head>
 
     <body>
 
-        <div id="header">
-            / <a href="/webapp/home"><b>главная</b></a> /
-            <a href="/webapp/blog"><b>блог</b></a> /            
-            <a href="/webapp/projects"><b><span class="iamhere">проекты</span></b></a> /
-      		<a href="/webapp/devops"><b>devOps</b></a> /
-        </div>
+      <div id="header">
+        / <a href="/home"><b>главная</b></a> /
+        <a href="/blog"><b>блог</b></a> /            
+        <a href="/projects"><b><span class="iamhere">проекты</span></b></a> /
+      	<a href="/devops"><b>devOps</b></a> /
+      </div>
         
-        <div id="top">
-            <h1>PROJECT PAGE</h1>
-        </div>
+      <div id="top">
+        <h1>PROJECT PAGE</h1>
+      </div>
 
-        <h3>Классический текст Lorem Ipsum, используемый с XVI века</h3>
+      <h3>Классический текст Lorem Ipsum, используемый с XVI века</h3>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -129,9 +128,9 @@
          consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 
-        <div id="footer">
-            / <a href="#top"><b>наверх</b></a> /
-        </div>
+    <div id="footer">
+      / <a href="#top"><b>наверх</b></a> /
+    </div>
 
-    </body>
+  </body>
 </html>
