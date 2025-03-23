@@ -8,7 +8,7 @@
     	<%@include file="style.css"%>
    	</style>
 
-	<title>java practice: main</title>
+	<title>java practice: home</title>
 
 	<meta name="description" content="Ежедневная практика в java - лучший способ освоить данный язык программирования">
 
@@ -17,12 +17,12 @@
 	<body>
 
 		<div id="header">
-		/ <a href="/webapp/home"><b> <span class="iamhere">главная</span></b></a> /
-		<a href="/webapp/blog"><b>блог</b></a> /
+		/ <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
+		<a href="/blog"><b>блог</b></a> /
 		<!--
-    		<a href="/webapp/projects"><b>проекты</b></a> /
+    		<a href="/projects"><b>проекты</b></a> /
 		-->
-      		<a href="/webapp/devops"><b>devOps</b></a> /
+      		<a href="/devops"><b>devOps</b></a> /
     	</div>
 
         <div id="top">
@@ -38,7 +38,7 @@
 
         <div id="logos" align="center">
           <p>
-            <a href="/webapp/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
+            <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
             <a href="jsps/devops/index.jsp"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
           </p>
         </div>
