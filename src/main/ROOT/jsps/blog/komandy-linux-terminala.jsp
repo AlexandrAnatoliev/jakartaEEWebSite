@@ -75,7 +75,7 @@
 		  mv [file] [./path/to/dir/]
 	  </div>
 
-    <p>Переместить <b>file</b> в директорию <b>dir</b>.</p>
+		<p>Переместить <b>file</b> в директорию <b>dir</b> Этой же командой можно переименовать файл.</p>
 
 	  <div class="vimcode">
 		  cd [./path/to/dir/]
@@ -141,37 +141,51 @@
     <h3>Просмотр файлов</h3>
 
 	  <div class="vimcode">
-		  touch	
+		  touch [file]	
 	  </div>
+
+		<p>Создать файл с именем <b>file</b></p>
 
 	  <div class="vimcode">
-		  cat	
+			cat [file]</br>	
+			cat [file1] >> [file2]	
 	  </div>
+
+		<p>Вывести содержимое файла с именем <b>file</b> в стандартный поток вывода (на экран). Прочитать <b>file1</b> и дописать его содержимое в конец <b>file2</b></p>
 
 	  <div class="vimcode">
-		  less	
+		  less [file]	
 	  </div>
 
+		<p>Прочитать файл</p>	
+		
 	  <div class="vimcode">
 		  tail	
 	  </div>
 
 	  <div class="vimcode">
-		  head	
+			head [file1]</br>
+		  head -3 [file2]
 	  </div>
+		
+		<p>Выведет первые 10 строк <b>file1</b> (по умолчинию) и первые три строки <b>file2</b>
 
 	  <div class="vimcode">
 		  find	
 	  </div>
 
 	  <div class="vimcode">
-		  echo	
+		  echo $PATH	
 	  </div>
+
+		<p>Команда <b>echo</b> выводит значение переданного ей аргумента на экран. В данном случае будет выведено значение переменной <b>PATH</b>: список директорий, в которых будет производиться поиск бинарного файла для его выполнению по умолчанию (т.е. команды <b>ls, cd, echo</b> являются скомпилированными программами, которые выполняются при их вызове</p>
 
 	  <div class="vimcode">
-		  vim	
+		  vim [file]	
 	  </div>
 
+		<p>Открыть файл <b>file</b> в текстовом редакторе <b>vim</b>, либо создать его, если он не существует.</p>
+		
     <h3>Взаимодействие между командами</h3>
 
 	  <div class="vimcode">
