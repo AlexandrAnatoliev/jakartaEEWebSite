@@ -84,6 +84,24 @@
     <p>Перейти в директорию <b>dir</b>, без аргументов - в домашнюю директорию.</p>
 	
 	  <div class="vimcode">
+		  # cd /
+	  </div>
+
+    <p>Перейти в корневую директорию.</p>
+	
+	  <div class="vimcode">
+		  # cd ..
+	  </div>
+
+    <p>Перейти в директорию на один уровень выше.</p>
+	
+	  <div class="vimcode">
+		  # cd -
+	  </div>
+
+    <p>Вернуться (в ту директорию, из которой пришел).</p>
+	
+	  <div class="vimcode">
 		  mkdir [./path/to/dir/]
 	  </div>
 
@@ -100,6 +118,17 @@
 	  </div>
 
     <p>Показать список файлов и каталогов (содержимое текущей территории).</p>
+
+<pre class="vimcode">
+# ls -l
+total 28
+-rw-r--r-- 1 root root 1150 Mar 25 22:43 favicon.ico
+drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
+-rw-r--r-- 1 root root 1372 Mar 25 22:43 index.jsp
+-rw-r--r-- 1 root root 2156 Mar 25 22:43 style.css
+</pre>
+
+		<p>Отобразить подробно.</p>
 
 	  <div class="vimcode">
 		  pwd	
@@ -209,6 +238,28 @@
 	  </div>
 
     <h3>Разрешения файлов и папок linux</h3>
+
+<pre class="vimcode">
+-rw-r--r-- 1 root root 1150 Mar 25 22:43 file.java
+drwxr-xr-x 5 root root 4096 Mar 25 22:43 dir
+lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link
+</pre>
+
+		<p>Первая буква означает, что это:
+			<li><b>-</b> - файл (<b>file.java</b>)</li>
+			<li><b>d</b> - директория (<b>dir</b>)</li>
+			<li><b>l</b> - ссылка (<b>link</b>)</li>
+		</p>
+
+		<p>Последующие буквы раздёлены на три части по три символа и означают права доступа:
+			<li>d<b>rwx</b>rwxrwx - владельца</li>
+			<li>drwx<b>rwx</b>rwx - группы владельца</li>
+			<li>drwxrwx<b>rwx</b> - всех остальных</li>
+			<li><b>-</b> - нет права</li>
+			<li><b>r</b> - право на запись</li>
+			<li><b>w</b> - право на чтение</li>
+			<li><b>x</b> - на исполнение (открыть директорию, запустить файл)</li>
+		</p>
 
 	  <div class="vimcode">
 		  chown
