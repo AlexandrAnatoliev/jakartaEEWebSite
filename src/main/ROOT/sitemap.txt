@@ -1,0 +1,6 @@
+http://java-practice.ru
+http://java-practice.ru/blog
+http://java-practice.ru/devops
+http://java-practice.ru/jsps/blog/arenda-vps.jsp
+http://java-practice.ru/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp
+http://java-practice.ru/jsps/blog/komandy-linux-terminala.jsp
