@@ -3,6 +3,8 @@
 <html>
 	<head>
 
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 	  <style>
       <%@include file="/style.css"%>
     </style>
