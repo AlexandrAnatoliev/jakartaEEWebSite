@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://java-practice.ru/sitemap.txt
+Disallow:
