@@ -239,31 +239,32 @@ drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 
     <h3>Разрешения файлов и папок linux</h3>
 
+	  <p>Первая буква означает, тип файла:</p>
+
 <pre class="vimcode">
--rw-r--r-- 1 root root 1150 Mar 25 22:43 file.java
-drwxr-xr-x 5 root root 4096 Mar 25 22:43 dir
-lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link
+-rw-r--r-- 1 root root 1150 Mar 25 22:43 file.java          файл
+drwxr-xr-x 5 root root 4096 Mar 25 22:43 dir                директория
+lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link               ссылка
 </pre>
 
-		<p>Первая буква означает, что это:
-			<ul>
-				<li><b>-</b> - файл (<b>file.java</b>)</li>
-				<li><b>d</b> - директория (<b>dir</b>)</li>
-				<li><b>l</b> - ссылка (<b>link</b>)</li>
-			</ul>
-		</p>
+    <p>Последующие буквы раздёлены на три части по три символа и означают права доступа:</p>
 
-		<p>Последующие буквы раздёлены на три части по три символа и означают права доступа:
-			<ul>
-				<li>d<b>rwx</b>rwxrwx - владельца</li>
-				<li>drwx<b>rwx</b>rwx - группы владельца</li>
-				<li>drwxrwx<b>rwx</b> - всех остальных</li>
-				<li><b>-</b> - нет права</li>
-				<li><b>r</b> - право на запись</li>
-				<li><b>w</b> - право на чтение</li>
-				<li><b>x</b> - на исполнение (открыть директорию, запустить файл)</li>
-			</ul>
-		</p>
+<pre class="vimcode">
+права:              drwxrwxrwx
+  владельца__________|  |  |
+  группы владельца______|  |
+  всех остальных___________|
+</pre>
+
+    <p>где:
+
+<pre class="vimcode">
+права:                                              drwxr-xr--
+  на чтение__________________________________________||| |
+  на запись___________________________________________|| |
+  на исполнение (открыть директорию, запустить файл)___| |
+  нет прав_______________________________________________|
+</pre>
 
 	  <div class="vimcode">
 		  chown
@@ -273,6 +274,29 @@ lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link
 		  chmod
 	  </div>
 
+    <p>Изменение прав</p>
+
+<pre class="vimcode">
+# ls -l
+-rwxr-xr-x 1 root root 1150 Mar 25 22:43 file.class
+   |  |  |
+   ---------------------есть право на выполнение файла
+
+# chmod -x file.class   отобрать право (-x)
+
+# ls -l
+-rw-r--r-- 1 root root 1150 Mar 25 22:43 file.class
+   |  |  |
+   ---------------------нет прав на выполнение файла
+
+# chmod +x file.class   вернуть право (+x)
+</pre>
+
+	  <div class="vimcode">
+		  chmod
+	  </div>
+
+    <p>Изменение прав</p>
 	  <div class="vimcode">
 		  chmod u+x	
 	  </div>
