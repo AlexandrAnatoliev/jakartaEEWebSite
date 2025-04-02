@@ -4,7 +4,7 @@
 <html>
   <head>
     <style type="text/css">
-		  <%@include file="/style.css" %>      	
+		  <%@include file="/style.css" %>
     </style>
     <title>java practice: команды linux терминала</title>
     <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
@@ -12,10 +12,9 @@
 
   <body>
 
-    
 	  <div id="header">
       <div class="favicon">
-        <img src="/favicon.ico" alt="favicon" class="favicon">
+        <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
 		    / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
@@ -287,10 +286,6 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     <h3>Взаимодействие между командами</h3>
 
 	  <div class="vimcode">
-		  | (pipe)	
-	  </div>
-
-	  <div class="vimcode">
 		  > (redirection)	
 	  </div>
 
@@ -301,11 +296,44 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 # cat file.txt      прочитать содержимое файла и вывести на экран (стандартный поток вывода)
 </pre>
 
-    <p>При перенаправлении с помощью (<b>></b>) предыдщие данные в файле <b>file.txt</b> будут стерты.</p>
+    <p>При перенаправлении с помощью ( <b>></b> ) предыдущие данные в файле <b>file.txt</b> будут стерты.</p>
+
+<pre class="vimcode">
+Читаем содержимое несуществующего файла file.txt
+# cat file.txt
+нет такого файла                сообщение об ошибке выводится в консоль
+# cat file.txt 2> note.txt      сообщение об ошибке записывается в файл note.txt
+
+Номера потоков данных
+0: stdin    ввод
+1: stdout   вывод               по умолчанию - в консоль
+2: stderr   вывод ошибок        по умолчанию - в консоль
+</pre>
+
+    <p>С помощью ( <b>></b> ) можно перенаправить как все, так и отдельные потоки.</p>
 
 	  <div class="vimcode">
 		  >> (appending)	
 	  </div>
+
+    <p>Одинарное перенаправление ( <b>></b> ) перзаписывает файл, двойное ( <b>>></b> ) - дописывает в конец.</p>
+
+	  <div class="vimcode">
+		  | (pipe)	
+	  </div>
+
+    <p>С помощью каналов можно перенаправить поток из одной программы в другую.</p>
+
+<pre class="vimcode">
+alexandr@HONOR:~/GitHub/jackartaEEWebSite$ find "src" | grep "java"
+src/main/ROOT/WEB-INF/classes/HomeServlet.java
+src/main/ROOT/WEB-INF/classes/ProjectsServlet.java
+src/main/ROOT/WEB-INF/classes/BlogServlet.java
+src/main/ROOT/WEB-INF/classes/DevopsServlet.java
+</pre>
+
+    <p>Например, с помощью команды <b>find</b> ищем все файлы в директории <b>src</b> и не выводим их на экран, 
+    а передаем в программу <b>grep</b>. Уже с ее помощью выводим на экран только <b>java</b> файлы.</p>
 
 	  <div class="vimcode">
 		  xargs	

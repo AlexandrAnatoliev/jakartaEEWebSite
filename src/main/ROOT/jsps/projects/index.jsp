@@ -17,13 +17,20 @@
 
     <body>
 
-      <div id="header">
-        / <a href="/home"><b>главная</b></a> /
-        <a href="/blog"><b>блог</b></a> /            
-        <a href="/projects"><b><span class="iamhere">проекты</span></b></a> /
-      	<a href="/devops"><b>devOps</b></a> /
+	  <div id="header">
+      <div class="favicon">
+        <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
-        
+      <div class="menu">
+		    / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
+		    <a href="/blog"><b>блог</b></a> /
+		    <!--
+    		  <a href="/projects"><b>проекты</b></a> /
+		    -->
+        <a href="/devops"><b>devOps</b></a> /
+      </div>
+    </div>
+    
       <div id="top">
         <h1>PROJECT PAGE</h1>
       </div>
