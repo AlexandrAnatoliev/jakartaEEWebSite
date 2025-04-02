@@ -19,7 +19,7 @@
 
 	  <div id="header">
       <div class="favicon">
-        <img src="/favicon.ico" alt="favicon" class="favicon">
+        <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
 		    / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /

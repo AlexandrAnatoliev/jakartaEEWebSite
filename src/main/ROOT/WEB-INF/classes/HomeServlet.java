@@ -5,7 +5,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Class to return website home page
  *
- * @version 0.2.4
+ * @version 0.3.0
  * @author AlexandrAnatoliev
  */
 public class HomeServlet extends HttpServlet {
