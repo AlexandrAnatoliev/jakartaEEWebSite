@@ -2,6 +2,6 @@
 #!/bin/bash
 echo    # separate the output with an empty line
 echo "start compilation" "$1"
-javac -cp ../../../../local-tomcat-10/lib/servlet-api.jar ../WEB-INF/classes/"$1".java
+javac -cp ../../../../tomcat/lib/servlet-api.jar ../WEB-INF/classes/"$1".java
 echo "end compilation" "$1"
 
