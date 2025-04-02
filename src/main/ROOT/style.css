@@ -31,6 +31,19 @@ img.large {
     box-shadow: 5px 5px 5px #777777;
     margin: 0px auto;}
 
+img.logo {
+    width: 40px;
+    height: 40px;}
+
+.favicon {
+    float: left;
+    margin-left: 10px;
+    width: 2em;
+    height: 2em;}
+
+.menu {
+    padding-top: 0.5em;
+}
 #header {
     position: fixed;
     top: 10px;
@@ -89,9 +102,6 @@ img.large {
 .iamhere {
     color: red;}
 
-.logo {
-    width: 40px;
-    height: 40px;}
 
 #logos a:hover {
     border-style: solid;

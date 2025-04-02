@@ -18,12 +18,17 @@
 	<body>
 
 	  <div id="header">
-		  / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
-		  <a href="/blog"><b>блог</b></a> /
-		  <!--
-    		<a href="/projects"><b>проекты</b></a> /
-		  -->
-      <a href="/devops"><b>devOps</b></a> /
+      <div class="favicon">
+        <img src="/favicon.ico" alt="favicon" class="favicon">
+      </div>
+      <div class="menu">
+		    / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
+		    <a href="/blog"><b>блог</b></a> /
+		    <!--
+    		  <a href="/projects"><b>проекты</b></a> /
+		    -->
+        <a href="/devops"><b>devOps</b></a> /
+      </div>
     </div>
 
     <div id="top">
