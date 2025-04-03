@@ -56,14 +56,16 @@
 
 <pre class="vimcode">
 user@my-desktop:/root$ ls -la /src
-|    |           |   | |   |   |
-|    |           |   | |   |   |____содержательный параметр (показать содержимое src)
-|    |           |   | |   |________ключи команды
-|    |           |   | |____________имя команды
-|    |           |   |______________приглашение системы к введению команды
-|    |           |__________________текущая директория
-|    |______________________________имя компьютера
-|___________________________________имя пользователя
+|    |           |   | |   |  |
+1    2           3   4 5   6  7
+  где:
+1 - имя пользователя
+2 - имя компьютера
+3 - текущая директория
+4 - приглашение системы к введению команды
+5 - имя команды
+6 - ключи команды
+7 - содержательный параметр (показать содержимое src)
 </pre>
 
     <h3>Установка программ</h3>
@@ -149,7 +151,6 @@ user@my-desktop:/root$ ls -la /src
 <pre class="vimcode">
 # ls -l
 total 28
--rw-r--r-- 1 root root 1150 Mar 25 22:43 favicon.ico
 drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 -rw-r--r-- 1 root root 1372 Mar 25 22:43 index.jsp
 -rw-r--r-- 1 root root 2156 Mar 25 22:43 style.css
@@ -159,7 +160,7 @@ drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 
 <pre class="vimcode">
 # ls -a
-.  ..  favicon.ico  images  index.jsp  style.css  .settings
+.  ..  ico  images  index.jsp  style.css  .settings
 </pre>
 
     <p>Вывести скрытые файлы (<b>.settings</b>).</p>
@@ -169,7 +170,6 @@ drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 total 28
 drwxrwxr-x 7 root root 4096 мар 20 22:41 .
 drwxrwxr-x 9 root root 4096 мар 23 22:19 ..
--rw-r--r-- 1 root root 1150 Mar 25 22:43 favicon.ico
 drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 -rw-r--r-- 1 root root 1372 Mar 25 22:43 index.jsp
 -rw-r--r-- 1 root root 2156 Mar 25 22:43 style.css
@@ -292,22 +292,22 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     <p>Перенаправление потока вывода</p>
 
 <pre class="vimcode">
-# date > file.txt   записать текущую дату в файл
-# cat file.txt      прочитать содержимое файла и вывести на экран (стандартный поток вывода)
+# date > file.txt 
+# cat file.txt
 </pre>
 
-    <p>При перенаправлении с помощью ( <b>></b> ) предыдущие данные в файле <b>file.txt</b> будут стерты.</p>
+<p>Записать ( <b>></b> ) текущую дату (<b>date</b>) в файл <b>vile.txt</b>, прочитать (<b>cat</b>) содержимое файла и вывести на экран (стандартный поток вывода). При перенаправлении с помощью ( <b>></b> ) предыдущие данные в файле <b>file.txt</b> будут стерты.</p>
 
 <pre class="vimcode">
 Читаем содержимое несуществующего файла file.txt
 # cat file.txt
-нет такого файла                сообщение об ошибке выводится в консоль
-# cat file.txt 2> note.txt      сообщение об ошибке записывается в файл note.txt
+нет такого файла                выводится в консоль
+# cat file.txt 2> note.txt      записывается в файл note.txt
 
-Номера потоков данных
+  Номера потоков данных:
 0: stdin    ввод
-1: stdout   вывод               по умолчанию - в консоль
-2: stderr   вывод ошибок        по умолчанию - в консоль
+1: stdout   вывод               (по умолчанию
+2: stderr   вывод ошибок        в консоль)
 </pre>
 
     <p>С помощью ( <b>></b> ) можно перенаправить как все, так и отдельные потоки.</p>
@@ -325,7 +325,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     <p>С помощью каналов можно перенаправить поток из одной программы в другую.</p>
 
 <pre class="vimcode">
-alexandr@HONOR:~/GitHub/jackartaEEWebSite$ find "src" | grep "java"
+alexandr@HONOR:~/jackartaEEWebSite$ find "src" | grep "java"
 src/main/ROOT/WEB-INF/classes/HomeServlet.java
 src/main/ROOT/WEB-INF/classes/ProjectsServlet.java
 src/main/ROOT/WEB-INF/classes/BlogServlet.java
@@ -349,28 +349,34 @@ src/main/ROOT/WEB-INF/classes/DevopsServlet.java
 	  <p>Первая буква означает, тип файла:</p>
 
 <pre class="vimcode">
--rw-r--r-- 1 root root 1150 Mar 25 22:43 file.java          файл
-drwxr-xr-x 5 root root 4096 Mar 25 22:43 dir                директория
-lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link               ссылка
+-rw-r--r-- 1 root root 1150 Mar 25 22:43 file.java  (файл)
+drwxr-xr-x 5 root root 4096 Mar 25 22:43 dir        (директория)
+lrwxrwxrwx 2 root root 1096 Mar 25 22:43 link       (ссылка)
 </pre>
 
     <p>Последующие буквы раздёлены на три части по три символа и означают права доступа:</p>
 
 <pre class="vimcode">
-права:              drwxrwxrwx
-  владельца__________|  |  |
-  группы владельца______|  |
-  всех остальных___________|
+drwxrwxrwx
+ |  |  |
+ 1  2  3
+  права:
+1 - владельца
+2 - группы владельца
+3 - всех остальных
 </pre>
 
     <p>где:
 
 <pre class="vimcode">
-права:                                              drwxr-xr--
-  на чтение__________________________________________||| |
-  на запись___________________________________________|| |
-  на исполнение (открыть директорию, запустить файл)___| |
-  нет прав_______________________________________________|
+drwxr-xr--
+ ||   | |
+ 12   3 4
+  права:
+1 - на чтение (r)
+2 - на запись (w)
+3 - на исполнение (x - открыть директорию, запустить файл)
+4 - нет прав (-)
 </pre>
 
 	  <div class="vimcode">
