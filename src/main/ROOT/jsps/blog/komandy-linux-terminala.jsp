@@ -252,10 +252,10 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 		<p>Вывести содержимое файла с именем <b>file</b> в стандартный поток вывода (на экран). Прочитать <b>file1</b> и дописать его содержимое в конец <b>file2</b></p>
 
 	  <div class="vimcode">
-		  less [file]	
+		  less [big-file]	
 	  </div>
 
-		<p>Прочитать файл</p>	
+		<p>Прочитать файл. Используется для постраничного вывода текста.</p>	
 		
 	  <div class="vimcode">
 		  tail [file]	
@@ -311,7 +311,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 		  > (redirection)	
 	  </div>
 
-    <p>Перенаправление потока вывода</p>
+    <p>Перенаправление потока вывода.</p>
 
 <pre class="vimcode">
 # date > file.txt 
