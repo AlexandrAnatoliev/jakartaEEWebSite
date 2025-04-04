@@ -52,7 +52,7 @@
 	
 	  <p>В любом случае будет полезно знать несколько команд linux терминала</p>
 
-    <h3>Командная строка</h3>
+    <h3>Командная строка терминала</h3>
 
 <pre class="vimcode">
 user@my-desktop:/root$ ls -la /src
@@ -68,7 +68,7 @@ user@my-desktop:/root$ ls -la /src
 7 - содержательный параметр (показать содержимое src)
 </pre>
 
-    <h3>Установка программ</h3>
+    <h3>Установка программ на linux</h3>
 
 	  <div class="vimcode">
 		  apt update [package]
@@ -91,7 +91,7 @@ user@my-desktop:/root$ ls -la /src
     при необходимости решает зависимости (т.е. устанавливает все другие пакеты, 
     необходимые для работы программ, устанавливаемого пакета), а затем устанавливает сам пакет.</p>
 
-    <h3>Ориентация на сервере</h3>
+    <h3>Ориентация на linux сервере</h3>
 
 	  <div class="vimcode">
 		  mv [file] [./path/to/dir/]
@@ -305,7 +305,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 
 		<p>Открыть файл <b>file</b> в текстовом редакторе <b>vim</b>, либо создать его, если он не существует.</p>
 		
-    <h3>Взаимодействие между командами</h3>
+    <h3>Взаимодействие между командами терминала</h3>
 
 	  <div class="vimcode">
 		  > (redirection)	
@@ -408,6 +408,18 @@ drwxr-xr--
 		  chown
 	  </div>
 
+    <p>Изменить владельца файла.</p>
+
+<pre class="vimcode">
+# ls -l
+-rwxr-xr-x 1 user user 1150 Mar 25 22:43 file.class
+# chown root:root file.class
+# ls -l
+-rwxr-xr-x 1 root root 1150 Mar 25 22:43 file.class
+</pre>
+
+    <p>Меняем владельца файла с <b>user</b> на <b>root</b>.</p>
+
 	  <div class="vimcode">
 		  chmod
 	  </div>
@@ -453,9 +465,16 @@ x - на исполнение
 
     <p>Изменение прав "точечно".</b>
 
-	  <div class="vimcode">
-		  chmod 755	
-	  </div>
+<pre class="vimcode">
+# chmod 764 file.class                  изменяем права файла	
+-rwxrw-r--  ... file.class              символы
+ 111110100                              биты
+ |<-          111 = 4+2+1 = 7
+     |<-      110 = 4+2+0 = 6 ->  764   права в числовом виде 
+       |<-    100 = 4+0+0 = 4
+</pre>
+
+<p>Символы (<b>-rwxrw-r--</b>) на самом деле обозначают биты (<b>111110100</b>). Три группы по три бита можно преобразовать в трехзначное число (<b>764</b>), которым обозначают права в числовом виде.</p> 
 
 	  <div class="vimcode">
 		  chgrp
@@ -475,6 +494,8 @@ x - на исполнение
 		  whoami
 	  </div>
 
+    <p>Выводит имя пользователя</p>
+
 	  <div class="vimcode">
 		  groupadd
 	  </div>
@@ -482,6 +503,14 @@ x - на исполнение
 	  <div class="vimcode">
 		  usermod
 	  </div>
+
+    <p>Добавить пользователя в группу.</p>
+
+	  <div class="vimcode">
+		  # usermod -aG group user
+	  </div>
+
+    <p>Пользователь <b>user</b> будет добавлен в группу <b>group</b>.</p>
 
 	  <h3>Мониторинг linux систем</h3>
 
