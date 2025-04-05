@@ -4,6 +4,5 @@ echo    # separate the output with an empty line
 echo "start recompilation"
 ./compile BlogServlet
 ./compile DevopsServlet
-./compile HomeServlet
 ./compile ProjectsServlet
 echo "end recompilation"
