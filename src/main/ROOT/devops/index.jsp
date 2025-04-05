@@ -42,9 +42,9 @@
 		  <h4>LINUX</h4>
 		
 		  <ul>
-				<li><a href="/jsps/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
-				<li><a href="/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
-				<li><a href="/jsps/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
+				<li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
+				<li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
+				<li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
 			</ul>
 	  </div>
 
