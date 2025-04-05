@@ -19,7 +19,7 @@
         <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
-		    / <a href="/home"><b> <span class="iamhere">главная</span></b></a> /
+		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
 		    <a href="/blog"><b>блог</b></a> /
 		    <!--
     		  <a href="/projects"><b>проекты</b></a> /
