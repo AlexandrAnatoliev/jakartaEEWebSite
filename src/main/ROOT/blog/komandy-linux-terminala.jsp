@@ -35,7 +35,7 @@
 	
 	  <div class="article-preview">
       <h4>Аренда виртуального сервера</h4>
-      <p>Краткий пошаговый гайд по аренде сервера... <a href="/jsps/blog/arenda-vps.jsp">
+      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp">
       <b>читать</b></a></p>
 	  </div>
 
@@ -47,7 +47,7 @@
 
 	  <div class="article-preview">
       <h4>Подключение по ssh к виртуальному серверу</h4>
-		  <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
+		  <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
 	  </div>
 	
 	  <p>В любом случае будет полезно знать несколько команд linux терминала</p>
@@ -600,8 +600,8 @@ x - на исполнение
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
-		  <ul><li><a href="/jsps/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
-		  <ul><li><b><a href="/jsps/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></b></li></ul>
+		  <ul><li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
+		  <ul><li><b><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></b></li></ul>
 		  <ul><li><b>Основные команды linux терминала</b></li></ul>
 	  </div>
     <div id="footer">
