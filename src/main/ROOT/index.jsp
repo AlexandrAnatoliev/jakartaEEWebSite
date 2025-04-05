@@ -41,7 +41,6 @@
     <div id="logos" align="center">
       <p>
         <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
-        <a href="jsps/devops/index.jsp"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
       </p>
     </div>
 
