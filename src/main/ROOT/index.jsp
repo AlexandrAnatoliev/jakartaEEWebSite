@@ -9,7 +9,7 @@
       <%@include file="/style.css"%>
     </style>
 
-	  <title>java practice</title>
+	  <title>java практика</title>
 
 	  <meta name="description" content="Ежедневная практика в java - лучший способ освоить данный язык программирования">
 

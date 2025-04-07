@@ -7,7 +7,7 @@
       <%@include file="/style.css"%>
     </style>
 
-    <title>java practice: blog</title>
+    <title>java практика: blog</title>
 
     <meta name="description" content="Моя личная практика java">
 

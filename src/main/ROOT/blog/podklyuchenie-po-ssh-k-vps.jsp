@@ -8,7 +8,7 @@
 			text-align: center;}
     </style>
 
-    <title>java practice: подключение по ssh к vps</title>
+    <title>java практика: подключение по ssh к vps</title>
     <meta name="description" content="Краткий гайд по подключению по ssh к виртуальному серверу (VPS)">
   </head>
 

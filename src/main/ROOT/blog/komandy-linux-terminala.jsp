@@ -6,7 +6,7 @@
     <style type="text/css">
 		  <%@include file="/style.css" %>
     </style>
-    <title>java practice: команды linux терминала</title>
+    <title>java практика: команды linux терминала</title>
     <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
   </head>
 
