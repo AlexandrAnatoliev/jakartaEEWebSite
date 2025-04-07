@@ -10,6 +10,7 @@
     <title>java практика: blog</title>
 
     <meta name="description" content="Моя личная практика java">
+    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/blog/">
 
   </head>
   
