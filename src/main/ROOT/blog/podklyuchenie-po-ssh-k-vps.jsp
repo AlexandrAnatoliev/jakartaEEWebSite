@@ -3,9 +3,9 @@
 <html>
   <head>
     <style type="text/css">
-		<%@include file="/style.css" %>
-		body p {
-			text-align: center;}
+		  <%@include file="/style.css" %>
+	  	body p {
+			  text-align: center;}
     </style>
 
     <title>java практика: подключение по ssh к vps</title>
