@@ -7,7 +7,7 @@
       <%@include file="/style.css"%>
     </style>
 
-    <title>java practice: blog</title>
+    <title>java практика: blog</title>
 
     <meta name="description" content="Моя личная практика java">
 
@@ -39,7 +39,11 @@
 	
 	  <div class="article-preview">
       <h4>Основные команды linux терминала</h4>
-		  <p>Основные команды linux терминала, необходимые пользователю... <a href="/blog/komandy-linux-terminala.jsp"><b>читать</b></a></p>
+      <p>Команды, вводимые пользователем в консоли терминала, выполняются командной оболочкой <b>bash</b>. 
+      Пользователь вводит команду, <b>bash</b> ищет программу, соответствующую команде, в нужных каталогах,
+       запускает ее и передает ей введенные параметры. Количество их, потому, огромно. 
+       В статье будут описаны лишь те команды linux терминала, которые я использую чаще всего...
+		  <a href="/blog/komandy-linux-terminala.jsp"><b>читать</b></a></p>
 	  </div>
 
 	  <div class="article-preview">

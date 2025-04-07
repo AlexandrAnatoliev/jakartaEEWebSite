@@ -8,7 +8,7 @@
       <%@include file="/style.css"%>
     </style>
 
-    <title>java practice: projects</title>
+    <title>java практика: проекты на java</title>
 
     <meta name="description" content="Практика java на реальных проектах">
 	  <meta name="robots" content="nofollow">

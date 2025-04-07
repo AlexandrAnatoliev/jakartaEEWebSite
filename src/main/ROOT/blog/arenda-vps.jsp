@@ -10,14 +10,13 @@
 			  text-align: center;}
     </style>
         
-    <title>java practice: аренда vps</title>
+    <title>java практика: аренда vps</title>
 
     <meta name="description" content="Краткий гайд по аренде виртуального сервера (VPS)">
 
   </head>
 
   <body>
-
     
 	  <div id="header">
       <div class="favicon">
@@ -32,7 +31,6 @@
         <a href="/devops"><b>devOps</b></a> /
       </div>
     </div>
-
 
     <div id="top">
       <h1>АРЕНДА ВИРТУАЛЬНОГО СЕРВЕРА (VPS)</h1>

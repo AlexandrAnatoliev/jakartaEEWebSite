@@ -3,12 +3,12 @@
 <html>
   <head>
     <style type="text/css">
-		<%@include file="/style.css" %>      	
-		body p {
-			text-align: center;}
+		  <%@include file="/style.css" %>
+	  	body p {
+			  text-align: center;}
     </style>
 
-    <title>java practice: подключение по ssh к vps</title>
+    <title>java практика: подключение по ssh к vps</title>
     <meta name="description" content="Краткий гайд по подключению по ssh к виртуальному серверу (VPS)">
   </head>
 
@@ -27,7 +27,6 @@
         <a href="/devops"><b>devOps</b></a> /
       </div>
     </div>
-
 
     <div id="top">
       <h1>ПОДКЛЮЧЕНИЕ ПО SSH К ВИРТУАЛЬНОМУ СЕРВЕРУ (VPS)</h1>

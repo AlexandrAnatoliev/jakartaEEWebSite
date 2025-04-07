@@ -8,7 +8,7 @@
       <%@include file="/style.css"%>
     </style>
 
-    <title>java practice: devops</title>
+    <title>java практика: devops</title>
 
     <meta name="description" content="На практике знания только языка java не достаточно, необходимо разобраться и в devOps и devTools">
 	  <meta name="robots" content="nofollow">
