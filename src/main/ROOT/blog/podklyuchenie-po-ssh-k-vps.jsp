@@ -3,7 +3,7 @@
 <html>
   <head>
     <style type="text/css">
-		<%@include file="/style.css" %>      	
+		<%@include file="/style.css" %>
 		body p {
 			text-align: center;}
     </style>
@@ -27,7 +27,6 @@
         <a href="/devops"><b>devOps</b></a> /
       </div>
     </div>
-
 
     <div id="top">
       <h1>ПОДКЛЮЧЕНИЕ ПО SSH К ВИРТУАЛЬНОМУ СЕРВЕРУ (VPS)</h1>
