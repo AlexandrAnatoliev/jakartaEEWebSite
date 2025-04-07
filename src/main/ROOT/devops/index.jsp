@@ -12,6 +12,7 @@
 
     <meta name="description" content="На практике знания только языка java не достаточно, необходимо разобраться и в devOps и devTools">
 	  <meta name="robots" content="nofollow">
+    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/devops/">
 
   </head>
 

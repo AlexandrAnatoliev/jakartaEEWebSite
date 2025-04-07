@@ -13,6 +13,7 @@
     <title>java практика: аренда vps</title>
 
     <meta name="description" content="Краткий гайд по аренде виртуального сервера (VPS)">
+    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/blog/arenda-vps.jsp">
 
   </head>
 

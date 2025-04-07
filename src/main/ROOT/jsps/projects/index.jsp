@@ -12,7 +12,7 @@
 
     <meta name="description" content="Практика java на реальных проектах">
 	  <meta name="robots" content="nofollow">
-
+    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/projects">
   </head>
 
     <body>
