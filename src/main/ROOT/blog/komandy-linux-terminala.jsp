@@ -511,9 +511,11 @@ x - на исполнение
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
-		  <ul><li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li></ul>
-		  <ul><li><b><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></b></li></ul>
-		  <ul><li><b>Основные команды linux терминала</b></li></ul>
+		  <ul>
+        <li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
+		    <li><b><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></b></li>
+		    <li><b>Основные команды linux терминала</b></li>
+      </ul>
 	  </div>
     <div id="footer">
       / <a href="#top"><b>наверх</b></a> /
