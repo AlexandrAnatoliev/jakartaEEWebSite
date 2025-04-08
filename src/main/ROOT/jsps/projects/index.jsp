@@ -12,7 +12,6 @@
 
     <meta name="description" content="Практика java на реальных проектах">
 	  <meta name="robots" content="nofollow">
-
   </head>
 
     <body>

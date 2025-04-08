@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+    <meta http-equiv="refresh" content="0; url=https://java-practice.ru">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	  <style>
