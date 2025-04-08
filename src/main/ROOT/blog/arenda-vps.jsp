@@ -10,9 +10,9 @@
 			  text-align: center;}
     </style>
         
-    <title>java практика: аренда vps сервера</title>
+    <title>java практика: аренда виртуального сервера</title>
 
-    <meta name="description" content="Краткий гайд по аренде виртуального сервера (VPS)">
+    <meta name="description" content="Аренда виртуального сервера (vps), краткий гайд для ускорения и облегчения процесса его настройки.">
 
   </head>
 
