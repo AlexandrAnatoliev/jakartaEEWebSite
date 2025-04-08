@@ -10,9 +10,9 @@
 			  text-align: center;}
     </style>
         
-    <title>java практика: аренда vps сервера</title>
+    <title>java практика: аренда виртуального сервера</title>
 
-    <meta name="description" content="Краткий гайд по аренде виртуального сервера (VPS)">
+    <meta name="description" content="Аренда виртуального сервера (vps), краткий гайд для ускорения и облегчения процесса его настройки.">
 
   </head>
 
@@ -100,9 +100,11 @@
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
-		  <ul><li><b>Аренда виртуального сервера</b></li></ul>
-		  <ul><li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li></ul>
-		  <ul><li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li></ul>
+		  <ul>
+        <li><b>Аренда виртуального сервера</b></li>
+		    <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
+		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
+      </ul>
 	  </div>
 
     <div id="footer">
