@@ -12,7 +12,6 @@
 	  <title>java практика</title>
 
 	  <meta name="description" content="Ежедневная практика в java - лучший способ освоить данный язык программирования">
-    <meta http-equiv="refresh" content="0; url=https://java-practice.ru">
 
 	</head>
 

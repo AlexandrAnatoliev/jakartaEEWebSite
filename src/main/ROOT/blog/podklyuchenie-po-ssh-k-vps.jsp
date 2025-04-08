@@ -10,7 +10,6 @@
 
     <title>java практика: подключение по ssh к vps</title>
     <meta name="description" content="Краткий гайд по подключению по ssh к виртуальному серверу (VPS)">
-    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/blog/podklyuchenie-po-ssh-k-vps.jsp">
   </head>
 
   <body>
