@@ -8,7 +8,6 @@
     </style>
     <title>java практика: команды linux терминала</title>
     <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
-    <meta http-equiv="refresh" content="0; url=https://java-practice.ru/blog/komandy-linux-terminala.jsp">
   </head>
 
   <body>

@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <meta http-equiv="refresh" content="0; url=https://java-practice.ru">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	  <style>
@@ -12,7 +11,6 @@
 	  <title>java практика</title>
 
 	  <meta name="description" content="Ежедневная практика в java - лучший способ освоить данный язык программирования">
-    <meta http-equiv="refresh" content="0; url=https://java-practice.ru">
 
 	</head>
 
