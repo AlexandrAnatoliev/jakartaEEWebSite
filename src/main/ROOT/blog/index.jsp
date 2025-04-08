@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> <!DOCTYPE html>
 <html>
 	<head>
 
@@ -53,7 +52,10 @@
 	
 	  <div class="article-preview">
       <h4>Аренда виртуального сервера</h4>
-      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp"><b>читать</b></a></p>
+      <p>Для размещения и запуска своих проектов арендовать <b>vps</b> сервер будет дешевле, чем оплачивать услуги хостинга. 
+      Управлять им, однако немного сложнее, потому что понадобятся некоторые знания для его настройки. 
+      Чтобы облегчить этот процесс, составлен небольшой гайд...
+      <a href="/blog/arenda-vps.jsp"><b>читать</b></a></p>
 	  </div>
 
     <div id="footer">
