@@ -40,8 +40,15 @@
     <div id="logos" align="center">
       <p>
         <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
+        <a href="/devops#wireguard"><img src="images/logo/wireguard.svg" class="logo" alt="wireguard" title="wireguard"/></a>
       </p>
     </div>
+
+	  <div class="article-preview">
+      <h4>Виртуальная частная сеть</h4>
+      <p>Краткий гайд по настройке <b>wireguard</b> на своем сервере...
+		  <a href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a></p>
+	  </div>
 
     <div id="footer">
       / <a href="#top"><b>наверх</b></a> /
