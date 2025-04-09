@@ -86,14 +86,7 @@
 
     <p>Выглядеть он будет так:</p>
 
-<pre class="vimcode">
-[Interface]
-PrivateKey = [privatekey]
-Address = 10.0.0.1/24
-ListenPort = 51830
-PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERAGE
-PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERAGE
-</pre>
+    <img alt="Создаем конфиг для wireguard" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
 
     <p>Файл с конфигурацией <b>wireguard</b>-сервера находится в этой же папке</p>
 
@@ -158,18 +151,7 @@ AllowedIPs = 10.0.0.2/32
 
     <p>Выглядеть, в итоге, он будет так:</p>
 
-<pre class="vimcode">
-[Interface]
-PrivateKey = [privatekey]
-Address = 10.0.0.1/24
-ListenPort = 51830
-PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERAGE
-PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERAGE
-
-[Peer]
-PublicKey = [client_publickey]
-AllowedIPs = 10.0.0.2/32
-</pre>
+    <img alt="Добавляем в конфиг сервера клиента" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
     
     <p>Перезагружаем <b>systemctl</b> сервис с <b>wireguard</b>
 

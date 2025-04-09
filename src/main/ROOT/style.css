@@ -35,6 +35,15 @@ img.logo {
     width: 40px;
     height: 40px;}
 
+img.code {
+    width: 900;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #777777;
+    margin: 0px auto;}
+
 .favicon {
     float: left;
     margin-left: 10px;
