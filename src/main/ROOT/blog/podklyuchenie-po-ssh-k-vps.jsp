@@ -34,6 +34,12 @@
 
     <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)</p>
 
+	  <div class="article-preview">
+      <h4>Аренда виртуального сервера</h4>
+      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp">
+      <b>читать</b></a></p>
+	  </div>
+
     <p>Запустите сервер</p>
 
 	  <img alt="Включение виртуального сервера" src="/images/podklyuchenie-po-ssh-k-vps/pic-1.png" class="large">
@@ -54,6 +60,7 @@
         <li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
 		    <li><b>Подключение по ssh к виртуальному серверу</b></li>
 		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
+        <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
       </ul>
 	  </div>
 
