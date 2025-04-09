@@ -7,7 +7,7 @@
 		  <%@include file="/style.css" %>
     </style>
     <title>java практика: копирование файлов по ssh</title>
-    <meta name="description" content="Основные команды linux терминала, необходимые пользователю">
+    <meta name="description" content="Копирование файлов по ssh, краткий гайд.">
   </head>
 
   <body>
