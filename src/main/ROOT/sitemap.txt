@@ -4,3 +4,4 @@ https://java-practice.ru/blog
 https://java-practice.ru/blog/arenda-vps.jsp
 https://java-practice.ru/blog/podklyuchenie-po-ssh-k-vps.jsp
 https://java-practice.ru/blog/komandy-linux-terminala.jsp
+https://java-practice.ru/blog/kopirovanie-fajlov-po-ssh.jsp
