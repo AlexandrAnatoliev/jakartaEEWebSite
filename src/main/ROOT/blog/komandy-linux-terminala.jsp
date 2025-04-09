@@ -512,9 +512,10 @@ x - на исполнение
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
-        <li><a href="/blog/arenda-vps.jsp">Аренда виртуального сервера</a></li>
-		    <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></li>
+        <li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
+        <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
 		    <li><b>Основные команды linux терминала</b></li>
+        <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
