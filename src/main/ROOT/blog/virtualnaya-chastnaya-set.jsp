@@ -86,7 +86,7 @@
 
     <p>Выглядеть он будет так:</p>
 
-    <img alt="Создаем конфиг для wireguard" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
+    <img alt="Виртуальная частная сеть, создаем конфиг для wireguard" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
 
     <p>Файл с конфигурацией <b>wireguard</b>-сервера находится в этой же папке</p>
 
@@ -151,7 +151,7 @@ AllowedIPs = 10.0.0.2/32
 
     <p>Выглядеть, в итоге, он будет так:</p>
 
-    <img alt="Добавляем в конфиг сервера клиента" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
+    <img alt="Виртуальная частная сеть, добавляем в конфиг клиента" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
     
     <p>Перезагружаем <b>systemctl</b> сервис с <b>wireguard</b>
 
