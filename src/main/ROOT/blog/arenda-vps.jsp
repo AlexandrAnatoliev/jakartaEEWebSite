@@ -102,8 +102,8 @@
       <h4>Навигация по статьям</h4>
 		  <ul>
         <li><b>Аренда виртуального сервера</b></li>
-		    <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
-		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
+		    <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp">Подключение по ssh к виртуальному серверу</a></li>
+		    <li><a href="/blog/komandy-linux-terminala.jsp">Основные команды linux терминала</a></li>
       </ul>
 	  </div>
 
