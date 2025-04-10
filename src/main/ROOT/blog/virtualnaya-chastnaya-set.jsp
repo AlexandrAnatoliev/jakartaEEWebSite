@@ -58,7 +58,7 @@
     <p>Генерируем ключи <b>wireguard</b>-сервера</p>
 
     <div class="vimcode">
-      # wg genkey | tee /etc/privatekey | wg pubkey | tee /etc/wireguard/publickey
+      # wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
     </div>
 
     <p>Сгенерированные публичный и приватный ключи будут сохранены в соответствующих файлах</p>
@@ -151,7 +151,7 @@ AllowedIPs = 10.0.0.2/32
 
     <p>Выглядеть, в итоге, он будет так:</p>
 
-    <img alt="Виртуальная частная сеть, добавляем в конфиг клиента" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
+    <img alt="Виртуальная частная сеть, добавляем в конфиг клиента" src="/images/virtualnaya-chastnaya-set/code2.png" class="code">
     
     <p>Перезагружаем <b>systemctl</b> сервис с <b>wireguard</b>
 
