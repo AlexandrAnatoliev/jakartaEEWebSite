@@ -184,6 +184,24 @@ PersistentKeepalive = 20
 
     <p>Этот конфигурационный файл открываем в <b>wireguard</b>-клиенте телефона или компьютера.</p>
 
+    <p> Например, в <b>Ubuntu</b> это выглядит так: Заходим в <b>"Настройки"</b>, далее <b>"Сеть"</b>. Нажимаем <b>"+"</b>, чтобы добавить <b>"VPN"</b>. Выбираем <b>"Импортировать из файла"</b>.</p>
+
+    <img alt="Добавление конфигурации vpn на ubuntu1" src="/images/virtualnaya-chastnaya-set/addvpn1.png" class="large">
+
+    <p>Находим созданный ранее Вами файл с конфигурацией клиента и открываем его.</p>
+
+    <img alt="Добавление конфигурации vpn на ubuntu2" src="/images/virtualnaya-chastnaya-set/addvpn2.png" class="large">
+    
+    <p>Можно включать и использовать.</p>
+
+    <img alt="Добавление конфигурации vpn на ubuntu3" src="/images/virtualnaya-chastnaya-set/addvpn3.png" class="large">
+
+    <p>Параметры конфигурации, подключенных пользователей, количество переданного трафика и т.п. моджно посмотреть с помощью команды:</p>
+
+    <div class="vimcode">
+      # wg show
+    </div>
+
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
