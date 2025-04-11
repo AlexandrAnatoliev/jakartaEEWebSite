@@ -58,356 +58,191 @@ project-dir/
   Test.java
 </pre>
 
-Имя файла с исходным кодом должно совпадать с именем класса (class Test -> Test.java).
+    <p>Имя файла с исходным кодом должно совпадать с именем класса (class <b>Test</b> -> <b>Test.java</b>).</p>
 
-```java
+<pre class="vimcode">
 // Исходный кода файла Test.java
-class Test {
-    public static void main(String[] args) {
-        System.out.println("Run Test");
-    }
+public class Test {
+  public static void main(String[] args) {
+    System.out.println("Run Test");
+  }
 }
-```
+</pre>
 
-* Компилируем файл **Test.java** в файл с байт-кодом **Test.class** командой:
+    <p>Компилируем файл <b>Test.java</b> в файл с байт-кодом <b>Test.class</b> командой:</p>
 
-```javac Test.java```
+    <div class="vimcode">
+      $ javac Test.java
+    </div>
 
-Файл **Test.class** появится рядом с **Test.java**:
+    <p>Файл <b>Test.class</b> появится рядом с <b>Test.java</b>:</p>
 
-```
+<pre class="vimcode">
 project-dir/
-	Test.java
-	Test.class
-```
+  Test.java
+  Test.class
+</pre>
 
-* Запускаем программу командой:
+    <p>Запускаем программу командой:</p>
 
-```java Test```
+    <div class="vimcode">
+      $ java Test
+    </div>
 
 
-    <h3>Компиляция и выполнение нескольких классов</h3>
+    <h3>Компиляция и выполнение нескольких java классов</h3>
 
-Для работы с несколькими классами нужен **classpath**. Он похож на файловую систему, в которой содержатся классы, а
-функции папок выполняют пакеты (**packages**).
+    <p>Для работы с несколькими классами нужен <b>classpath</b>. Он похож на файловую систему, в которой содержатся классы, а функции папок выполняют пакеты (<b>packages</b>).</p>
 
-Отделим файлы исходного кода (каталог **src/**) от скомпилированных файлов (**bin/**).
+    <p>Отделим файлы исходного кода (каталог <b>src/</b>) от скомпилированных файлов (<b>bin/</b>). Например, в пакете <b>src</b> находится два класса <b>Box</b> и <b>BoxMachine</b>.</p>
 
-Например, в пакете **src** находится два класса **Box** и **BoxMachine**.
-
-```java
+<pre class="vimcode">
 package src;
 
 public class Box {
-    private double size;
+  private double size;
 
-    public Box(double size) {
-        this.size = size;
-    }
+  public Box(double size) {
+    this.size = size;
+  }
 
-    public String toString() {
-        return "Box have size " + size;
-    }
+  public String toString() {
+    return "Box have size " + size;
+  }
 }
-```
+</pre>
 
-```java
+<pre class="vimcode">
 package src;
 
 public class BoxMachine {
-    public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(new Box(Math.random() * 10));
-        }
+  public static void main(String[] args) {
+    for (int i = 0; i < 5; i++) {
+      System.out.println(new Box(Math.random() * 10));
     }
+  }
 }
-```
+</pre>
 
-Все это образует файловую структуру:
+    <p>Все это образует файловую структуру:</b>
 
-```
+<pre class="vimcode">
 project-dir/
-    src/
-        Box.java
-        BoxMachine.java      
-```
+  src/
+    Box.java
+    BoxMachine.java
+</pre>
 
-Чтобы скомпилировать эту группу классов, необходимо из главного каталога (в котором лежит **src/** каталог) выполнить
-команду:
+    <p>Чтобы скомпилировать эту группу классов, необходимо из главного каталога (в котором лежит <b>src/</b> каталог) выполнить команду:</b>
 
-```
-javac -d bin ./src/*
+<pre class="vimcode">
+$ javac -d bin ./src/*
 где:
-    -d      - флаг, после которого следует указать местоположение, куда попадут скомпилированные файлы.
-    bin     - название папки
-    ./src/* - расположение исходных файлов
-    *       - указывает, что необходимо скомпилировать все файлы
-```
+  -d      - флаг, после которого следует указать...
+  bin     - ...куда попадут скомпилированные файлы
+  ./src/  - расположение исходных файлов
+  *       - указывает, что необходимо скомпилировать все файлы
+</pre>
 
-Теперь скомпилированные файлы появились в папке **bin/**:
+    <p>Теперь скомпилированные файлы появились в папке <b>bin/</b>:</p>
 
-```
+<pre class="vimcode">
 project-dir/
+  src/
+    Box.java
+    BoxMachine.java
+  bin/
     src/
-        Box.java
-        BoxMachine.java
-    bin/
-        src/
-            Box.class
-            BoxMachine.class
-```
+      Box.class
+      BoxMachine.class
+</pre>
 
-Для их запуска из главной директории воспользуемся командой:
+    <p>Для их запуска из главной директории (<b>project-dir</b>)воспользуемся командой:</p>
 
-```
-java -classpath ./bin src.BoxMachine
+<pre class="vimcode">
+$ java -classpath ./bin src.BoxMachine
 где:
-    -classpath      - флаг, после которого указывается местоположение скомпилированных файлов
-    ./bin           - название папки, в которой лежат скомпилированные файлы
-    src.BoxMachine  - название пакета и главного класса 
-```
+  -classpath      - флаг, после которого указывается...
+  ./bin           - ...местоположение скомпилированных файлов
+  src.BoxMachine  - название пакета и главного класса
+</pre>
 
     <h3>Создание JAR-файлов</h3>
 
-Соберем скомпилированные файлы в **jar-файл** - архив классов.
+    <p>Соберем скомпилированные файлы в <b>jar-файл</b> - архив классов.</p>
 
-* В главном каталоге создадим файл-манифест **manifest.mf**:
+    <p>В главном каталоге создадим файл-манифест <b>manifest.mf</b>:</p>
 
-```
+<pre class="vimcode">
 project-dir/
-    manifest.mf
+  manifest.mf
+  src/
+    Box.java
+    BoxMachine.java
+  bin/
     src/
-        Box.java
-        BoxMachine.java
-    bin/
-        src/
-            Box.class
-            BoxMachine.class
-```
+      Box.class
+      BoxMachine.class
+</pre>
 
-В нем указывается главный класс, который будет запускаться при выполнении **jar-файла**, **classpath** и дополнительная
-информация.
+    <p>В нем указывается главный класс, который будет запускаться при выполнении <b>jar-файла</b>, <b>classpath</b> и дополнительная информация.</p>
 
-```
-main-class: src.BoxMachine  // класс, содержащий метод main
-class-path: bin/            // путь к скомпилированным классам или дополнительным библиотекам
-```
+<pre class="vimcode">
+// класс, содержащий метод main
+main-class: src.BoxMachine
+// путь к скомпилированным классам или дополнительным библиотекам
+class-path: bin/
+</pre>
 
-* Собираем **jar-файл**:
+    <p>Собираем <b>jar-файл</b>:</p>
 
-```
+<pre class="vimcode">
 jar -cmf manifest.mf box-machine.jar -C bin .
 где:
-    -cmf            - флаг, после которого указывают путь к файлу манифеста
-    manifest.mf     - путь к манифесту
-    box-machine.jar - название выходного jar-файла
-    -C              - флаг, после которого указывают путь к скомпилированным классам
-    bin             - путь к скомпилированным классам
-    .               - путь, куда будет помещен jar-файл
-```
+  -cmf            - флаг, после которого указывают...
+  manifest.mf     - ...путь к манифесту
+  box-machine.jar - название выходного jar-файла
+  -C              - флаг, после которого указывают...
+  bin             - ...путь к скомпилированным классам
+  .               - путь, куда будет помещен jar-файл
+</pre>
 
-**jar-файл** создан в текущей папке
+    <p><b>jar-файл</b> создан в текущей папке</p>
 
-```
+<pre class="vimcode">
 project-dir/
-    box-machine.jar
-    manifest.mf
+  box-machine.jar
+  manifest.mf
+  src/
+    Box.java
+    BoxMachine.java
+  bin/
     src/
-        Box.java
-        BoxMachine.java
-    bin/
-        src/
-            Box.class
-            BoxMachine.class
-```
+      Box.class
+      BoxMachine.class
+</pre>
 
-* Запускаем **jar-файл** командой:
+    <p>Запускаем <b>jar-файл</b> командой:</p>
 
-```java -jar box-machine.jar```
+    <div class="vimcode">
+      $ java -jar box-machine.jar
+    </div>
 
-В качестве проверки создадим отдельную директорию `lib/`, перенесем туда наш jar-файл и запустим его оттуда.
+    <p>В качестве проверки создадим отдельную директорию <b>lib/</b>, перенесем туда наш <b>jar-файл</b> и запустим его оттуда.</p>
 
-```
+<pre class="vimcode">
 project-dir/
-    manifest.mf
+  manifest.mf
+  src/
+    Box.java
+    BoxMachine.java
+  bin/
     src/
-        Box.java
-        BoxMachine.java
-    bin/
-        src/
-            Box.class
-            BoxMachine.class
+      Box.class
+      BoxMachine.class
     lib/
-        box-machine.jar
-```
-	  <div class="article-preview">
-		  <h4>Полезные ссылки</h4>
-		  <ul>
-        <li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
-        <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
-        <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
-        <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
-			</ul>
-	  </div>
-
-    <p>Обновляем пакеты на сервере</p>
-
-    <div class="vimcode">
-      # apt update && apt upgrade -y
-    </div>
-
-    <p>Устанавливаем <b>wireguard</b></p>
-
-    <div class="vimcode">
-      # apt install -y wireguard
-    </div>
-
-    <p>Генерируем ключи <b>wireguard</b>-сервера</p>
-
-    <div class="vimcode">
-      # wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey
-    </div>
-
-    <p>Сгенерированные публичный и приватный ключи будут сохранены в соответствующих файлах</p>
-
-<pre class="vimcode">
-/etc/
-  wireguard/
-    privatekey
-    publickey
+      box-machine.jar
 </pre>
-
-    <p>Проверим, как называется сетевой интерфейс</p>
-
-    <div class="vimcode">
-      # ip a
-    </div>
-
-    <p>Скорее всего сетевой интерфейс будет <b>eth.0</b>.</p>
-
-    <p>Создаем конфиг для сетевого интерфейса</p>
-
-    <div class="vimcode">
-      # vim /etc/wireguard/wg0.conf
-    </div>
-
-    <p>Выглядеть он будет так:</p>
-
-    <img alt="Виртуальная частная сеть, создаем конфиг для wireguard" src="/images/virtualnaya-chastnaya-set/code1.png" class="code">
-
-    <p>Файл с конфигурацией <b>wireguard</b>-сервера находится в этой же папке</p>
-
-<pre class="vimcode">
-/etc/
-  wireguard/
-    privatekey
-    publickey
-    wg0.conf
-</pre>
-
-    <p>В примере в строках <b>PostUp</b> и <b>PostDown</b> использован сетевой интерфейс <b>eth0</b> (у Вас может быть и другой).
-    Вставляем вместо <b>[privatekey]</b> содержимое файла <b>/etc/wireguard/privatekey</b>.</p>
-
-    <p>Настраиваем <b>ip</b> форвардинг:</p>
-
-    <div class="vimcode">
-      $ echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
-    </div>
-
-    <p>Включаем <b>systemd</b> демон с <b>wireguard</b>:</p>
-
-<pre class="vimcode">
-# systemctl enable wg-quick@wg0.service 
-# systemctl start wg-quick@wg0.service 
-# systemctl status wg-quick@wg0.service 
-</pre>
-
-    <p>Создаем ключи клиента:</p>
-
-    <div class="vimcode">
-      # wg genkey | tee /etc/wireguard/client_privatekey | wg pubkey | tee /etc/wireguard/client_publickey
-    </div>
-
-    <p>Они появляются в каталоге</p>
-
-<pre class="vimcode">
-/etc/
-  wireguard/
-    client_privatekey
-    client_publickey
-    privatekey
-    publickey
-    wg0.conf
-</pre>
-
-    <p>Добавляем в конфиг сервера клиента:</p>
-
-    <div class="vimcode">
-      vim /etc/wireguard/wg0.conf
-    </div>
-
-    <p>Запись клиента</p>
-
-<pre class="vimcode">
-[Peer]
-PublicKey = [client_publickey]
-AllowedIPs = 10.0.0.2/32
-</pre>
-
-    <p>Вставляем вместо <b>[client_publickey]</b> содержимое файла <b>/etc/wireguard/client_publickey</b>.</p>
-
-    <p>Выглядеть, в итоге, он будет так:</p>
-
-    <img alt="Виртуальная частная сеть, добавляем в конфиг клиента" src="/images/virtualnaya-chastnaya-set/code2.png" class="code">
-    
-    <p>Перезагружаем <b>systemctl</b> сервис с <b>wireguard</b>
-
-<pre class="vimcode">
-# systemctl restart wg-quick@wg0
-# systemctl status wg-quick@wg0
-</pre>
-
-    <p>На <b>ЛОКАЛЬНОЙ</b> машине (клиенте) создаем текстовый файл с конфигом клиента</p>
-
-    <div class="vimcode">
-      $ vim client_wb.conf
-    </div>
-
-<pre class="vimcode">
-[Interface]
-PrivateKey = [client_privatekey]
-Address = 10.0.0.2/32
-DNS = 8.8.8.8
-
-[Peer]
-PublicKey = [publickey]
-Endpoint = [server-ip]:51830
-AllowedIPs = 0.0.0.0/0
-PersistentKeepalive = 20
-</pre>
-
-    <p>Вставляем вместо <b>[client_privatekey]</b> содержимое файла <b>/etc/wireguard/client_privatekey</b>,
-    вместо <b>[publickey]</b> - <b>/etc/wireguard/publickey</b>, <b>[server-ip]</b> заменяем на <b>ip</b> сервера.</p>
-
-    <p>Этот конфигурационный файл открываем в <b>wireguard</b>-клиенте телефона или компьютера.</p>
-
-    <p> Например, в <b>Ubuntu</b> это выглядит так: Заходим в <b>"Настройки"</b>, далее <b>"Сеть"</b>. Нажимаем <b>"+"</b>, чтобы добавить <b>"VPN"</b>. Выбираем <b>"Импортировать из файла"</b>.</p>
-
-    <img alt="Добавление конфигурации vpn на ubuntu1" src="/images/virtualnaya-chastnaya-set/addvpn1.png" class="large">
-
-    <p>Находим созданный ранее Вами файл с конфигурацией клиента и открываем его.</p>
-
-    <img alt="Добавление конфигурации vpn на ubuntu2" src="/images/virtualnaya-chastnaya-set/addvpn2.png" class="large">
-    
-    <p>Можно включать и использовать.</p>
-
-    <img alt="Добавление конфигурации vpn на ubuntu3" src="/images/virtualnaya-chastnaya-set/addvpn3.png" class="large">
-
-    <p>Параметры конфигурации, подключенных пользователей, количество переданного трафика и т.п. моджно посмотреть с помощью команды:</p>
-
-    <div class="vimcode">
-      # wg show
-    </div>
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
