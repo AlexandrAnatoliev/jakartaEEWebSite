@@ -129,17 +129,17 @@ img.code {
 	margin: 10px;}
 
 .calculator {
-	background-color: #300a24;
+  background-color: #efefef;
 	border-style: solid;
-  border-width: 0px;
-	color: white;
+  border-width: 2px;
   box-shadow: 5px 5px 5px #777777;
   font-family: Courier, Courier New;
   padding: 10px;
 	border-radius: 10px;
-	margin: 10px;}
+	margin: 10px;
+	color: black;}
 
 .calculator p {
   font-family: Courier, Courier New;
-	color: white;}
+	color: black;}
 
