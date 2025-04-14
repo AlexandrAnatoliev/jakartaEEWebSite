@@ -110,6 +110,7 @@ apt install openjdk-11-jre-headless
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
         <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
 		    <li><b>Установка java на linux</b></li>
+        <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
