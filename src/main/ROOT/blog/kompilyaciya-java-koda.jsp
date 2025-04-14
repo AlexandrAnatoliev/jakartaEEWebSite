@@ -61,7 +61,7 @@ project-dir/
     <p>Имя файла с исходным кодом должно совпадать с именем класса (class <b>Test</b> -> <b>Test.java</b>).</p>
 
 <pre class="vimcode">
-// Исходный кода файла Test.java
+// Test.java
 public class Test {
   public static void main(String[] args) {
     System.out.println("Run Test");
@@ -97,6 +97,7 @@ project-dir/
     <p>Отделим файлы исходного кода (каталог <b>src/</b>) от скомпилированных файлов (<b>bin/</b>). Например, в пакете <b>src</b> находится два класса <b>Box</b> и <b>BoxMachine</b>.</p>
 
 <pre class="vimcode">
+// Box.java
 package src;
 
 public class Box {
@@ -113,6 +114,7 @@ public class Box {
 </pre>
 
 <pre class="vimcode">
+// BoxMachine.java
 package src;
 
 public class BoxMachine {
