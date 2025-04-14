@@ -23,7 +23,7 @@
 		  <%@include file="/style.css" %>
     </style>
     <title>java практика: установка java на ubuntu</title>
-    <meta name="description" content="установка java на примере ubuntu, краткий гайд.">
+    <meta name="description" content="установка java на linux, краткий гайд.">
   </head>
 
   <body>
@@ -44,7 +44,7 @@
 
 
     <div id="top">
-      <h1>УСТАНОВКА JAVA НА UBUNTU</h1>
+      <h1>УСТАНОВКА JAVA НА LINUX</h1>
     </div>
 
     <p> Краткий гайд по установке <b>java</b> на <b>linux</b>.</p>
@@ -108,9 +108,9 @@ apt install openjdk-11-jre-headless
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
-		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
-		    <li><b>Виртуальная частная сеть</b></li>
+        <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
+		    <li><b>Установка java на linux</b></li>
       </ul>
 	  </div>
     <div id="footer">
