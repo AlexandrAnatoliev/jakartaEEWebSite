@@ -54,6 +54,12 @@
     Он помогает мне уложить знания в голове, служит своеобразной тетрадкой, в которую я могу подсматривать иногда, а также возможно будет полезен другим.</p>
 	
 	  <div class="article-preview">
+      <h4>Установка java на linux</h4>
+      <p>Небольшой конспект по установке <b>java</b> на <b>linux</b>...
+		  <a href="/blog/ustanovka-java.jsp"><b>читать</b></a></p>
+	  </div>
+
+	  <div class="article-preview">
       <h4>Виртуальная частная сеть</h4>
       <p>Краткий гайд по настройке <b>wireguard</b> на своем сервере...
 		  <a href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a></p>

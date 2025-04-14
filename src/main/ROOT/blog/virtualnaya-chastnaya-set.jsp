@@ -224,6 +224,7 @@ PersistentKeepalive = 20
 		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
 		    <li><b>Виртуальная частная сеть</b></li>
+        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
