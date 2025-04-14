@@ -58,6 +58,7 @@
       <p>
         <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux"/></a>
         <a href="/devops#wireguard"><img src="images/logo/wireguard.svg" class="logo" alt="wireguard" title="wireguard"/></a>
+        <a href="/devops#java"><img src="images/logo/java.svg" class="logo" alt="java" title="java"/></a>
       </p>
     </div>
 

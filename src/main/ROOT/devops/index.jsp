@@ -73,6 +73,14 @@
 			</ul>
 	  </div>
 
+	  <div id="java" class="article-preview">
+		  <h4>JAVA</h4>
+		
+		  <ul>
+        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
+			</ul>
+	  </div>
+
     <div id="footer">
       / <a href="#top"><b>наверх</b></a> /
     </div>
