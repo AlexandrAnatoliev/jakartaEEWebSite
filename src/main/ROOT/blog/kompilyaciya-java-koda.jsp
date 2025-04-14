@@ -249,6 +249,7 @@ project-dir/
         <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
 		    <li><b>Компиляция java кода</b></li>
+        <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
