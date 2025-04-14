@@ -21,6 +21,11 @@ p {
     font-size: 1.1em;
     color: #7A7A7A}
 
+body li{
+    font-family: Gergia, Times, serif;
+    font-size: 1.1em;
+    color: #7A7A7A}
+
 img.large {
     width: 620px;
     height: 400px;
@@ -44,15 +49,10 @@ img.code {
     box-shadow: 5px 5px 5px #777777;
     margin: 0px auto;}
 
-.favicon {
-    float: left;
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;}
-
-.menu {
-    padding-top: 0.5em;
-}
+#logos a:hover {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;}
 
 #header {
     position: fixed;
@@ -84,6 +84,19 @@ img.code {
     box-shadow: 5px 5px 5px #777777;
     border-radius: 10px;}
 
+.favicon {
+    float: left;
+    margin-left: 10px;
+    width: 2em;
+    height: 2em;}
+
+.menu {
+    padding-top: 0.5em;
+}
+
+.iamhere {
+    color: red;}
+
 .article-preview {
 	border-style: solid;
     	border-width: 2px;
@@ -108,14 +121,6 @@ img.code {
 
 .center {
     text-align: center;}
-
-.iamhere {
-    color: red;}
-
-#logos a:hover {
-    border-style: solid;
-    border-width: 0px;
-    border-bottom-width: 2px;}
 
 .vimcode {
 	background-color: #300a24;
