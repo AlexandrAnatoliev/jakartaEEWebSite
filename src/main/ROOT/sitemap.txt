@@ -7,3 +7,4 @@ https://java-practice.ru/blog/komandy-linux-terminala.jsp
 https://java-practice.ru/blog/kopirovanie-fajlov-po-ssh.jsp
 https://java-practice.ru/blog/virtualnaya-chastnaya-set.jsp
 https://java-practice.ru/blog/ustanovka-java.jsp
+https://java-practice.ru/blog/kompilyaciya-java-koda.jsp

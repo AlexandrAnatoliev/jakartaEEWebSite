@@ -78,6 +78,7 @@
 		
 		  <ul>
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
+        <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
 			</ul>
 	  </div>
 
