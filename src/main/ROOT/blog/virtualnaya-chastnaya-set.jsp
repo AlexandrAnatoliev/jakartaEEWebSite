@@ -33,15 +33,14 @@
         <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
-		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
-		    <a href="/blog"><b>блог</b></a> /
+		    / <a href="/"><b>главная</b></a> /
+		    <a href="/blog"><b><b><span class="iamhere">блог</span></b></a> /
 		    <!--
     		  <a href="/projects"><b>проекты</b></a> /
 		    -->
-        <a href="/devops"><b>devOps</b></a> /
+        <a href="/devops">devOps</b></a> /
       </div>
     </div>
-
 
     <div id="top">
       <h1>ВИРТУАЛЬНАЯ ЧАСТНАЯ СЕТЬ</h1>
@@ -224,6 +223,7 @@ PersistentKeepalive = 20
 		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
 		    <li><b>Виртуальная частная сеть</b></li>
+        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
       </ul>
 	  </div>
     <div id="footer">

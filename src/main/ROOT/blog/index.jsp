@@ -30,18 +30,17 @@
   
   <body>
 
-    
 	  <div id="header">
       <div class="favicon">
         <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
-		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
-		    <a href="/blog"><b>блог</b></a> /
+		    / <a href="/"><b>главная</b></a> /
+		    <a href="/blog"><b><b><span class="iamhere">блог</span></b></a> /
 		    <!--
     		  <a href="/projects"><b>проекты</b></a> /
 		    -->
-        <a href="/devops"><b>devOps</b></a> /
+        <a href="/devops">devOps</b></a> /
       </div>
     </div>
 
@@ -53,6 +52,12 @@
     <p>Это небольшой дневник, в котором излагается моя личная практика <b>java</b> шаг за шагом в виде конспектов, гайдов и может быть даже статей. 
     Он помогает мне уложить знания в голове, служит своеобразной тетрадкой, в которую я могу подсматривать иногда, а также возможно будет полезен другим.</p>
 	
+	  <div class="article-preview">
+      <h4>Установка java на linux</h4>
+      <p>Небольшой конспект по установке <b>java</b> на <b>linux</b>...
+		  <a href="/blog/ustanovka-java.jsp"><b>читать</b></a></p>
+	  </div>
+
 	  <div class="article-preview">
       <h4>Виртуальная частная сеть</h4>
       <p>Краткий гайд по настройке <b>wireguard</b> на своем сервере...

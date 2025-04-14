@@ -33,15 +33,14 @@
         <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
-		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
-		    <a href="/blog"><b>блог</b></a> /
+		    / <a href="/"><b>главная</b></a> /
+		    <a href="/blog"><b><b><span class="iamhere">блог</span></b></a> /
 		    <!--
     		  <a href="/projects"><b>проекты</b></a> /
 		    -->
-        <a href="/devops"><b>devOps</b></a> /
+        <a href="/devops">devOps</b></a> /
       </div>
     </div>
-
 
     <div id="top">
       <h1>ОСНОВНЫЕ КОМАНДЫ LINUX ТЕРМИНАЛА</h1>
