@@ -3,6 +3,22 @@
 <html>
 
   <head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(101004544, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/101004544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     
     <style>
       <%@include file="/style.css"%>
@@ -22,12 +38,12 @@
         <img src="/favicon.ico" alt="java практика сайт" class="favicon">
       </div>
       <div class="menu">
-		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
+		    / <a href="/"><b>главная</b></a> /
 		    <a href="/blog"><b>блог</b></a> /
 		    <!--
     		  <a href="/projects"><b>проекты</b></a> /
 		    -->
-        <a href="/devops"><b>devOps</b></a> /
+        <a href="/devops"><b><span class="iamhere">devOps</span></b></a> /
       </div>
     </div>
 
@@ -36,7 +52,7 @@
       <h1>DEVOPS И DEVTOOLS</h1>
     </div>
 
-	  <p>На этой странице статьи будут сгруппированы по содержанию</p>
+	  <p>На этой странице собраны статьи связанные больше не с самим программированием, а такими вопросами как настройка, отладка и т.п.</p>
 
 	  <div id="linux" class="article-preview">
 		  <h4>LINUX</h4>
@@ -54,6 +70,14 @@
 		
 		  <ul>
         <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
+			</ul>
+	  </div>
+
+	  <div id="java" class="article-preview">
+		  <h4>JAVA</h4>
+		
+		  <ul>
+        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
 			</ul>
 	  </div>
 
