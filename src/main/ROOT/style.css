@@ -53,6 +53,7 @@ img.code {
 .menu {
     padding-top: 0.5em;
 }
+
 #header {
     position: fixed;
     top: 10px;
@@ -119,13 +120,26 @@ img.code {
 .vimcode {
 	background-color: #300a24;
 	border-style: solid;
-    	border-width: 0px;
+  border-width: 0px;
 	color: white;
-    	box-shadow: 5px 5px 5px #777777;
-    	font-family: Courier, Courier New;
-    	padding: 10px;
+  box-shadow: 5px 5px 5px #777777;
+  font-family: Courier, Courier New;
+  padding: 10px;
 	border-radius: 10px;
 	margin: 10px;}
 
+.calculator {
+	background-color: #300a24;
+	border-style: solid;
+  border-width: 0px;
+	color: white;
+  box-shadow: 5px 5px 5px #777777;
+  font-family: Courier, Courier New;
+  padding: 10px;
+	border-radius: 10px;
+	margin: 10px;}
 
+.calculator p {
+  font-family: Courier, Courier New;
+	color: white;}
 

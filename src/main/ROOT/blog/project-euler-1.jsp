@@ -56,54 +56,48 @@
 
     <p>Проверим, устанавливалась <b>java</b> ранее или нет.</p>
 
-    <h3>Определение делимости двух чисел</h1>
+    <div class="calculator">
+
+    <h3>Онлайн-калькулятор: "Определение делимости двух чисел"</h1>
 
     <form method="post">
-      <label for="number1">Числитель:</label>
+      <label for="number1">Введите первое число:</label>
       <input type="number" step="any" id="number1" name="number1" required><br><br>
 
-      <label for="number2">Знаменатель:</label>
+      <label for="number2">Введите второе число:</label>
       <input type="number" step="any" id="number2" name="number2" required><br><br>
 
       <input type="submit" value="Определить делимость">
     </form>
 
     <%
-        // Получаем введенные значения из запроса
-        String num1Str = request.getParameter("number1");
-        String num2Str = request.getParameter("number2");
+      // Получаем введенные значения из запроса
+      String num1Str = request.getParameter("number1");
+      String num2Str = request.getParameter("number2");
 
-        // Проверяем, что параметры не null и не пустые
-        if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty()) {
-            try {
-                // Преобразуем строки в числа
-                double num1 = Double.parseDouble(num1Str);
-                double num2 = Double.parseDouble(num2Str);
+      // Проверяем, что параметры не null и не пустые
+      if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty()) {
+        try {
+          // Преобразуем строки в числа
+            double num1 = Double.parseDouble(num1Str);
+            double num2 = Double.parseDouble(num2Str); %>
 
-                // Вычисляем сумму
-                double sum = num1 % num2; %>
-        
-                <% if(sum == 0) {%>
-                  <p>YES</p>
-                <% } else { %>
-                  <p>NO</p>
-                <% } %>
+            <% if((num1 % num2) == 0) {%>
+            
+              <p>Число <strong><%= num1 %></strong> делится на число <strong><%= num2 %></strong> нацело.</p>
+            <% } else { %>
+              <p>Числа <strong><%= num1 %></strong> и <strong><%= num2 %></strong> не делятся нацело.</p>
+            <% } %>
 
-    <!-- Выводим результат -->
-    <h3>Результат:</h3>
-    <p>Сумма чисел <strong><%= num1 %></strong> и <strong><%= num2 %></strong> равна <strong><%= sum %></strong>.</p>
-
-    <%
-            } catch (NumberFormatException e) {
-    %>
+    <%   } catch (NumberFormatException e) { %>
 
     <!-- Обработка ошибки ввода -->
     <p style="color: red;">Ошибка: Пожалуйста, введите корректные числовые значения.</p>
 
-    <%
-            }
-        }
+    <%  }
+      }
     %>
+    </div>
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
