@@ -246,9 +246,9 @@ project-dir/
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
-		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
-        <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
-		    <li><b>Виртуальная частная сеть</b></li>
+        <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
+        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
+		    <li><b>Компиляция java кода</b></li>
       </ul>
 	  </div>
     <div id="footer">
