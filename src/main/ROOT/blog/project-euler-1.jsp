@@ -47,7 +47,7 @@
     </div>
 
     <div id="top">
-      <h1>Проект Эйлера 1 задача</h1>
+      <h1>ПРОЕКТ ЭЙЛЕРА 1 ЗАДАЧА</h1>
     </div>
 
     <p>Решая эту задачу, можно не только отработать конструкции языка <b>java</b>, но и разобраться с компиляцией программы без использования <b>ide</b>. 
@@ -189,6 +189,7 @@ Answer = 233168
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
         <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
 		    <li><b>Проект Эйлера 1 задача</b></li>
+        <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
       </ul>
 	  </div>
     <div id="footer">

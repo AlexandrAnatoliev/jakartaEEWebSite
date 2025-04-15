@@ -253,6 +253,7 @@ project-dir/
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
 		    <li><b>Компиляция java кода</b></li>
         <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
+        <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
