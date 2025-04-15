@@ -37,6 +37,9 @@
       <div class="favicon">
         <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
       </div>
+      <div class="github">
+        <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
+      </div>
       <div class="menu">
 		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
 		    <a href="/blog"><b>блог</b></a> /

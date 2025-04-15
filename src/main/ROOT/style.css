@@ -90,6 +90,12 @@ img.code {
     width: 2em;
     height: 2em;}
 
+.github {
+    float: right;
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;}
+
 .menu {
     padding-top: 0.5em;
 }
