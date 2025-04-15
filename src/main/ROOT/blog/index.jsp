@@ -32,7 +32,7 @@
 
 	  <div id="header">
       <div class="favicon">
-        <img src="/favicon.ico" alt="java практика сайт" class="favicon">
+        <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
       </div>
       <div class="menu">
 		    / <a href="/"><b>главная</b></a> /
