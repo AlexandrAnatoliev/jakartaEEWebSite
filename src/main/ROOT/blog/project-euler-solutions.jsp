@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
   <head>
     <!-- Yandex.Metrika counter -->
@@ -20,12 +21,10 @@
     <!-- /Yandex.Metrika counter -->
     <style type="text/css">
 		  <%@include file="/style.css" %>
-	  	body p {
-			  text-align: center;}
     </style>
-
-    <title>java практика: подключение по ssh к vps</title>
-    <meta name="description" content="Краткий гайд по подключению по ssh к виртуальному серверу (VPS)">
+    <title>java практика: проект Эйлера решенные задачи</title>
+    <meta name="description" content="Решая задачи проекта Эйлера, можно не только познакомиться с алгоритмами и отработать конструкции языка программирования, 
+    но и разобраться с такими вопросами как настройка, отладка, тестирование и т.п.">
   </head>
 
   <body>
@@ -48,41 +47,27 @@
     </div>
 
     <div id="top">
-      <h1>ПОДКЛЮЧЕНИЕ ПО SSH К ВИРТУАЛЬНОМУ СЕРВЕРУ (VPS)</h1>
+      <h1>ПРОЕКТ ЭЙЛЕРА - РЕШЕННЫЕ ЗАДАЧИ</h1>
     </div>
 
-    <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)</p>
+    <p>Цикл задач проекта Эйлера позволяет не только познакомиться с алгоритмами и отработать конструкции языка программирования, 
+    но и разобраться с такими вопросами как настройка, отладка, тестирование и т.п.</p>
 
 	  <div class="article-preview">
-      <h4>Аренда виртуального сервера</h4>
-      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp">
-      <b>читать</b></a></p>
+      <h4>Проект Эйлера задача 1</h4>
+      <p>Решая эту задачу, можно не только отработать конструкции языка <b>java</b>, но и разобраться с компиляцией программы без использования <b>ide</b>. 
+      Как бонус, сделан небольшой <b>онлайн-калькулятор</b>, позволяющий проверить Ваши вычисления, и приведен <b>ответ</b> на задачу...
+		  <a href="/blog/project-euler-1.jsp"><b>читать</b></a></p>
 	  </div>
-
-    <p>Запустите сервер</p>
-
-	  <img alt="Включение виртуального сервера" src="/images/podklyuchenie-po-ssh-k-vps/pic-1.png" class="large">
-	
-	  <p>Введите команду вида:</p>
-
-	  <div class="vimcode">
-		  ssh root@ip_адрес_сервера
-	  </div>
-
-	  <p>Пароль можно взять на даш-борде</p>
-	
-	  <img alt="Дашборд виртуального сервера" src="/images/podklyuchenie-po-ssh-k-vps/pic-2.png" class="large">
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
-        <li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
-		    <li><b>Подключение по ssh к виртуальному серверу</b></li>
-		    <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
-        <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование файлов по ssh</b></a></li>
+        <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
+        <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
+		    <li><b>Проект Эйлера - решенные задачи</b></li>
       </ul>
 	  </div>
-
     <div id="footer">
       / <a href="#top"><b>наверх</b></a> /
     </div>

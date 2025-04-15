@@ -21,6 +21,11 @@ p {
     font-size: 1.1em;
     color: #7A7A7A}
 
+body li{
+    font-family: Gergia, Times, serif;
+    font-size: 1.1em;
+    color: #7A7A7A}
+
 img.large {
     width: 620px;
     height: 400px;
@@ -44,15 +49,11 @@ img.code {
     box-shadow: 5px 5px 5px #777777;
     margin: 0px auto;}
 
-.favicon {
-    float: left;
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;}
+#logos a:hover {
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;}
 
-.menu {
-    padding-top: 0.5em;
-}
 #header {
     position: fixed;
     top: 10px;
@@ -83,6 +84,25 @@ img.code {
     box-shadow: 5px 5px 5px #777777;
     border-radius: 10px;}
 
+.favicon {
+    float: left;
+    margin-left: 10px;
+    width: 2em;
+    height: 2em;}
+
+.github {
+    float: right;
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;}
+
+.menu {
+    padding-top: 0.5em;
+}
+
+.iamhere {
+    color: red;}
+
 .article-preview {
 	border-style: solid;
     	border-width: 2px;
@@ -108,24 +128,29 @@ img.code {
 .center {
     text-align: center;}
 
-.iamhere {
-    color: red;}
-
-#logos a:hover {
-    border-style: solid;
-    border-width: 0px;
-    border-bottom-width: 2px;}
-
 .vimcode {
 	background-color: #300a24;
 	border-style: solid;
-    	border-width: 0px;
+  border-width: 0px;
 	color: white;
-    	box-shadow: 5px 5px 5px #777777;
-    	font-family: Courier, Courier New;
-    	padding: 10px;
+  box-shadow: 5px 5px 5px #777777;
+  font-family: Courier, Courier New;
+  padding: 10px;
 	border-radius: 10px;
 	margin: 10px;}
 
+.calculator {
+  background-color: #efefef;
+	border-style: solid;
+  border-width: 2px;
+  box-shadow: 5px 5px 5px #777777;
+  font-family: Courier, Courier New;
+  padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	color: black;}
 
+.calculator p {
+  font-family: Courier, Courier New;
+	color: black;}
 

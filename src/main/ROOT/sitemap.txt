@@ -8,3 +8,5 @@ https://java-practice.ru/blog/kopirovanie-fajlov-po-ssh.jsp
 https://java-practice.ru/blog/virtualnaya-chastnaya-set.jsp
 https://java-practice.ru/blog/ustanovka-java.jsp
 https://java-practice.ru/blog/kompilyaciya-java-koda.jsp
+https://java-practice.ru/blog/project-euler-1.jsp
+https://java-practice.ru/blog/project-euler-solutions.jsp
