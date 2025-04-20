@@ -115,17 +115,32 @@
     </div>
 
 <pre class="vimcode">
-public class Problem1 {
+import java.util.Scanner;
 
+public class Problem2 {
   public static void main(String[] args) {
+
+    int firstFib = 1;
+    int secondFib = 2;
+    int nextFib = 3; // 1 + 2
     int answer = 0;
 
-    for (int num = 1; num < 1000; num++) {
-      if ((num % 3) == 0 || (num % 5) == 0)
-        answer += num;
+    Scanner input = new Scanner(System.in);
+    System.out.print("Input max value Fibonacci sequence term: ");
+    int max = input.nextInt();
+
+    while (nextFib < max) {
+
+      if (secondFib % 2 == 0) {
+        answer += secondFib;
+      }
+
+      nextFib = firstFib + secondFib;
+      firstFib = secondFib;
+      secondFib = nextFib;
     }
 
-    System.out.println("Answer = " + answer);
+    System.out.println("Answer is " + answer);
   }
 }
 </pre>
