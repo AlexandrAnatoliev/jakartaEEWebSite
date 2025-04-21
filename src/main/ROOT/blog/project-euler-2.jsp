@@ -84,10 +84,10 @@
       String num1Str = request.getParameter("number1");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && !num1Str.isEmpty()) {
+      if (num1Str != null && !num1Str.isEmpty() && Double.parseDouble(num1Str) < 1_000_000_000) {
         try {
           // Преобразуем строки в числа
-          double num1 = (int)Double.parseDouble(num1Str);
+          int num1 = (int)Double.parseDouble(num1Str);
 
           int firstFib = 1;
           int secondFib = 2;
