@@ -62,43 +62,51 @@
     </div>
 
     <p>Каждый следующий элемент ряда Фибоначчи получается при сложении двух предыдущих. 
-    Начиная с <b>1</b> и <b>2</b>, первые <b>10</b> элементов будут:</p>
+    Начиная с <b>1</b> и <b>2</b>, первые <b>10</b> элементов будут:<br/>
 
-    <p><b>1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</b></p>
+    <b>1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</b><br/>
 
-    <p>Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают <b>четыре миллиона.</b></p>
+    Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают <b>четыре миллиона.</b></p>
 
     <div class="calculator">
 
     <h3>Онлайн-калькулятор: "Определение ближайшего меньшего числа Фибоначчи"</h1>
 
     <form method="post">
-      <label for="number1">Введите первое число:</label>
+      <label for="number1">Введите число:</label>
       <input type="number" step="any" id="number1" name="number1" required><br><br>
 
-      <label for="number2">Введите второе число:</label>
-      <input type="number" step="any" id="number2" name="number2" required><br><br>
-
-      <input type="submit" value="Определить делимость">
+      <input type="submit" value="Посчитать">
     </form>
 
     <%
       // Получаем введенные значения из запроса
       String num1Str = request.getParameter("number1");
-      String num2Str = request.getParameter("number2");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty()) {
+      if (num1Str != null && !num1Str.isEmpty()) {
         try {
           // Преобразуем строки в числа
-          double num1 = Double.parseDouble(num1Str);
-          double num2 = Double.parseDouble(num2Str); %>
+          double num1 = (int)Double.parseDouble(num1Str);
 
-          <% if((num1 % num2) == 0) {%>
-            <p>Число <strong><%= num1 %></strong> делится на число <strong><%= num2 %></strong> нацело.</p>
-          <% } else { %>
-            <p>Числа <strong><%= num1 %></strong> и <strong><%= num2 %></strong> не делятся нацело.</p>
-          <% } %>
+          int firstFib = 1;
+          int secondFib = 2;
+          int nextFib = 3; // 1 + 2
+          int answer = 0;%>
+
+          <%while (nextFib < num1) {%>
+
+            <%if (secondFib % 2 == 0) {%>
+              <%answer += secondFib;%>
+            <%}%>
+
+            <%nextFib = firstFib + secondFib;%>
+            <%firstFib = secondFib;%>
+            <%secondFib = nextFib;%>
+          <%}%>
+
+            <p>Число <strong><%= firstFib %></strong> является ближайшим меньшим числом Фибоначчи.<br/>
+            Сумма всех четных элементов ряда <strong><%= answer %></strong>.</p>
 
     <%   } catch (NumberFormatException e) { %>
 
