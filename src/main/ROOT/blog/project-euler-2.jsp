@@ -62,43 +62,51 @@
     </div>
 
     <p>Каждый следующий элемент ряда Фибоначчи получается при сложении двух предыдущих. 
-    Начиная с <b>1</b> и <b>2</b>, первые <b>10</b> элементов будут:</p>
+    Начиная с <b>1</b> и <b>2</b>, первые <b>10</b> элементов будут:<br/>
 
-    <p><b>1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</b></p>
+    <b>1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</b><br/>
 
-    <p>Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают <b>четыре миллиона.</b></p>
+    Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают <b>четыре миллиона.</b></p>
 
     <div class="calculator">
 
-    <h3>Онлайн-калькулятор: "Определение делимости двух чисел"</h1>
+    <h3>Онлайн-калькулятор: "Определение ближайшего меньшего числа Фибоначчи"</h1>
 
     <form method="post">
-      <label for="number1">Введите первое число:</label>
+      <label for="number1">Введите число:</label>
       <input type="number" step="any" id="number1" name="number1" required><br><br>
 
-      <label for="number2">Введите второе число:</label>
-      <input type="number" step="any" id="number2" name="number2" required><br><br>
-
-      <input type="submit" value="Определить делимость">
+      <input type="submit" value="Посчитать">
     </form>
 
     <%
       // Получаем введенные значения из запроса
       String num1Str = request.getParameter("number1");
-      String num2Str = request.getParameter("number2");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty()) {
+      if (num1Str != null && !num1Str.isEmpty() && Double.parseDouble(num1Str) < 1_000_000_000) {
         try {
           // Преобразуем строки в числа
-          double num1 = Double.parseDouble(num1Str);
-          double num2 = Double.parseDouble(num2Str); %>
+          int num1 = (int)Double.parseDouble(num1Str);
 
-          <% if((num1 % num2) == 0) {%>
-            <p>Число <strong><%= num1 %></strong> делится на число <strong><%= num2 %></strong> нацело.</p>
-          <% } else { %>
-            <p>Числа <strong><%= num1 %></strong> и <strong><%= num2 %></strong> не делятся нацело.</p>
-          <% } %>
+          int firstFib = 1;
+          int secondFib = 2;
+          int nextFib = 3; // 1 + 2
+          int answer = 0;%>
+
+          <%while (nextFib < num1) {%>
+
+            <%if (secondFib % 2 == 0) {%>
+              <%answer += secondFib;%>
+            <%}%>
+
+            <%nextFib = firstFib + secondFib;%>
+            <%firstFib = secondFib;%>
+            <%secondFib = nextFib;%>
+          <%}%>
+
+            <p>Число <strong><%= firstFib %></strong> является ближайшим меньшим числом Фибоначчи.<br/>
+            Сумма всех четных элементов ряда <strong><%= answer %></strong>.</p>
 
     <%   } catch (NumberFormatException e) { %>
 
@@ -122,7 +130,7 @@ public class Problem2 {
 
     int firstFib = 1;
     int secondFib = 2;
-    int nextFib = 3; // 1 + 2
+    int nextFib = 3;    // 1 + 2
     int answer = 0;
 
     Scanner input = new Scanner(System.in);
@@ -145,19 +153,38 @@ public class Problem2 {
 }
 </pre>
 
-    <p>Весь алгоритм задачи построен на том, что если два числа делятся нацело, то остаток от их деления равен нулю.</p>
+    <p>Во-первых, нужно помнить, что согласно заданию и самому определению чисел Фибоначчи: “следующий элемент получается при сложении двух предыдущих”.</p> 
 
     <div class="vimcode">
-      if ((num % 3) == 0 || (num % 5) == 0)
+      nextFib = firstFib + secondFib;
+    </div>
+    
+    <p>Во-вторых, четное число делится на <b>2</b> без остатка</p>
+
+    <div class="vimcode">
+      if (secondFib % 2 == 0)
     </div>
 
-    <p>
-      <ul>
-        <li>В цикле <b>for</b> перебираем натуральные числа <b>num</b> от одного до тысячи.</li> 
-        <li>Каждое из них проверяем на соответствие условиям задачи.</li>
-        <li>Числа, удовлетворяющие условиям задачи, суммируем в переменную <b>answer</b>.</li>
-      </ul>
-    </p>
+    <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново. Потому, как только будет получено число Фибоначчи, следующее за первыми двумя</p>
+
+    <div class="vimcode">
+      nextFib = firstFib + secondFib;
+    </div>
+
+    <p>...значения обновляются:</p>
+    
+    <div class="vimcode">
+      firstFib = secondFib;
+    </div>
+
+    <p>...первое число принимает значение второго:</p>
+
+    <div class="vimcode">
+      secondFib = nextFib;
+    </div>
+    
+    <p>...второе – третьего (суммы первых двух).<br/>
+    Такой цикл продолжается снова и снова до тех пор, пока в итоге не дойдет до искомых <b>4000000</b>.</p>
 
     <div id="top">
       <h3>DevOps</h3>
