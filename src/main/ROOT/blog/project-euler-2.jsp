@@ -73,28 +73,28 @@
     <h3>Онлайн-калькулятор: "Определение ближайшего меньшего числа Фибоначчи"</h1>
 
     <form method="post">
-      <label for="number1">Введите число:</label>
-      <input type="number" step="any" id="number1" name="number1" required><br><br>
+      <label for="maximum">Введите число:</label>
+      <input type="number" step="any" id="maximum" name="maximum" required><br><br>
 
       <input type="submit" value="Посчитать">
     </form>
 
     <%
       // Получаем введенные значения из запроса
-      String num1Str = request.getParameter("number1");
+      String maxStr = request.getParameter("maximum");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && !num1Str.isEmpty() && Double.parseDouble(num1Str) < 1_000_000_000) {
+      if (maxStr != null && !maxStr.isEmpty() && (Double.parseDouble(maxStr) < 1_000_000_000)) {
         try {
           // Преобразуем строки в числа
-          int num1 = (int)Double.parseDouble(num1Str);
+          int max = Integer.parseInt(maxStr);
 
           int firstFib = 1;
           int secondFib = 2;
           int nextFib = 3; // 1 + 2
           int answer = 0;%>
 
-          <%while (nextFib < num1) {%>
+          <%while (nextFib < max) {%>
 
             <%if (secondFib % 2 == 0) {%>
               <%answer += secondFib;%>
