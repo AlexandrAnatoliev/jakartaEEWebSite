@@ -73,28 +73,28 @@
     <h3>Онлайн-калькулятор: "Определение ближайшего меньшего числа Фибоначчи"</h1>
 
     <form method="post">
-      <label for="number1">Введите число:</label>
-      <input type="number" step="any" id="number1" name="number1" required><br><br>
+      <label for="maximum">Введите число:</label>
+      <input type="number" step="any" id="maximum" name="maximum" required><br><br>
 
       <input type="submit" value="Посчитать">
     </form>
 
     <%
       // Получаем введенные значения из запроса
-      String num1Str = request.getParameter("number1");
+      String maxStr = request.getParameter("maximum");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && !num1Str.isEmpty() && Double.parseDouble(num1Str) < 1_000_000_000) {
+      if (maxStr != null && !maxStr.isEmpty() && (Double.parseDouble(maxStr) < 1_000_000_000)) {
         try {
           // Преобразуем строки в числа
-          int num1 = (int)Double.parseDouble(num1Str);
+          int max = Integer.parseInt(maxStr);
 
           int firstFib = 1;
           int secondFib = 2;
           int nextFib = 3; // 1 + 2
           int answer = 0;%>
 
-          <%while (nextFib < num1) {%>
+          <%while (nextFib < max) {%>
 
             <%if (secondFib % 2 == 0) {%>
               <%answer += secondFib;%>
@@ -159,13 +159,13 @@ public class Problem2 {
       nextFib = firstFib + secondFib;
     </div>
     
-    <p>Во-вторых, четное число делится на <b>2</b> без остатка</p>
+    <p>Во-вторых, четное число делится на <b>2</b> без остатка.</p>
 
     <div class="vimcode">
       if (secondFib % 2 == 0)
     </div>
 
-    <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново. Потому, как только будет получено число Фибоначчи, следующее за первыми двумя</p>
+    <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново. Потому, как только будет получено число Фибоначчи, следующее за первыми двумя.</p>
 
     <div class="vimcode">
       nextFib = firstFib + secondFib;
@@ -190,27 +190,35 @@ public class Problem2 {
       <h3>DevOps</h3>
     </div>
 
-	  <p>Поскольку программирование это не только код, но и такие вопросы как настройка, отладка и т.п., скомпилируем файл в прямо консоли:</p>
-
-    <div class="vimcode">
-      javac Problem1.java
-    </div>
-
-    <p>Запустим скомпилированный файл и получим искомый ответ:</p>
-<pre class="vimcode">
-$ java Problem1
-Answer = 233168
-</pre>
-
-    <p>Вопросы компиляции <b>java</b> были подробно описаны ранее, не буду повторяться:</b>
+    <p>Постепенно приближаем сложность задачи к реальной - напишем и запустим программу на удаленном сервере.<br/>
+    Арендуем <b>vps сервер</b> на время (гайд внизу).</p>
 
 	  <div class="article-preview">
-      <h4>Компиляция java кода</h4>
-      <p>Компиляция <b>java</b> кода без использования <b>ide</b> (одного класса, нескольких, создание <b>jar-файла</b>).
-		  <a href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a></p>
+      <h4>Аренда виртуального сервера</h4>
+      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp">
+      <b>читать</b></a></p>
 	  </div>
 
-    <p>Небольшой гайд по установке <b>java</b> на компьютер:</p>
+    <p>...подключимся к нему...
+
+	  <div class="article-preview">
+      <h4>Подключение по ssh к виртуальному серверу</h4>
+		  <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
+	  </div>
+	
+    <p>...и напишем текст программы в любом встроеном текстовом редакторе - <b>vim, nano</b> (лично я пользуюсь <b>neovim</b>).<br/>
+    Краткий список команд ниже.</p>
+
+	  <div class="article-preview">
+      <h4>Основные команды linux терминала</h4>
+      <p>Команды, вводимые пользователем в консоли терминала, выполняются командной оболочкой <b>bash</b>. 
+      Пользователь вводит команду, <b>bash</b> ищет программу, соответствующую команде, в нужных каталогах,
+       запускает ее и передает ей введенные параметры. Количество их, потому, огромно. 
+       В статье будут описаны лишь те команды linux терминала, которые я использую чаще всего...
+		  <a href="/blog/komandy-linux-terminala.jsp"><b>читать</b></a></p>
+	  </div>
+
+    <p>Небольшой гайд по установке <b>java</b> на сервер:</p>
 
 	  <div class="article-preview">
       <h4>Установка java на linux</h4>
@@ -218,27 +226,40 @@ Answer = 233168
 		  <a href="/blog/ustanovka-java.jsp"><b>читать</b></a></p>
 	  </div>
     
-    <p>Даже притом, что сложность этой программы уровня <b>Hello world</b>, в ней применен ряд конструкций языка <b>java</b>:
+    <p>Скомпилируем программу...</p>
+
+    <div class="vimcode">
+      javac Problem2.java
+    </div>
+
+    <p>Вопросы компиляции <b>java</b> были подробно описаны в статье.</b>
+
+	  <div class="article-preview">
+      <h4>Компиляция java кода</h4>
+      <p>Компиляция <b>java</b> кода без использования <b>ide</b> (одного класса, нескольких, создание <b>jar-файла</b>).
+		  <a href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a></p>
+	  </div>
+
+    <p>Запустим скомпилированный файл, введем максимальное число, до которого будем производить вычисления и получим искомый ответ:</p>
+<pre class="vimcode">
+$ java Problem2
+Input max value Fibonacci sequence term: 4000000
+Answer is 4613732
+</pre>
+
+    <p>В данной программе применилм несколько новых конструкций языка <b>java</b>:
       <ul>
-        <li>Объявление и инициализация переменной</li>
-        <li>Арифметическая операция <b>%</b></li>
-        <li>Сочетание арифметической операции с присваиванием <b>+=</b></li>
-        <li>Операция инкремента <b>++</b></li>
-        <li>Операции отношения <b>==</b> и логические <b><</b> и <b>||</b></li>
-        <li>Сцепление строки с числом</li>
-        <li>Область видимости, вложенные блоки</li>
-        <li>Условный оператор <b>if</b></li>
-        <li>Цикл <b>for</b></li>
+        <li>Чтение программой вводимых пользователем данных</li>
+        <li>Применен цикл <b>while</b></li>
       </ul>
     </p>
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
-        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
-        <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
-		    <li><b>Проект Эйлера 1 задача</b></li>
+        <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
         <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
+		    <li><b>Проект Эйлера 2 задача</b></li>
       </ul>
 	  </div>
     <div id="footer">
