@@ -10,3 +10,4 @@ https://java-practice.ru/blog/ustanovka-java.jsp
 https://java-practice.ru/blog/kompilyaciya-java-koda.jsp
 https://java-practice.ru/blog/project-euler-1.jsp
 https://java-practice.ru/blog/project-euler-solutions.jsp
+https://java-practice.ru/blog/project-euler-2.jsp
