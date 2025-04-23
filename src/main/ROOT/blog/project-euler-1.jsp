@@ -190,6 +190,7 @@ Answer = 233168
         <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
 		    <li><b>Проект Эйлера 1 задача</b></li>
         <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
+        <li><a href="/blog/project-euler-2.jsp"><b>Проект Эйлера задача 2</b></a></li>
       </ul>
 	  </div>
     <div id="footer">
