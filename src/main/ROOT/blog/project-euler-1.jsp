@@ -108,9 +108,9 @@
     </div>
 
 <pre class="vimcode">
-public class Problem1 {
-
+public class Solution {
   public static void main(String[] args) {
+
     int answer = 0;
 
     for (int num = 1; num < 1000; num++) {
@@ -144,12 +144,12 @@ public class Problem1 {
 	  <p>Поскольку программирование это не только код, но и такие вопросы как настройка, отладка и т.п., скомпилируем файл в прямо консоли:</p>
 
     <div class="vimcode">
-      javac Problem1.java
+      javac Solution.java
     </div>
 
     <p>Запустим скомпилированный файл и получим искомый ответ:</p>
 <pre class="vimcode">
-$ java Problem1
+$ java Solution
 Answer = 233168
 </pre>
 
@@ -190,6 +190,7 @@ Answer = 233168
         <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция java кода</b></a></li>
 		    <li><b>Проект Эйлера 1 задача</b></li>
         <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
+        <li><a href="/blog/project-euler-2.jsp"><b>Проект Эйлера задача 2</b></a></li>
       </ul>
 	  </div>
     <div id="footer">

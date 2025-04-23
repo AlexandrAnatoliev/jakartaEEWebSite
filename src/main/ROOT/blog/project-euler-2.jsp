@@ -125,12 +125,12 @@
 <pre class="vimcode">
 import java.util.Scanner;
 
-public class Problem2 {
+public class Solution {
   public static void main(String[] args) {
 
     int firstFib = 1;
     int secondFib = 2;
-    int nextFib = 3;    // 1 + 2
+    int nextFib = 3; // 1 + 2
     int answer = 0;
 
     Scanner input = new Scanner(System.in);
@@ -149,6 +149,7 @@ public class Problem2 {
     }
 
     System.out.println("Answer is " + answer);
+    input.close();
   }
 }
 </pre>
@@ -229,7 +230,7 @@ public class Problem2 {
     <p>Скомпилируем программу...</p>
 
     <div class="vimcode">
-      javac Problem2.java
+      javac Solution.java
     </div>
 
     <p>Вопросы компиляции <b>java</b> были подробно описаны в статье.</b>
@@ -242,7 +243,7 @@ public class Problem2 {
 
     <p>Запустим скомпилированный файл, введем максимальное число, до которого будем производить вычисления и получим искомый ответ:</p>
 <pre class="vimcode">
-$ java Problem2
+$ java Solution
 Input max value Fibonacci sequence term: 4000000
 Answer is 4613732
 </pre>
