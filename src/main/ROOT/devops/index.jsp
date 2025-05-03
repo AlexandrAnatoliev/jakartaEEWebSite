@@ -45,7 +45,7 @@
         		<ul>
     				<li><a href="/"><b>Главная</b></a></li>
     				<li><a href="/blog"><b>Блог</b></a></li>
-    				<li><a href="/devops"><b><span class="iamhere"></span>DevOps</b></a></li>
+    				<li><a href="/devops"><b><span class="iamhere">DevOps</span></b></a></li>
     			</ul>
       		</div>
     	</div>
