@@ -62,18 +62,50 @@ img.code {
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
-    padding-top: 1em;
-    background-color: #efefef;
+    background-color: #333;
     box-shadow: 5px 5px 5px #777777;
-    padding-bottom: 1em;}
-
-#header a {
-    text-decoration: none;
-    color: black}
-
+    }
+	
 #header a:hover, a:hover {
     color: red;
     text-shadow: 1px 1px 0px #000000;}
+    
+.iamhere {
+    color: red;}
+	
+.favicon {
+	padding-top: 0.2em;
+    float: left;
+    margin-left: 10px;
+    width: 2em;
+    height: 2em;}
+
+.github {
+	padding-top: 0.2em;
+    float: right;
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;}
+    
+.menu ul {
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+  	overflow: hidden;}
+  	
+.menu ul li {
+	float: left;}
+
+.menu ul li a {
+ 	display: block;
+	color: white;
+ 	padding: 0.5em 1em;
+	text-decoration: none;}
+
+.menu ul li a:hover {
+	background-color: #111;}
 
 #footer {
     text-align: right;
@@ -83,25 +115,6 @@ img.code {
     padding: 10px;
     box-shadow: 5px 5px 5px #777777;
     border-radius: 10px;}
-
-.favicon {
-    float: left;
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;}
-
-.github {
-    float: right;
-    margin-right: 10px;
-    width: 2em;
-    height: 2em;}
-
-.menu {
-    padding-top: 0.5em;
-}
-
-.iamhere {
-    color: red;}
 
 .article-preview {
 	border-style: solid;

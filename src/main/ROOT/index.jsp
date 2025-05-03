@@ -40,16 +40,17 @@
       <div class="github">
         <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
       </div>
-      <div class="menu">
-		    / <a href="/"><b> <span class="iamhere">главная</span></b></a> /
-		    <a href="/blog"><b>блог</b></a> /
-		    <!--
-    		  <a href="/projects"><b>проекты</b></a> /
-		    -->
-        <a href="/devops"><b>devOps</b></a> /
-      </div>
-    </div>
 
+      <div class="menu">
+        <ul>
+    		<li><a href="/"><b><span class="iamhere">Главная</span></b></a></li>
+    		<li><a href="/blog"><b><b>Блог</b></a></li>
+    		<li><a href="/devops">DevOps</b></a></li>
+    	</ul>
+      </div>
+      
+    </div>
+    
     <div id="top">
       <h1>О ПРОЕКТЕ</h1> 
 	  </div>
