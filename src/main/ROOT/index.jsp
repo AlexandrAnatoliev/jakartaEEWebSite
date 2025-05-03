@@ -80,7 +80,9 @@
 	  </div>
 
     <div id="footer">
-      / <a href="#top"><b>наверх</b></a> /
+    	<ul>
+    		<li><a href="#top"><b>Наверх</b></a></li>
+    	</ul>
     </div>
 
   </body>
