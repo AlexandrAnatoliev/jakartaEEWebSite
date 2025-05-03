@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
     font-family: Arial, Verdana;
-    padding: 10px;
     width: 90%;
     box-shadow: 0px 0px 10px #777777;
     border-radius: 10px;
@@ -16,7 +15,7 @@ h1 {
     letter-spacing: 0.1em;}
 
 p {
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     font-family: Gergia, Times, serif;
     font-size: 1.1em;
     color: #7A7A7A}
@@ -62,66 +61,96 @@ img.code {
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
-    padding-top: 1em;
-    background-color: #efefef;
+    background-color: #333;
     box-shadow: 5px 5px 5px #777777;
-    padding-bottom: 1em;}
-
-#header a {
-    text-decoration: none;
-    color: black}
-
-#header a:hover, a:hover {
+    }
+	
+#header a:hover, a:hover, #footer a:hover {
     color: red;
     text-shadow: 1px 1px 0px #000000;}
-
-#footer {
-    text-align: right;
-    border-width: 2px;
-    background-color: #efefef;
-    border-style: solid;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    border-radius: 10px;}
-
+    
+.iamhere {
+    color: red;}
+	
 .favicon {
+	padding-top: 0.2em;
     float: left;
     margin-left: 10px;
     width: 2em;
     height: 2em;}
 
 .github {
+	padding-top: 0.2em;
     float: right;
     margin-right: 10px;
     width: 2em;
     height: 2em;}
+    
+.menu ul {
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+  	overflow: hidden;}
+  	
+.menu ul li {
+	float: left;}
 
-.menu {
-    padding-top: 0.5em;
-}
+.menu ul li a {
+ 	display: block;
+	color: white;
+ 	padding: 0.5em 1em;
+	text-decoration: none;}
 
-.iamhere {
-    color: red;}
+.menu ul li a:hover {
+	background-color: #111;}
 
+#footer {
+    text-align: right;
+    border-width: 2px;
+    background-color: #333;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #777777;
+    border-radius: 10px;}
+    
+#footer ul {
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+  	overflow: hidden;}
+  	
+#footer ul li {
+	float: right;}
+	
+#footer ul li a {
+ 	display: block;
+	color: white;
+ 	padding: 0.5em 1em;
+	text-decoration: none;}
+	
+#footer ul li a:hover {
+	background-color: #111;}
+	
 .article-preview {
 	border-style: solid;
-    	border-width: 2px;
+    border-width: 2px;
 	border-width: 2px;
-	background-color: rgb(140, 202, 242);
+	background-color: rgb(200, 200, 200);
 	border-radius: 10px;
-    	box-shadow: 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px #777777;
 	margin: 10px;}
 
 .article-preview h4 {
-    	text-align: center;
-    	padding-bottom: 0px;
+    text-align: center;
+    padding-bottom: 0px;
 	margin-bottom: 0px;
 	letter-spacing: 0.1em;}
 
 .article-preview p, .article-preview li {
-    	font-family: Gergia, Times, serif;
-    	font-size: 1.1em;
-    	text-align: left;
+	font-style: italic;
+    font-family: Gergia, Times, serif;
+    text-align: left;
 	padding-top: 0px;
 	color: black;}
 
@@ -131,26 +160,28 @@ img.code {
 .vimcode {
 	background-color: #300a24;
 	border-style: solid;
-  border-width: 0px;
+  	border-width: 0px;
 	color: white;
-  box-shadow: 5px 5px 5px #777777;
-  font-family: Courier, Courier New;
-  padding: 10px;
+  	box-shadow: 5px 5px 5px #777777;
+  	font-family: Courier, Courier New;
+  	padding: 10px;
 	border-radius: 10px;
 	margin: 10px;}
 
 .calculator {
-  background-color: #efefef;
+  	background-color: #efefef;
 	border-style: solid;
-  border-width: 2px;
-  box-shadow: 5px 5px 5px #777777;
-  font-family: Courier, Courier New;
-  padding: 10px;
+  	border-width: 2px;
+  	box-shadow: 5px 5px 5px #777777;
+  	font-family: Courier, Courier New;
+  	padding: 10px;
 	border-radius: 10px;
-	margin: 10px;
-	color: black;}
+	margin: 10px;}
 
 .calculator p {
-  font-family: Courier, Courier New;
+  	font-family: Courier, Courier New;
 	color: black;}
 
+label {
+	font-size: 1.1em;
+}

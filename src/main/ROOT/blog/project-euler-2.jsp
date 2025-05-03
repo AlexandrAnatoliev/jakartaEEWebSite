@@ -31,22 +31,22 @@
 
   <body>
 
-	  <div id="header">
-      <div class="favicon">
-        <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
-      </div>
-      <div class="menu">
-		    / <a href="/"><b>главная</b></a> /
-		    <a href="/blog"><b><b><span class="iamhere">блог</span></b></a> /
-		    <!--
-    		  <a href="/projects"><b>проекты</b></a> /
-		    -->
-        <a href="/devops">devOps</b></a> /
-      </div>
-    </div>
+		<div id="header">
+      		<div class="favicon">
+        		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
+      		</div>
+      		<div class="github">
+        		<a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
+      		</div>
+
+      		<div class="menu">
+        		<ul>
+    				<li><a href="/"><b>Главная</b></a></li>
+    				<li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+    				<li><a href="/devops"><b>DevOps</b></a></li>
+    			</ul>
+      		</div>
+    	</div>
 
     <div id="top">
       <h1>ПРОЕКТ ЭЙЛЕРА 2 ЗАДАЧА</h1>
@@ -263,9 +263,12 @@ Answer is 4613732
 		    <li><b>Проект Эйлера 2 задача</b></li>
       </ul>
 	  </div>
-    <div id="footer">
-      / <a href="#top"><b>наверх</b></a> /
-    </div>
+	  
+        <div id="footer">
+    		<ul>
+    			<li><a href="#top"><b>Наверх</b></a></li>
+    		</ul>
+    	</div>
 
   </body>
 </html>

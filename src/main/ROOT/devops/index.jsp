@@ -33,22 +33,22 @@
 
   <body>
 
-	  <div id="header">
-      <div class="favicon">
-        <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
-      </div>
-      <div class="menu">
-		    / <a href="/"><b>главная</b></a> /
-		    <a href="/blog"><b>блог</b></a> /
-		    <!--
-    		  <a href="/projects"><b>проекты</b></a> /
-		    -->
-        <a href="/devops"><b><span class="iamhere">devOps</span></b></a> /
-      </div>
-    </div>
+		<div id="header">
+      		<div class="favicon">
+        		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
+      		</div>
+      		<div class="github">
+        		<a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
+      		</div>
+
+      		<div class="menu">
+        		<ul>
+    				<li><a href="/"><b>Главная</b></a></li>
+    				<li><a href="/blog"><b>Блог</b></a></li>
+    				<li><a href="/devops"><b><span class="iamhere">DevOps</span></b></a></li>
+    			</ul>
+      		</div>
+    	</div>
 
         
     <div id="top">
@@ -86,7 +86,9 @@
 	  </div>
 
     <div id="footer">
-      / <a href="#top"><b>наверх</b></a> /
+    	<ul>
+    		<li><a href="#top"><b>Наверх</b></a></li>
+    	</ul>
     </div>
 
   </body>

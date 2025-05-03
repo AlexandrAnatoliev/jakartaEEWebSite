@@ -28,24 +28,24 @@
 
   </head>
   
-  <body>
+  	<body>
 
-	  <div id="header">
-      <div class="favicon">
-        <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
-      </div>
-      <div class="menu">
-		    / <a href="/"><b>главная</b></a> /
-		    <a href="/blog"><b><b><span class="iamhere">блог</span></b></a> /
-		    <!--
-    		  <a href="/projects"><b>проекты</b></a> /
-		    -->
-        <a href="/devops">devOps</b></a> /
-      </div>
-    </div>
+		<div id="header">
+      		<div class="favicon">
+        		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
+      		</div>
+      		<div class="github">
+        		<a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
+      		</div>
+
+      		<div class="menu">
+        		<ul>
+    				<li><a href="/"><b>Главная</b></a></li>
+    				<li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+    				<li><a href="/devops"><b>DevOps</b></a></li>
+    			</ul>
+      		</div>
+    	</div>
 
 
     <div id="top">
@@ -56,7 +56,7 @@
     Он помогает мне уложить знания в голове, служит своеобразной тетрадкой, в которую я могу подсматривать иногда, а также возможно будет полезен другим.</p>
 	
 	  <div class="article-preview">
-      <h4>Четные числа Фибоначчи</h4>
+      <h4>Проект Эйлера задача 2</h4>
       <p>В данной задаче продолжаем знакомиться с языком <b>java</b>, для чего реализуем 
       пользовательский ввод, а также установим и запустим программу на удаленном сервере. Как всегда, 
       для проверки вычислений сделан небольшой <b>онлайн-калькулятор</b> и приведен 
@@ -125,9 +125,11 @@
       <a href="/blog/arenda-vps.jsp"><b>читать</b></a></p>
 	  </div>
 
-    <div id="footer">
-      / <a href="#top"><b>наверх</b></a> /
-    </div>
+        <div id="footer">
+    		<ul>
+    			<li><a href="#top"><b>Наверх</b></a></li>
+    		</ul>
+    	</div>
 
   </body>
 </html>
