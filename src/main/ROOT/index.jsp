@@ -33,23 +33,22 @@
 
 	<body>
 
-	  <div id="header">
-      <div class="favicon">
-        <a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
-      </div>
-      <div class="github">
-        <a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
-      </div>
+		<div id="header">
+      		<div class="favicon">
+        		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
+      		</div>
+      		<div class="github">
+        		<a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
+      		</div>
 
-      <div class="menu">
-        <ul>
-    		<li><a href="/"><b><span class="iamhere">Главная</span></b></a></li>
-    		<li><a href="/blog"><b><b>Блог</b></a></li>
-    		<li><a href="/devops">DevOps</b></a></li>
-    	</ul>
-      </div>
-      
-    </div>
+      		<div class="menu">
+        		<ul>
+    				<li><a href="/"><b><span class="iamhere">Главная</span></b></a></li>
+    				<li><a href="/blog"><b>Блог</b></a></li>
+    				<li><a href="/devops"><b>DevOps</b></a></li>
+    			</ul>
+      		</div>
+    	</div>
     
     <div id="top">
       <h1>О ПРОЕКТЕ</h1> 
