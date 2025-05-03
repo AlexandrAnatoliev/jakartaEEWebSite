@@ -135,23 +135,23 @@ img.code {
 	
 .article-preview {
 	border-style: solid;
-    	border-width: 2px;
+    border-width: 2px;
 	border-width: 2px;
-	background-color: rgb(140, 202, 242);
+	background-color: #efefef;
 	border-radius: 10px;
-    	box-shadow: 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px #777777;
 	margin: 10px;}
 
 .article-preview h4 {
-    	text-align: center;
-    	padding-bottom: 0px;
+    text-align: center;
+    padding-bottom: 0px;
 	margin-bottom: 0px;
 	letter-spacing: 0.1em;}
 
 .article-preview p, .article-preview li {
-    	font-family: Gergia, Times, serif;
-    	font-size: 1.1em;
-    	text-align: left;
+    font-family: Gergia, Times, serif;
+    font-size: 1.1em;
+    text-align: left;
 	padding-top: 0px;
 	color: black;}
 
@@ -170,17 +170,16 @@ img.code {
 	margin: 10px;}
 
 .calculator {
-  background-color: #efefef;
+  	background-color: #efefef;
 	border-style: solid;
-  border-width: 2px;
-  box-shadow: 5px 5px 5px #777777;
-  font-family: Courier, Courier New;
-  padding: 10px;
+  	border-width: 2px;
+  	box-shadow: 5px 5px 5px #777777;
+  	font-family: Courier, Courier New;
+  	padding: 10px;
 	border-radius: 10px;
-	margin: 10px;
-	color: black;}
+	margin: 10px;}
 
 .calculator p {
-  font-family: Courier, Courier New;
+  	font-family: Courier, Courier New;
 	color: black;}
 
