@@ -87,16 +87,17 @@
           			long number = Long.parseLong(numStr);%>
           			<p>Число <b><%= numStr %></b> раскладывается на множители:
 
-          			<%while (number > 1) {%>
-          			
-          				<%for (long i = 2; i <= number; i++) {%>
-            				<%if (number % i == 0) {%>
-            					<%number /= i;%>
-            					<b><%= i %></b>
-            				<%}%>
+          			<%for (long i = 2; i * i <= number; i++) {%>
+            			<%while (number % i == 0) {%>
+            				<%number /= i;%>
+            				<b><%= i %></b>
             			<%}%>
-   
-          			<%}%>
+            		<%}%>
+            		
+            		<%if(number > 1) {%>
+            		 	<b><%= number %></b>
+            		<%} %>
+  
           			</p>
 
     		<%   } catch (NumberFormatException e) { %>
