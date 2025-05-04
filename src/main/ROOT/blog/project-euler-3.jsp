@@ -2,35 +2,36 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  	<head>
+    	<!-- Yandex.Metrika counter -->
+    	<script type="text/javascript" >
+      		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      		m[i].l=1*new Date();
+      		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(101004544, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-      });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/101004544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <style type="text/css">
-		  <%@include file="/style.css" %>
-    </style>
-    <title>java практика: проект Эйлера 2 задача</title>
-    <meta name="description" content="Проект Эйлера 2 задача (четные числа Фибоначчи) прозволяет 
-                                      не только отработать конструкции языка java, но и реализовать 
-                                      пользовательский ввод, установку и запуск  программы на удаленном 
-                                      сервере">
-  </head>
+      		ym(101004544, "init", {
+        		clickmap:true,
+        		trackLinks:true,
+        		accurateTrackBounce:true
+      		});
+    	</script>
+    	<noscript><div><img src="https://mc.yandex.ru/watch/101004544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    	<!-- /Yandex.Metrika counter -->
+    	
+    	<style type="text/css">
+		  	<%@include file="/style.css" %>
+    	</style>
+    	
+    	<title>java практика: проект Эйлера 3 задача</title>
+    	
+    	<meta name="description" content="Проект Эйлера 3 задача (наибольший простой делитель) позволила: отработать конструкции языка java, 
+    	реализовать пользовательский ввод через параметры командной строки, скомпилировать файлы программы в jar архив, передать его через ssh 
+   		и запустить на удаленном сервере">
+  	</head>
 
-  <body>
-
+  	<body>
 		<div id="header">
       		<div class="favicon">
         		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
@@ -48,25 +49,21 @@
       		</div>
     	</div>
 
-    <div id="top">
-      <h1>ПРОЕКТ ЭЙЛЕРА 2 ЗАДАЧА</h1>
-    </div>
+    	<div id="top">
+      		<h1>ПРОЕКТ ЭЙЛЕРА 3 ЗАДАЧА</h1>
+    	</div>
 
-    <p>В данной задаче продолжаем знакомиться с языком <b>java</b>, для чего реализуем 
-    пользовательский ввод, а также установим и запустим программу на удаленном сервере. Как всегда, 
-    для проверки вычислений сделан небольшой <b>онлайн-калькулятор</b> и приведен 
-    <b>правильный ответ</b> на задачу.</p>
+    	<p>Данная небольшая задача уже не решается "с наскоку" и потребует немного подумать над алгоритмом. Также помимо применения в программе новых 
+    	конструкций языка <b>java</b>, реализуем пользовательский ввод через параметры командной строки, все файлы скомпилируем в один <b>jar</b> архив, 
+    	передадим его через <b>ssh</b> и запустим на удаленном сервере. <b>Онлайн-калькулятор</b> для проверки вычислений и <b>правильный ответ</b> 
+    	на задачу прилагаются.</p>
 
-    <div id="top">
-      <h3>Четные числа Фибоначчи</h3>
-    </div>
+    	<div id="top">
+      		<h3>Наибольший простой делитель</h3>
+    	</div>
 
-    <p>Каждый следующий элемент ряда Фибоначчи получается при сложении двух предыдущих. 
-    Начиная с <b>1</b> и <b>2</b>, первые <b>10</b> элементов будут:<br/>
-
-    <b>1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</b><br/>
-
-    Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают <b>четыре миллиона.</b></p>
+    <p>Простые делители числа <b>13195</b> - это <b>5, 7, 13</b> и <b>29</b>.<br/>
+    Какой самый большой делитель числа <b>600851475143</b>, являющийся простым числом?</p>
 
     <div class="calculator">
 
@@ -233,7 +230,7 @@ public class Solution {
       javac Solution.java
     </div>
 
-    <p>Вопросы компиляции <b>java</b> были подробно описаны в статье.</p>
+    <p>Вопросы компиляции <b>java</b> были подробно описаны в статье.</b>
 
 	  <div class="article-preview">
       <h4>Компиляция java кода</h4>
@@ -248,7 +245,7 @@ Input max value Fibonacci sequence term: 4000000
 Answer is 4613732
 </pre>
 
-    <p>В данной программе применили несколько новых конструкций языка <b>java</b>:
+    <p>В данной программе применилм несколько новых конструкций языка <b>java</b>:
       <ul>
         <li>Чтение программой вводимых пользователем данных</li>
         <li>Применен цикл <b>while</b></li>
