@@ -62,58 +62,52 @@
       		<h3>Наибольший простой делитель</h3>
     	</div>
 
-    <p>Простые делители числа <b>13195</b> - это <b>5, 7, 13</b> и <b>29</b>.<br/>
-    Какой самый большой делитель числа <b>600851475143</b>, являющийся простым числом?</p>
+    	<p>Простые делители числа <b>13195</b> - это <b>5, 7, 13</b> и <b>29</b>.<br/>
+    	Какой самый большой делитель числа <b>600851475143</b>, являющийся простым числом?</p>
 
-    <div class="calculator">
+    	<div class="calculator">
 
-    <h3>Онлайн-калькулятор: "Определение ближайшего меньшего числа Фибоначчи"</h3>
+    		<h3>Онлайн-калькулятор: "Разложение числа на простые множители"</h3>
 
-    <form method="post">
-      <label for="maximum">Введите число:</label>
-      <input type="number" step="any" id="maximum" name="maximum" required><br><br>
+    		<form method="post">
+      			<label for="num">Введите число:</label>
+      			<input type="number" step="any" id="num" name="num" required><br><br>
 
-      <input type="submit" value="Посчитать">
-    </form>
+      			<input type="submit" value="Посчитать">
+    		</form>
 
-    <%
-      // Получаем введенные значения из запроса
-      String maxStr = request.getParameter("maximum");
+    		<%
+      		// Получаем введенные значения из запроса
+      		String numStr = request.getParameter("num");
 
-      // Проверяем, что параметры не null и не пустые
-      if (maxStr != null && !maxStr.isEmpty() && (Double.parseDouble(maxStr) < 1_000_000_000)) {
-        try {
-          // Преобразуем строки в числа
-          int max = Integer.parseInt(maxStr);
+      		// Проверяем, что параметры не null и не пустые
+      		if (numStr != null && !numStr.isEmpty()) {
+        		try {
+          			// Преобразуем строки в числа
+          			long number = Long.parseLong(numStr);%>
+          			<p>Число <b><%= numStr %></b> раскладывается на множители:
 
-          int firstFib = 1;
-          int secondFib = 2;
-          int nextFib = 3; // 1 + 2
-          int answer = 0;%>
+          			<%while (number > 1) {%>
+          			
+          				<%for (long i = 2; i <= number; i++) {%>
+            				<%if (number % i == 0) {%>
+            					<%number /= i;%>
+            					<b><%= i %></b>
+            				<%}%>
+            			<%}%>
+   
+          			<%}%>
+          			</p>
 
-          <%while (nextFib < max) {%>
+    		<%   } catch (NumberFormatException e) { %>
 
-            <%if (secondFib % 2 == 0) {%>
-              <%answer += secondFib;%>
-            <%}%>
+    			<!-- Обработка ошибки ввода -->
+    			<p style="color: red;">Ошибка: Пожалуйста, введите корректные числовые значения.</p>
 
-            <%nextFib = firstFib + secondFib;%>
-            <%firstFib = secondFib;%>
-            <%secondFib = nextFib;%>
-          <%}%>
-
-            <p>Число <strong><%= firstFib %></strong> является ближайшим меньшим числом Фибоначчи.<br/>
-            Сумма всех четных элементов ряда <strong><%= answer %></strong>.</p>
-
-    <%   } catch (NumberFormatException e) { %>
-
-    <!-- Обработка ошибки ввода -->
-    <p style="color: red;">Ошибка: Пожалуйста, введите корректные числовые значения.</p>
-
-    <%  }
-      }
-    %>
-    </div>
+    		<%  }
+      		}
+    		%>
+    	</div>
 
     <div id="top">
       <h3>Описание алгоритма работы программы</h3>
