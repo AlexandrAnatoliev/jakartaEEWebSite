@@ -182,63 +182,47 @@ public class Solution {
 		содержащий необходимые методы для вычислений.</p>
 
 <pre class="vimcode">
+//Calculator.java
 class Calculator {
-  long getNearGreaterDiv(long number, long div) {
+  long getMinDiv(long number, long div) {
     if(number % div == 0) {
       return div;
     }
-    else if (div % 2 == 0){
-      div++;
-    }
-    else {
-      div += 2;
-    }
 
-        for (long i = div; i * i < number; i += 2) {
-            if (number % i == 0)
-                return i;
-        }
+    div = (div % 2 == 0) ? (div + 1) : (div + 2);
 
-        return 1;
+    for (long i = div; i * i < number; i += 2) {
+      if (number % i == 0)
+        return i;
     }
     
-    long getMaxPrimeDiv(long num) {
-        long minDiv = getNearGreaterDiv(num, 2);
-
-        while (minDiv != 1) {
-            num = num / minDiv;
-            minDiv = getNearGreaterDiv(num, minDiv);
-        }
-        return num;
-    }
+    return 1;
+  }
+</pre>
     
+    	<p>Метод <b>getMinDiv()</b> принимает число и начальный делитель в качестве аргументов и возвращает минимальный простой делитель числа.<br/>
+    	При этом проверяются только нечетные делители и только до корня квадратного из проверяемого числа.</p>
+
+<pre class="vimcode">
+//Calculator.java - продолжение
+  long getMaxPrimeDiv(long num) {
+    long minDiv = getMinDiv(num, 2);
+
+    while (minDiv != 1) {
+      num = num / minDiv;
+      minDiv = getMinDiv(num, minDiv);
+    }
+    return num;
+  }
 }
 </pre>
 
-    <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново. Потому, как только будет получено число Фибоначчи, следующее за первыми двумя.</p>
+		<p>Метод <b>getMaxPrimeDiv()</b> принимает число и раскладывает его на множители до тех пор, пока оно не перестанет раскладываться. 
+		Последний полученый множитель и будет искомым <b>максимальным простым делителем</b>.</p>
 
-    <div class="vimcode">
-      nextFib = firstFib + secondFib;
-    </div>
-
-    <p>...значения обновляются:</p>
-    
-    <div class="vimcode">
-      firstFib = secondFib;
-    </div>
-
-    <p>...первое число принимает значение второго:</p>
-
-    <div class="vimcode">
-      secondFib = nextFib;
-    </div>
-    
-    <p>...второе – третьего (суммы первых двух).<br/>
-    Такой цикл продолжается снова и снова до тех пор, пока в итоге не дойдет до искомых <b>4000000</b>.</p>
-
-    <div id="top">
-      <h3>DevOps</h3>
-    </div>
+    	<div id="top">
+      		<h3>DevOps</h3>
+    	</div>
 
     <p>Постепенно приближаем сложность задачи к реальной - напишем и запустим программу на удаленном сервере.<br/>
     Арендуем <b>vps сервер</b> на время (гайд внизу).</p>
