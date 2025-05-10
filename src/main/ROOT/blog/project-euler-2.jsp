@@ -261,6 +261,7 @@ Answer is 4613732
         <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
         <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
 		    <li><b>Проект Эйлера 2 задача</b></li>
+        <li><a href="/blog/project-euler-3.jsp"><b>Проект Эйлера задача 3</b></a></li>
       </ul>
 	  </div>
 	  
