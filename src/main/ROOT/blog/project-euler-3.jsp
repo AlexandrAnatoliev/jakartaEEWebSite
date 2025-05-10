@@ -193,17 +193,17 @@ public class Solution {
 //Calculator.java
 class Calculator {
   long getMinDiv(long number, long div) {
-    if(number % div == 0) {
+    if((number % div == 0) && (div * div <= number)) {
       return div;
     }
-
-    div = (div % 2 == 0) ? (div + 1) : (div + 2);
-
-    for (long i = div; i * i < number; i += 2) {
+                
+    div = (div % 2 == 0) ? (div + 1) : (div);
+        
+    for (long i = div; i * i <= number + 1; i += 2) {
       if (number % i == 0)
         return i;
     }
-    
+
     return 1;
   }
 </pre>
@@ -214,12 +214,13 @@ class Calculator {
 <pre class="vimcode">
 //Calculator.java - продолжение
   long getMaxPrimeDiv(long num) {
-    long minDiv = getMinDiv(num, 2);
+    long minDiv = 2;
 
-    while (minDiv != 1) {
-      num = num / minDiv;
+    do {
       minDiv = getMinDiv(num, minDiv);
-    }
+      num = num / minDiv;
+    } while (minDiv != 1);
+    	
     return num;
   }
 }
@@ -232,69 +233,168 @@ class Calculator {
       		<h3>DevOps</h3>
     	</div>
 
-    <p>Постепенно приближаем сложность задачи к реальной - напишем и запустим программу на удаленном сервере.<br/>
-    Арендуем <b>vps сервер</b> на время (гайд внизу).</p>
+		<p>Продолжаю упражняться в работе с удаленным сервером. Соберу исходный код программы в один <b>jar-файл</b>, 
+		скопирую его на сервер по <b>ssh</b> и запущу там.</p>
+		
+		<p>В данный момент структура программы имеет следующий вид:</p>
 
-	  <div class="article-preview">
-      <h4>Аренда виртуального сервера</h4>
-      <p>Краткий пошаговый гайд по аренде сервера... <a href="/blog/arenda-vps.jsp">
-      <b>читать</b></a></p>
-	  </div>
-
-    <p>...подключимся к нему...
-
-	  <div class="article-preview">
-      <h4>Подключение по ssh к виртуальному серверу</h4>
-		  <p>Краткий гайд по подключению по ssh к виртуальному серверу (VPS)... <a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a></p>
-	  </div>
-	
-    <p>...и напишем текст программы в любом встроеном текстовом редакторе - <b>vim, nano</b> (лично я пользуюсь <b>neovim</b>).<br/>
-    Краткий список команд ниже.</p>
-
-	  <div class="article-preview">
-      <h4>Основные команды linux терминала</h4>
-      <p>Команды, вводимые пользователем в консоли терминала, выполняются командной оболочкой <b>bash</b>. 
-      Пользователь вводит команду, <b>bash</b> ищет программу, соответствующую команде, в нужных каталогах,
-       запускает ее и передает ей введенные параметры. Количество их, потому, огромно. 
-       В статье будут описаны лишь те команды linux терминала, которые я использую чаще всего...
-		  <a href="/blog/komandy-linux-terminala.jsp"><b>читать</b></a></p>
-	  </div>
-
-    <p>Небольшой гайд по установке <b>java</b> на сервер:</p>
-
-	  <div class="article-preview">
-      <h4>Установка java на linux</h4>
-      <p>Небольшой конспект по установке <b>java</b> на <b>linux</b>...
-		  <a href="/blog/ustanovka-java.jsp"><b>читать</b></a></p>
-	  </div>
-    
-    <p>Скомпилируем программу...</p>
-
-    <div class="vimcode">
-      javac Solution.java
-    </div>
-
-    <p>Вопросы компиляции <b>java</b> были подробно описаны в статье.</b>
-
-	  <div class="article-preview">
-      <h4>Компиляция java кода</h4>
-      <p>Компиляция <b>java</b> кода без использования <b>ide</b> (одного класса, нескольких, создание <b>jar-файла</b>).
-		  <a href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a></p>
-	  </div>
-
-    <p>Запустим скомпилированный файл, введем максимальное число, до которого будем производить вычисления и получим искомый ответ:</p>
 <pre class="vimcode">
-$ java Solution
-Input max value Fibonacci sequence term: 4000000
-Answer is 4613732
+problem-3/
+  src/
+    Calculator.java
+    Solution.java
 </pre>
 
-    <p>В данной программе применилм несколько новых конструкций языка <b>java</b>:
-      <ul>
-        <li>Чтение программой вводимых пользователем данных</li>
-        <li>Применен цикл <b>while</b></li>
-      </ul>
+		<p>Компилирую файлы с исходным кодом:</p>
+
+    <div class="vimcode">
+    	# javac -d bin/ src/Calculator.java src/Solution.java 
+    </div>
+    
+    <p>Где:
+    	<ul>
+    		<li><b>-d bin/</b> - куда размещать скомпилированые файлы;</li>
+    		<li><b>src/Calculator.java src/Solution.java</b> - расположение компилируемых файлов с исходным кодом;</li>
+    	</ul>
     </p>
+
+		<p>Скомпилированные файлы появились в отдельной папке:</p>
+
+<pre class="vimcode">
+problem-3/
+  bin/
+    Calculator.class
+    Solution.class
+  src/
+    Calculator.java
+    Solution.java
+</pre>
+
+		<p>Вопросы компиляции <b>java</b>-кода более подробно описаны в статье:</p>
+
+	  	<div class="article-preview">
+      		<h4>Компиляция java кода</h4>
+      		<p>Компиляция <b>java</b> кода без использования <b>ide</b> (одного класса, нескольких, создание <b>jar-файла</b>).
+		  	<a href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a></p>
+	  	</div>
+	  
+	 	<p>Чтобы создать архив классов понадобится файл-манифест <b>manifest.mf</b></p> 
+	  
+<pre class="vimcode">
+problem-3/
+  bin/
+    Calculator.class
+    Solution.class
+  manifest.mf
+  src/
+    Calculator.java
+    Solution.java
+</pre>
+	  
+	  	<p>В нем нужно указать главный класс (содержащий метод <b>main()</b>) и путь к скомпилированным классам:</p>
+	  
+<pre class="vimcode">
+main-class: Solution
+class-path: bin/
+</pre>
+	  
+	  	<p>Собираю <b>jar-файл</b>:</p>
+	  	
+    	<div class="vimcode">
+    		# jar -cmf manifest.mf Solution.jar -C bin .
+    	</div>
+    	
+    	<p>Где:
+    		<ul>
+    			<li><b>-cmf manifest.mf</b> - путь к манифесту;</li>
+    			<li><b>Solution.jar</b> - название выходного <b>jar-файла</b>;</li>
+    			<li><b>-C bin</b> - путь к скомпилированным классам;</li>
+    			<li><b> . </b> - путь, куда будет помещен <b>jar-файл</b> (текущая директория);</li>
+    		</ul>
+    	</p>
+    
+    	<p>Собранный <b>jar-файл</b> появился в текущей директории:</p>
+    
+<pre class="vimcode">
+problem-3/
+  bin/
+    Calculator.class
+    Solution.class
+  manifest.mf
+  Solution.jar
+  src/
+    Calculator.java
+    Solution.java
+</pre>
+    
+    	<p>Копирую <b>jar-файл</b> на удаленный сервер:</p>
+    
+		<div class="vimcode">
+			$ scp Solution.jar root@192.123.4.56:/root/ 
+		</div>
+    
+    	<p>Краткий гайд, если возникнут вопросы:</p>
+
+	  	<div class="article-preview">
+      		<h4>Копирование файлов по ssh</h4>
+    		<p>После аренды виртуального сервера не всегда удобно что-то делать сразу на нем. 
+    		Чаще всего проект будет делаться на локальном компьютере и лишь потом копироваться сервер...
+		  	<a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>читать</b></a></p>
+	  	</div>
+
+		<p>Зашел на сервер:</p>
+		
+		<div class="vimcode">
+			$ ssh root@192.123.4.56
+		</div>
+		
+		<p>... и запустил <b>jar-файл:</b>
+		
+<pre class="vimcode">
+# java -jar Solution.jar 
+Answer is 6857
+</pre>
+
+		<p>Здесь возможно вылезет проблема, заключающаяся в том, что на сервере и компьютере установлены разные версии <b>java</b>.<br/> 
+		Проверить версию <b>java</b> можно командой:</p>
+
+		<div class="vimcode">
+			java -version	
+		</div>
+
+		<p>При необходимости можно установить или выбрать нужные версии и перекомпилировать все заново.<br>
+		Меняем версию <b>java</b>:</p>
+		
+		<div class="vimcode">
+			sudo update-alternatives --config java	
+		</div>
+
+		<p>... и компилятора <b>javac</b>:</p>
+		
+		<div class="vimcode">
+			sudo update-alternatives --config javac
+		</div>
+
+		<p>Еще несколько полезных статей, чтобы не повторяться:</p>
+
+	  	<div id="linux" class="article-preview">
+		  	<ul>
+        		<li><a href="/blog/arenda-vps.jsp"><b>Аренда виртуального сервера</b></a></li>
+        		<li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
+        		<li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение по ssh к виртуальному серверу</b></a></li>
+        		<li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные команды linux терминала</b></a></li>
+			</ul>
+		</div>
+		
+
+    	<p>В данной программе применилм несколько новых конструкций языка <b>java</b>:
+      		<ul>
+        		<li>Параметры командной строки;</li>
+        		<li>Разделил код на два класса в двух разных файлах;</li>
+        		<li>С помощью конструктора создан объект и вычисления производились с помощью его методов;</li>
+        		<li>Применил предопределенный класс <b>Long</b> и его статический метод <b>parseLong()</b>.</li>
+      		</ul>
+    	</p>
 
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
