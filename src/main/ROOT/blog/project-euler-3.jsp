@@ -160,7 +160,8 @@ src/
 // Solution.java
 public class Solution {
   public static void main(String[] args) {
-    long num = (args.length > 0) ? (Long.parseLong(args[0])) : (600851475143L);
+    long num = (args.length > 0) ? 
+      (Long.parseLong(args[0])) : (600851475143L);
 
     Calculator calculator = new Calculator();
     long answ = calculator.getMaxPrimeDiv(num);
