@@ -134,7 +134,7 @@ public class Solution {
     int answer = 0;
 
     Scanner input = new Scanner(System.in);
-    System.out.print("Input max value Fibonacci sequence term: ");
+    System.out.print("Input max value: ");
     int max = input.nextInt();
 
     while (nextFib < max) {
