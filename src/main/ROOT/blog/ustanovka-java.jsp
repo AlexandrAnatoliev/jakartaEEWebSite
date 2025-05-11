@@ -107,6 +107,21 @@ apt install openjdk-11-jre-headless
       javac -version
     </div>
 
+		<p>Также возможны ситуации, когда на сервере или компьютере установлены несколько разных версий <b>java</b>.
+		При необходимости всегда можно выбрать нужную.</p>
+
+		<p>Меняем версию <b>java</b>:</p>
+		
+		<div class="vimcode">
+			sudo update-alternatives --config java	
+		</div>
+
+		<p>... и компилятора <b>javac</b>:</p>
+		
+		<div class="vimcode">
+			sudo update-alternatives --config javac
+		</div>
+
 	  <div class="article-preview">
       <h4>Навигация по статьям</h4>
 		  <ul>
