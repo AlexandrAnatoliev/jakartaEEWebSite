@@ -156,6 +156,16 @@ footer ul li a:hover {
 	background-color: #111;
 }
 
+img.large {
+    width: 620px;
+    height: 400px;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #777777;
+    margin: 0px auto;}
+
 
 
 
@@ -241,16 +251,6 @@ footer ul li a:hover {
 
 
 
-
-img.large {
-    width: 620px;
-    height: 400px;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    margin: 0px auto;}
 
 
 img.code {
