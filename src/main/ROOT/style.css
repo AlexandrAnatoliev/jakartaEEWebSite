@@ -70,6 +70,10 @@ nav li a {
 	text-decoration: none;
 }
 
+nav ul li a:hover {
+	background-color: #111;
+}
+
 nav a.current {
     color: red;
 }
