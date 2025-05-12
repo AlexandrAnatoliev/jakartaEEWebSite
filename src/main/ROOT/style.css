@@ -1,11 +1,78 @@
 @charset "UTF-8";
+header, section, aside, article, footer, nav, figure, figcaption {
+	display: block;
+}
+
 body {
     font-family: Arial, Verdana;
     width: 90%;
     box-shadow: 0px 0px 10px #777777;
     border-radius: 10px;
     padding: 10px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
+
+body li{
+    font-family: Gergia, Times, serif;
+    font-size: 1.1em;
+    color: #7A7A7A
+}
+
+header, footer {
+    border-width: 2px;
+    background-color: #333;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #777777;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    width: 90%;
+}
+
+header a:hover, footer a:hover, a:hover {
+    color: red;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.favicon, .github {
+    margin-top: 0.2em;
+    width: 2em;
+    height: 2em;
+}
+
+.favicon {
+    float: left;
+    margin-left: 10px;
+}
+
+.github {
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul {
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+  	overflow: hidden;
+}
+
+nav li a {
+ 	display: block;
+	color: white;
+ 	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+nav a.current {
+    color: red;
+}
 
 h1, h3{
     text-align: center;
@@ -19,93 +86,82 @@ p {
     padding: 0px 10px 0px 10px;
     font-family: Gergia, Times, serif;
     font-size: 1.1em;
-    color: #7A7A7A}
+    color: #7A7A7A
+}
 
-body li{
-    font-family: Gergia, Times, serif;
-    font-size: 1.1em;
-    color: #7A7A7A}
-
-img.large {
-    width: 620px;
-    height: 400px;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    margin: 0px auto;}
-
-img.logo {
-    width: 40px;
-    height: 40px;}
-
-img.code {
-    width: 870px;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    margin: 0px auto;}
+#logos {
+    padding: 10px;
+}
 
 #logos a:hover {
     border-style: solid;
     border-width: 0px;
-    border-bottom-width: 2px;}
+    border-bottom-width: 2px;
+}
 
-#header {
-    position: fixed;
-    top: 10px;
-    width: 90%;
-    text-align: center;
-    border-style: solid;
+img.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.article-preview {
+	border-style: solid;
     border-width: 2px;
-    border-radius: 10px;
-    background-color: #333;
+	border-width: 2px;
+	background-color: rgb(200, 200, 200);
+	border-radius: 10px;
     box-shadow: 5px 5px 5px #777777;
-    }
-	
-#header a:hover, a:hover, #footer a:hover {
-    color: red;
-    text-shadow: 1px 1px 0px #000000;}
-    
-.iamhere {
-    color: red;}
-	
-.favicon {
-	padding-top: 0.2em;
-    float: left;
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;}
+	margin: 10px;}
 
-.github {
-	padding-top: 0.2em;
-    float: right;
-    margin-right: 10px;
-    width: 2em;
-    height: 2em;}
-    
-.menu ul {
-	display: flex;
-  	justify-content: center;
+.article-preview h4 {
+    text-align: center;
+    padding-bottom: 0px;
+	margin-bottom: 0px;
+	letter-spacing: 0.1em;}
+
+.article-preview p, .article-preview li {
+	font-style: italic;
+    font-family: Gergia, Times, serif;
+    text-align: left;
+	padding-top: 0px;
+	color: black;}
+
+footer {
+    text-align: right;
+}
+
+footer ul {
 	list-style-type: none;
  	margin: 0;
 	padding: 0;
-  	overflow: hidden;}
-  	
-.menu ul li {
-	float: left;}
+  	overflow: hidden;
+}
 
-.menu ul li a {
+footer ul li {
+	float: right;
+}
+
+footer ul li a {
  	display: block;
 	color: white;
  	padding: 0.5em 1em;
-	text-decoration: none;}
+	text-decoration: none;
+}
 
-.menu ul li a:hover {
-	background-color: #111;}
+footer ul li a:hover {
+	background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #footer {
     text-align: right;
@@ -132,31 +188,80 @@ img.code {
 	
 #footer ul li a:hover {
 	background-color: #111;}
-	
-.article-preview {
-	border-style: solid;
-    border-width: 2px;
-	border-width: 2px;
-	background-color: rgb(200, 200, 200);
-	border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-	margin: 10px;}
-
-.article-preview h4 {
-    text-align: center;
-    padding-bottom: 0px;
-	margin-bottom: 0px;
-	letter-spacing: 0.1em;}
-
-.article-preview p, .article-preview li {
-	font-style: italic;
-    font-family: Gergia, Times, serif;
-    text-align: left;
-	padding-top: 0px;
-	color: black;}
-
 .center {
     text-align: center;}
+
+.iamhere {
+    color: red;}
+    
+.menu ul {
+	display: flex;
+  	justify-content: center;
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+  	overflow: hidden;}
+  	
+.menu ul li {
+	float: left;}
+
+.menu ul li a {
+ 	display: block;
+	color: white;
+ 	padding: 0.5em 1em;
+	text-decoration: none;}
+
+.menu ul li a:hover {
+	background-color: #111;}
+
+#header {
+    position: fixed;
+    top: 10px;
+    width: 90%;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 5px 5px 5px #777777;
+    }
+	
+#header a:hover, a:hover, #footer a:hover {
+    color: red;
+    text-shadow: 1px 1px 0px #000000;}
+
+
+
+
+
+
+
+
+
+img.large {
+    width: 620px;
+    height: 400px;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #777777;
+    margin: 0px auto;}
+
+
+img.code {
+    width: 870px;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #777777;
+    margin: 0px auto;}
+
+
+    
+
+	
 
 .vimcode {
 	background-color: #300a24;
