@@ -74,8 +74,8 @@
       т.п.</p>
   </section>
 
-  <aside>
-    <section id="linux" class="article-preview">
+  <section>
+    <aside id="linux" class="article-preview">
       <h4>LINUX</h4>
       <ul>
         <li><a href="/blog/arenda-vps.jsp"><b>Аренда
@@ -87,17 +87,17 @@
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование
               файлов по ssh</b></a></li>
       </ul>
-    </section>
+    </aside>
 
-    <section id="wireguard" class="article-preview">
+    <aside id="wireguard" class="article-preview">
       <h4>WIREGUARD</h4>
       <ul>
         <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная
               частная сеть</b></a></li>
       </ul>
-    </section>
+    </aside>
 
-    <section id="java" class="article-preview">
+    <aside id="java" class="article-preview">
       <h4>JAVA</h4>
       <ul>
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка
@@ -105,8 +105,8 @@
         <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция
               java кода</b></a></li>
       </ul>
-    </section>
-  </aside>
+    </aside>
+  </section>
 
   <footer>
     <ul>

@@ -77,8 +77,8 @@
     </p>
   </section>
 
-  <aside>
-    <section class="article-preview">
+  <section>
+    <aside class="article-preview">
       <h4>Проект Эйлера задача 3</h4>
       <p>
         Данная небольшая задача уже не решилась "с наскоку" и
@@ -90,9 +90,9 @@
         для проверки вычислений и <b>правильный ответ</b> на задачу
         прилагаются... <a href="/blog/project-euler-3.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Проект Эйлера задача 2</h4>
       <p>
         В данной задаче продолжаю знакомиться с языком <b>java</b>, для
@@ -102,9 +102,9 @@
         приведен <b>правильный ответ</b> на задачу... <a
           href="/blog/project-euler-2.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Проект Эйлера - решенные задачи</h4>
       <p>
         Цикл задач проекта Эйлера позволяет не только познакомиться с
@@ -113,9 +113,9 @@
         тестирование и т.п... <a
           href="/blog/project-euler-solutions.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Проект Эйлера задача 1</h4>
       <p>
         Решая эту задачу, решил не только отработать конструкции языка <b>java</b>,
@@ -124,34 +124,34 @@
         позволяющий проверить Ваши вычисления, и приведен <b>ответ</b>
         на задачу... <a href="/blog/project-euler-1.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Компиляция java кода</h4>
       <p>
         Компиляция <b>java</b> кода без использования <b>ide</b> (одного
         класса, нескольких, создание <b>jar-файла</b>). <a
           href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Установка java на linux</h4>
       <p>
         Небольшой конспект по установке <b>java</b> на <b>linux</b>... <a
           href="/blog/ustanovka-java.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Виртуальная частная сеть</h4>
       <p>
         Краткий гайд по настройке <b>wireguard</b> на своем сервере... <a
           href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Копирование файлов по ssh</h4>
       <p>
         После аренды виртуального сервера не всегда удобно что-то делать
@@ -159,9 +159,9 @@
         компьютере и лишь потом копироваться сервер... <a
           href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Основные команды linux терминала</h4>
       <p>
         Команды, вводимые пользователем в консоли терминала, выполняются
@@ -172,17 +172,17 @@
         терминала, которые я использую чаще всего... <a
           href="/blog/komandy-linux-terminala.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Подключение по ssh к виртуальному серверу</h4>
       <p>
         Краткий гайд по подключению по ssh к виртуальному серверу
         (VPS)... <a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Аренда виртуального сервера</h4>
       <p>
         Для размещения и запуска своих проектов арендовать <b>vps</b>
@@ -191,8 +191,8 @@
         знания для его настройки. Чтобы облегчить этот процесс,
         составлен небольшой гайд... <a href="/blog/arenda-vps.jsp"><b>читать</b></a>
       </p>
-    </section>
-  </aside>
+    </aside>
+  </section>
 
   <footer>
     <ul>

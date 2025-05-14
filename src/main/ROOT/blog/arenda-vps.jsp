@@ -35,10 +35,10 @@
 <!-- /Yandex.Metrika counter -->
 
 <style type="text/css">
-<%@
-include file ="/style.css" %> body p {
-	text-align: center;
-}
+  <%@include file ="/style.css" %> 
+  body p {
+    text-align: center;
+  }
 </style>
 
 <title>java практика: аренда виртуального сервера</title>
@@ -195,17 +195,15 @@ include file ="/style.css" %> body p {
     </p>
   </section>
 
-  <aside>
-    <section class="article-preview">
-      <h4>Навигация по статьям</h4>
-      <ul>
-        <li><b>Аренда виртуального сервера</b></li>
-        <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение
-              по ssh к виртуальному серверу</b></a></li>
-        <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные
-              команды linux терминала</b></a></li>
-      </ul>
-    </section>
+  <aside class="article-preview">
+    <h4>Навигация по статьям</h4>
+    <ul>
+      <li><b>Аренда виртуального сервера</b></li>
+      <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение
+            по ssh к виртуальному серверу</b></a></li>
+      <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные
+            команды linux терминала</b></a></li>
+    </ul>
   </aside>
 
   <footer>

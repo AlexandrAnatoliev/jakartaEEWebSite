@@ -74,7 +74,7 @@
       тех, кому не терпится применить полученные знания в деле.</p>
   </section>
 
-  <aside>
+  <section>
     <div id="logos" align="center">
       <p>
         <a href="/devops#linux"><img src="images/logo/linux.svg"
@@ -87,15 +87,15 @@
       </p>
     </div>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Виртуальная частная сеть</h4>
       <p>
         Краткий гайд по настройке <b>wireguard</b> на своем сервере... <a
           href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a>
       </p>
-    </section>
+    </aside>
 
-    <section class="article-preview">
+    <aside class="article-preview">
       <h4>Проект Эйлера - решенные задачи</h4>
       <p>
         Цикл задач проекта Эйлера позволяет не только познакомиться с
@@ -104,8 +104,8 @@
         тестирование и т.п... <a
           href="/blog/project-euler-solutions.jsp"><b>читать</b></a>
       </p>
-    </section>
-  </aside>
+    </aside>
+  </section>
 
   <footer>
     <ul>
