@@ -102,7 +102,7 @@
       		String numStr = request.getParameter("num");
 
       		// Проверяем, что параметры не null и не пустые
-      		if (numStr != null && !numStr.isEmpty()) {
+      		if (numStr != null && !numStr.isEmpty() && (Double.parseDouble(numStr) > 0)) {
         		try {
           			// Преобразуем строки в числа
           			long number = Long.parseLong(numStr);%>
