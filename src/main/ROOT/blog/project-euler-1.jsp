@@ -100,7 +100,7 @@
       String num2Str = request.getParameter("number2");
 
       // Проверяем, что параметры не null и не пустые
-      if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty()) {
+      if (num1Str != null && num2Str != null && !num1Str.isEmpty() && !num2Str.isEmpty() && (Double.parseDouble(num1Str) > 0) && (Double.parseDouble(num2Str) > 0))  {
         try {
           // Преобразуем строки в числа
           double num1 = Double.parseDouble(num1Str);
