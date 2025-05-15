@@ -6,15 +6,15 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 public class ProjectsServlet extends HttpServlet {
 
-    @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+  @Override
+  public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
-        try {
-            request.setAttribute("servletName", "projectsServlet");
-            getServletConfig().getServletContext().getRequestDispatcher("/jsps/projects/index.jsp").forward(request,
-                    response);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+    try {
+      request.setAttribute("servletName", "projectsServlet");
+      getServletConfig().getServletContext().getRequestDispatcher("/jsps/projects/index.jsp").forward(request,
+          response);
+    } catch (Exception ex) {
+      ex.printStackTrace();
     }
+  }
 }

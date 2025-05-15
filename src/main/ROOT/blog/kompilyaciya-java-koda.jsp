@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
   <head>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+<script type="text/javascript">
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
       m[i].l=1*new Date();
       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -17,52 +18,73 @@
         accurateTrackBounce:true
       });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/101004544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <style type="text/css">
-		  <%@include file="/style.css" %>
-    </style>
-    <title>java практика: компиляция java кода</title>
-    <meta name="description" content="компиляция java кода без использования ide (одного класса, нескольких, создание jar-файла).">
-  </head>
 
-  <body>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/101004544"
+      style="position: absolute; left: -9999px;" alt="" />
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 
-		<div id="header">
-      		<div class="favicon">
-        		<a href="/"><img src="/favicon.ico" alt="java практика сайт" class="favicon"></a>
-      		</div>
-      		<div class="github">
-        		<a href="https://github.com/AlexandrAnatoliev"><img src="/images/logo/github.svg" alt="ссылка на github" class="github"></a>
-      		</div>
+<style type="text/css">
+  <%@include file="/style.css" %>
+</style>
 
-      		<div class="menu">
-        		<ul>
-    				<li><a href="/"><b>Главная</b></a></li>
-    				<li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
-    				<li><a href="/devops"><b>DevOps</b></a></li>
-    			</ul>
-      		</div>
-    	</div>
+<title>java практика: компиляция java кода</title>
+<meta name="description"
+  content="компиляция java кода без использования ide (одного класса, нескольких, создание jar-файла).">
+</head>
 
-    <div id="top">
-      <h1>КОМПИЛЯЦИЯ JAVA КОДА</h1>
+<body>
+  <header>
+    <div class="favicon">
+      <a href="/"><img src="/favicon.ico" alt="java практика сайт"
+        class="favicon"></a>
+    </div>
+    <div class="github">
+      <a href="https://github.com/AlexandrAnatoliev"><img
+        src="/images/logo/github.svg" alt="ссылка на github"
+        class="github"></a>
     </div>
 
-    <p>Компиляция <b>java</b> кода без использования <b>ide</b> (одного класса, нескольких, создание <b>jar-файла</b>).</p>
+    <nav>
+      <ul>
+        <li><a href="/"><b>Главная</b></a></li>
+        <li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+        <li><a href="/devops"><b>DevOps</b></a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section>
+    <h1 id="top">КОМПИЛЯЦИЯ JAVA КОДА</h1>
+
+    <p>
+      Компиляция <b>java</b> кода без использования <b>ide</b> (одного
+      класса, нескольких, создание <b>jar-файла</b>).
+    </p>
+  </section>
+
+  <section>
     <h3>Компиляция и выполнение одного java класса</h3>
 
-    <p>Пусть, исходный код программы находится в файле <b>Test.java</b> по пути:</p>
+    <p>
+      Пусть, исходный код программы находится в файле <b>Test.java</b>
+      по пути:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   Test.java
 </pre>
 
-    <p>Имя файла с исходным кодом должно совпадать с именем класса (class <b>Test</b> -> <b>Test.java</b>).</p>
+    <p>
+      Имя файла с исходным кодом должно совпадать с именем класса (class
+      <b>Test</b> -> <b>Test.java</b>).
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 // Test.java
 public class Test {
   public static void main(String[] args) {
@@ -71,15 +93,18 @@ public class Test {
 }
 </pre>
 
-    <p>Компилируем файл <b>Test.java</b> в файл с байт-кодом <b>Test.class</b> командой:</p>
+    <p>
+      Компилируем файл <b>Test.java</b> в файл с байт-кодом <b>Test.class</b>
+      командой:
+    </p>
 
-    <div class="vimcode">
-      $ javac Test.java
-    </div>
+    <div class="vimcode">$ javac Test.java</div>
 
-    <p>Файл <b>Test.class</b> появится рядом с <b>Test.java</b>:</p>
+    <p>
+      Файл <b>Test.class</b> появится рядом с <b>Test.java</b>:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   Test.java
   Test.class
@@ -87,18 +112,25 @@ project-dir/
 
     <p>Запускаем программу командой:</p>
 
-    <div class="vimcode">
-      $ java Test
-    </div>
+    <div class="vimcode">$ java Test</div>
+  </section>
 
-
+  <section>
     <h3>Компиляция и выполнение нескольких java классов</h3>
 
-    <p>Для работы с несколькими классами нужен <b>classpath</b>. Он похож на файловую систему, в которой содержатся классы, а функции папок выполняют пакеты (<b>packages</b>).</p>
+    <p>
+      Для работы с несколькими классами нужен <b>classpath</b>. Он похож
+      на файловую систему, в которой содержатся классы, а функции папок
+      выполняют пакеты (<b>packages</b>).
+    </p>
 
-    <p>Отделим файлы исходного кода (каталог <b>src/</b>) от скомпилированных файлов (<b>bin/</b>). Например, в пакете <b>src</b> находится два класса <b>Box</b> и <b>BoxMachine</b>.</p>
+    <p>
+      Отделим файлы исходного кода (каталог <b>src/</b>) от
+      скомпилированных файлов (<b>bin/</b>). Например, в пакете <b>src</b>
+      находится два класса <b>Box</b> и <b>BoxMachine</b>.
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 // Box.java
 package src;
 
@@ -115,7 +147,7 @@ public class Box {
 }
 </pre>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 // BoxMachine.java
 package src;
 
@@ -128,18 +160,21 @@ public class BoxMachine {
 }
 </pre>
 
-    <p>Все это образует файловую структуру:</b>
+    <p>Все это образует файловую структуру:</p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   src/
     Box.java
     BoxMachine.java
 </pre>
 
-    <p>Чтобы скомпилировать эту группу классов, необходимо из главного каталога (в котором лежит <b>src/</b> каталог) выполнить команду:</b>
+    <p>
+      Чтобы скомпилировать эту группу классов, необходимо из главного
+      каталога (в котором лежит <b>src/</b> каталог) выполнить команду:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 $ javac -d bin ./src/*
 где:
   -d      - флаг, после которого следует указать...
@@ -148,9 +183,11 @@ $ javac -d bin ./src/*
   *       - указывает, что необходимо скомпилировать все файлы
 </pre>
 
-    <p>Теперь скомпилированные файлы появились в папке <b>bin/</b>:</p>
+    <p>
+      Теперь скомпилированные файлы появились в папке <b>bin/</b>:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   src/
     Box.java
@@ -161,23 +198,32 @@ project-dir/
       BoxMachine.class
 </pre>
 
-    <p>Для их запуска из главной директории (<b>project-dir</b>)воспользуемся командой:</p>
+    <p>
+      Для их запуска из главной директории (<b>project-dir</b>)воспользуемся
+      командой:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 $ java -classpath ./bin src.BoxMachine
 где:
   -classpath      - флаг, после которого указывается...
   ./bin           - ...местоположение скомпилированных файлов
   src.BoxMachine  - название пакета и главного класса
 </pre>
+  </section>
 
+  <section>
     <h3>Создание JAR-файлов</h3>
 
-    <p>Соберем скомпилированные файлы в <b>jar-файл</b> - архив классов.</p>
+    <p>
+      Соберем скомпилированные файлы в <b>jar-файл</b> - архив классов.
+    </p>
 
-    <p>В главном каталоге создадим файл-манифест <b>manifest.mf</b>:</p>
+    <p>
+      В главном каталоге создадим файл-манифест <b>manifest.mf</b>:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   manifest.mf
   src/
@@ -189,16 +235,22 @@ project-dir/
       BoxMachine.class
 </pre>
 
-    <p>В нем указывается главный класс, который будет запускаться при выполнении <b>jar-файла</b>, <b>classpath</b> и дополнительная информация.</p>
+    <p>
+      В нем указывается главный класс, который будет запускаться при
+      выполнении <b>jar-файла</b>, <b>classpath</b> и дополнительная
+      информация.
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 main-class: src.BoxMachine // класс, содержащий метод main
 class-path: bin/ // путь к скомпилированным классам
 </pre>
 
-    <p>Собираем <b>jar-файл</b>:</p>
+    <p>
+      Собираем <b>jar-файл</b>:
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 jar -cmf manifest.mf box-machine.jar -C bin .
 где:
   -cmf            - флаг, после которого указывают...
@@ -209,9 +261,11 @@ jar -cmf manifest.mf box-machine.jar -C bin .
   .               - путь, куда будет помещен jar-файл
 </pre>
 
-    <p><b>jar-файл</b> создан в текущей папке</p>
+    <p>
+      <b>jar-файл</b> создан в текущей папке
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   box-machine.jar
   manifest.mf
@@ -224,15 +278,18 @@ project-dir/
       BoxMachine.class
 </pre>
 
-    <p>Запускаем <b>jar-файл</b> командой:</p>
+    <p>
+      Запускаем <b>jar-файл</b> командой:
+    </p>
 
-    <div class="vimcode">
-      $ java -jar box-machine.jar
-    </div>
+    <div class="vimcode">$ java -jar box-machine.jar</div>
 
-    <p>В качестве проверки создадим отдельную директорию <b>lib/</b>, перенесем туда наш <b>jar-файл</b> и запустим его оттуда.</p>
+    <p>
+      В качестве проверки создадим отдельную директорию <b>lib/</b>,
+      перенесем туда наш <b>jar-файл</b> и запустим его оттуда.
+    </p>
 
-<pre class="vimcode">
+    <pre class="vimcode">
 project-dir/
   manifest.mf
   src/
@@ -245,23 +302,28 @@ project-dir/
     lib/
       box-machine.jar
 </pre>
+  </section>
 
-	  <div class="article-preview">
-      <h4>Навигация по статьям</h4>
-		  <ul>
-        <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная частная сеть</b></a></li>
-        <li><a href="/blog/ustanovka-java.jsp"><b>Установка java на linux</b></a></li>
-		    <li><b>Компиляция java кода</b></li>
-        <li><a href="/blog/project-euler-1.jsp"><b>Проект Эйлера задача 1</b></a></li>
-        <li><a href="/blog/project-euler-solutions.jsp"><b>Проект Эйлера - решенные задачи</b></a></li>
-      </ul>
-	  </div>
-	  
-        <div id="footer">
-    		<ul>
-    			<li><a href="#top"><b>Наверх</b></a></li>
-    		</ul>
-    	</div>
+  <aside class="article-preview">
+    <h4>Навигация по статьям</h4>
+    <ul>
+      <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная
+            частная сеть</b></a></li>
+      <li><a href="/blog/ustanovka-java.jsp"><b>Установка
+            java на linux</b></a></li>
+      <li><b>Компиляция java кода</b></li>
+      <li><a href="/blog/project-euler-1.jsp"><b>Проект
+            Эйлера задача 1</b></a></li>
+      <li><a href="/blog/project-euler-solutions.jsp"><b>Проект
+            Эйлера - решенные задачи</b></a></li>
+    </ul>
+  </aside>
 
-  </body>
+  <footer>
+    <ul>
+      <li><a href="#top"><b>Наверх</b></a></li>
+    </ul>
+  </footer>
+
+</body>
 </html>

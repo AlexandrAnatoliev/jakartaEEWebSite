@@ -1,187 +1,215 @@
 @charset "UTF-8";
+
+header, section, aside, article, footer, nav, figure, figcaption {
+	display: block;
+}
+
 body {
-    font-family: Arial, Verdana;
-    width: 90%;
-    box-shadow: 0px 0px 10px #777777;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;}
+	font-family: Arial, Verdana;
+	width: 90%;
+	box-shadow: 0px 0px 10px #777777;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0 auto;
+}
 
-h1, h3{
-    text-align: center;
-    padding: 10px;}
+body li {
+	font-family: Gergia, Times, serif;
+	font-size: 1.1em;
+	color: #7A7A7A
+}
 
-h1 {
-    margin-top: 3em;
-    letter-spacing: 0.1em;}
+header, footer {
+	border-width: 2px;
+	background-color: #333;
+	border-style: solid;
+	box-shadow: 5px 5px 5px #777777;
+	border-radius: 10px;
+}
 
-p {
-    padding: 0px 10px 0px 10px;
-    font-family: Gergia, Times, serif;
-    font-size: 1.1em;
-    color: #7A7A7A}
+header {
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	width: 90%;
+}
 
-body li{
-    font-family: Gergia, Times, serif;
-    font-size: 1.1em;
-    color: #7A7A7A}
+header a:hover, footer a:hover, a:hover {
+	color: red;
+	text-shadow: 1px 1px 0px #000000;
+}
 
-img.large {
-    width: 620px;
-    height: 400px;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    margin: 0px auto;}
+.favicon, .github {
+	margin-top: 0.2em;
+	width: 2em;
+	height: 2em;
+}
 
-img.logo {
-    width: 40px;
-    height: 40px;}
-
-img.code {
-    width: 870px;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-    margin: 0px auto;}
-
-#logos a:hover {
-    border-style: solid;
-    border-width: 0px;
-    border-bottom-width: 2px;}
-
-#header {
-    position: fixed;
-    top: 10px;
-    width: 90%;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    background-color: #333;
-    box-shadow: 5px 5px 5px #777777;
-    }
-	
-#header a:hover, a:hover, #footer a:hover {
-    color: red;
-    text-shadow: 1px 1px 0px #000000;}
-    
-.iamhere {
-    color: red;}
-	
 .favicon {
-	padding-top: 0.2em;
-    float: left;
-    margin-left: 10px;
-    width: 2em;
-    height: 2em;}
+	float: left;
+	margin-left: 10px;
+}
 
 .github {
-	padding-top: 0.2em;
-    float: right;
-    margin-right: 10px;
-    width: 2em;
-    height: 2em;}
-    
-.menu ul {
+	float: right;
+	margin-right: 10px;
+}
+
+nav ul {
 	display: flex;
-  	justify-content: center;
+	justify-content: center;
 	list-style-type: none;
- 	margin: 0;
+	margin: 0;
 	padding: 0;
-  	overflow: hidden;}
-  	
-.menu ul li {
-	float: left;}
+	overflow: hidden;
+}
 
-.menu ul li a {
- 	display: block;
+nav li a {
+	display: block;
 	color: white;
- 	padding: 0.5em 1em;
-	text-decoration: none;}
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
 
-.menu ul li a:hover {
-	background-color: #111;}
+nav ul li a:hover {
+	background-color: #111;
+}
 
-#footer {
-    text-align: right;
-    border-width: 2px;
-    background-color: #333;
-    border-style: solid;
-    box-shadow: 5px 5px 5px #777777;
-    border-radius: 10px;}
-    
-#footer ul {
-	list-style-type: none;
- 	margin: 0;
-	padding: 0;
-  	overflow: hidden;}
-  	
-#footer ul li {
-	float: right;}
-	
-#footer ul li a {
- 	display: block;
-	color: white;
- 	padding: 0.5em 1em;
-	text-decoration: none;}
-	
-#footer ul li a:hover {
-	background-color: #111;}
-	
+nav a.current {
+	color: red;
+}
+
+h1, h3 {
+	text-align: center;
+	padding: 10px;
+}
+
+h1 {
+	margin-top: 3em;
+	letter-spacing: 0.1em;
+}
+
+p {
+	padding: 0px 10px 0px 10px;
+	font-family: Gergia, Times, serif;
+	font-size: 1.1em;
+	color: #7A7A7A
+}
+
+#logos {
+	padding: 10px;
+}
+
+#logos a:hover {
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-width: 2px;
+}
+
+img.logo {
+	width: 40px;
+	height: 40px;
+}
+
 .article-preview {
 	border-style: solid;
-    border-width: 2px;
+	border-width: 2px;
 	border-width: 2px;
 	background-color: rgb(200, 200, 200);
 	border-radius: 10px;
-    box-shadow: 5px 5px 5px #777777;
-	margin: 10px;}
+	box-shadow: 5px 5px 5px #777777;
+	margin: 10px;
+}
 
 .article-preview h4 {
-    text-align: center;
-    padding-bottom: 0px;
+	text-align: center;
+	padding-bottom: 0px;
 	margin-bottom: 0px;
-	letter-spacing: 0.1em;}
+	letter-spacing: 0.1em;
+}
 
 .article-preview p, .article-preview li {
 	font-style: italic;
-    font-family: Gergia, Times, serif;
-    text-align: left;
+	font-family: Gergia, Times, serif;
+	text-align: left;
 	padding-top: 0px;
-	color: black;}
+	color: black;
+}
 
-.center {
-    text-align: center;}
+footer {
+	text-align: right;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+footer ul li {
+	float: right;
+}
+
+footer ul li a {
+	display: block;
+	color: white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	background-color: #111;
+}
+
+img.large {
+	width: 620px;
+	height: 400px;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #777777;
+	margin: 0px auto;
+}
+
+img.code {
+	width: 870px;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #777777;
+	margin: 0px auto;
+}
 
 .vimcode {
 	background-color: #300a24;
 	border-style: solid;
-  	border-width: 0px;
+	border-width: 0px;
 	color: white;
-  	box-shadow: 5px 5px 5px #777777;
-  	font-family: Courier, Courier New;
-  	padding: 10px;
+	box-shadow: 5px 5px 5px #777777;
+	font-family: Courier, Courier New;
+	padding: 10px;
 	border-radius: 10px;
-	margin: 10px;}
+	margin: 10px;
+}
 
 .calculator {
-  	background-color: #efefef;
+	background-color: #efefef;
 	border-style: solid;
-  	border-width: 2px;
-  	box-shadow: 5px 5px 5px #777777;
-  	font-family: Courier, Courier New;
-  	padding: 10px;
+	border-width: 2px;
+	box-shadow: 5px 5px 5px #777777;
+	font-family: Courier, Courier New;
+	padding: 10px;
 	border-radius: 10px;
-	margin: 10px;}
+	margin: 10px;
+}
 
 .calculator p {
-  	font-family: Courier, Courier New;
-	color: black;}
+	font-family: Courier, Courier New;
+	color: black;
+}
 
 label {
 	font-size: 1.1em;
