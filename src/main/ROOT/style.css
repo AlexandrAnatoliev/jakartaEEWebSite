@@ -195,6 +195,26 @@ img.code {
 	margin: 10px;
 }
 
+.calculator {
+	background-color: #efefef;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: 5px 5px 5px #777777;
+	font-family: Courier, Courier New;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.calculator p {
+	font-family: Courier, Courier New;
+	color: black;
+}
+
+label {
+	font-size: 1.1em;
+}
+
 #footer {
 	text-align: right;
 	border-width: 2px;
@@ -273,24 +293,4 @@ img.code {
 #header a:hover, a:hover, #footer a:hover {
 	color: red;
 	text-shadow: 1px 1px 0px #000000;
-}
-
-.calculator {
-	background-color: #efefef;
-	border-style: solid;
-	border-width: 2px;
-	box-shadow: 5px 5px 5px #777777;
-	font-family: Courier, Courier New;
-	padding: 10px;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-.calculator p {
-	font-family: Courier, Courier New;
-	color: black;
-}
-
-label {
-	font-size: 1.1em;
 }
