@@ -59,7 +59,7 @@
     <nav>
       <ul>
         <li><a href="/"><b>Главная</b></a></li>
-        <li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+        <li><a href="/blog" class="current"><b>Блог</b></a></li>
         <li><a href="/devops"><b>DevOps</b></a></li>
       </ul>
     </nav>
@@ -88,19 +88,19 @@
 
     <p>Обновляем пакеты на сервере</p>
 
-    <div class="vimcode"># apt update && apt upgrade -y</div>
+    <div class="vimcode">apt update && apt upgrade -y</div>
 
     <p>
       Устанавливаем <b>wireguard</b>
     </p>
 
-    <div class="vimcode"># apt install -y wireguard</div>
+    <div class="vimcode">apt install -y wireguard</div>
 
     <p>
       Генерируем ключи <b>wireguard</b>-сервера
     </p>
 
-    <div class="vimcode"># wg genkey | tee
+    <div class="vimcode">wg genkey | tee
       /etc/wireguard/privatekey | wg pubkey | tee
       /etc/wireguard/publickey</div>
 
@@ -116,15 +116,15 @@
 
     <p>Проверим, как называется сетевой интерфейс</p>
 
-    <div class="vimcode"># ip a</div>
+    <div class="vimcode">ip a</div>
 
     <p>
-      Скорее всего сетевой интерфейс будет <b>eth.0</b>.
+      Скорее всего сетевой интерфейс будет <b>eth0</b>.
     </p>
 
     <p>Создаем конфиг для сетевого интерфейса</p>
 
-    <div class="vimcode"># vim /etc/wireguard/wg0.conf</div>
+    <div class="vimcode">vim /etc/wireguard/wg0.conf</div>
 
     <p>Выглядеть он будет так:</p>
 
@@ -164,14 +164,14 @@
     </p>
 
     <pre class="vimcode">
-# systemctl enable wg-quick@wg0.service 
-# systemctl start wg-quick@wg0.service 
-# systemctl status wg-quick@wg0.service 
+systemctl enable wg-quick@wg0.service 
+systemctl start wg-quick@wg0.service 
+systemctl status wg-quick@wg0.service 
 </pre>
 
     <p>Создаем ключи клиента:</p>
 
-    <div class="vimcode"># wg genkey | tee
+    <div class="vimcode">wg genkey | tee
       /etc/wireguard/client_privatekey | wg pubkey | tee
       /etc/wireguard/client_publickey</div>
 
@@ -213,8 +213,8 @@ AllowedIPs = 10.0.0.2/32
     <p>
       Перезагружаем <b>systemctl</b> сервис с <b>wireguard</b>
     <pre class="vimcode">
-# systemctl restart wg-quick@wg0
-# systemctl status wg-quick@wg0
+systemctl restart wg-quick@wg0
+systemctl status wg-quick@wg0
 </pre>
 
     <p>
@@ -281,7 +281,7 @@ PersistentKeepalive = 20
       количество переданного трафика и т.п. моджно посмотреть с помощью
       команды:</p>
 
-    <div class="vimcode"># wg show</div>
+    <div class="vimcode">wg show</div>
   </section>
 
   <aside class="article-preview">

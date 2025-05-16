@@ -59,7 +59,7 @@
     <nav>
       <ul>
         <li><a href="/"><b>Главная</b></a></li>
-        <li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+        <li><a href="/blog" class="current"><b>Блог</b></a></li>
         <li><a href="/devops"><b>DevOps</b></a></li>
       </ul>
     </nav>
@@ -115,31 +115,31 @@ ssh-copy-id [имя пользователя]@[ip-адрес]
 
     <p>Копируем файл на сервер</p>
 
-    <div class="vimcode">$ scp test.txt
+    <div class="vimcode">scp test.txt
       user@192.168.1.29:/home/user/</div>
 
     <p>Копируем несколько файлов за раз (указываем пути к ним через
       пробел):</p>
 
-    <div class="vimcode">$ scp test1.txt test2.txt
+    <div class="vimcode">scp test1.txt test2.txt
       user@192.168.1.29:/home/user/</div>
 
-    <p>Копируем с удаленного сервера на локальную машину (меням
-      источник и сесто назначения местами):</p>
+    <p>Копируем с удаленного сервера на локальную машину (меняем
+      источник и место назначения местами):</p>
 
-    <div class="vimcode">$ scp
+    <div class="vimcode">scp
       user@192.168.1.29:/home/user/test.txt ~/</div>
 
     <p>
       Передача директории (используем ключ <b>-r</b>):
     </p>
 
-    <div class="vimcode">$ scp -r testdir
+    <div class="vimcode">scp -r testdir
       user@192.168.1.29:/home/user/</div>
 
     <p>Передача с одного удаленного сервера на другой:</p>
 
-    <div class="vimcode"># scp
+    <div class="vimcode">scp
       gendo@192.168.1.25:/home/gendo/test.txt
       user@192.168.1.29:/home/user/</div>
   </section>

@@ -52,7 +52,7 @@
     <nav>
       <ul>
         <li><a href="/"><b>Главная</b></a></li>
-        <li><a href="/blog"><b><span class="iamhere">Блог</span></b></a></li>
+        <li><a href="/blog" class="current"><b>Блог</b></a></li>
         <li><a href="/devops"><b>DevOps</b></a></li>
       </ul>
     </nav>
