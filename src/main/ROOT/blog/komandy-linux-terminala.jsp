@@ -128,10 +128,10 @@ user@my-desktop:/root$ ls -la /src
   <section>
     <h3>Установка программ на linux</h3>
 
-    <div class="vimcode">apt update [package]</div>
+    <div class="vimcode">apt update</div>
 
     <p>Эта команда синхронизирует внутреннюю базу данных о пакетах с
-      их источникамия, т.е. по сути, ищет их обновления. Может выручить,
+      их источниками, т.е. по сути, ищет их обновления. Может выручить,
       если что-то вчера еще работало, а сегодня уже нет.</p>
 
     <div class="vimcode">apt upgrade [package]</div>
@@ -152,33 +152,33 @@ user@my-desktop:/root$ ls -la /src
   <section>
     <h3>Ориентация на linux сервере</h3>
 
-    <div class="vimcode">mv [file] [./path/to/dir/]</div>
+    <div class="vimcode">mv [file] [path/to/dir/]</div>
 
     <p>
       Переместить <b>file</b> в директорию <b>dir.</b> Этой же командой
       можно переименовать файл.
     </p>
 
-    <div class="vimcode">cd [./path/to/dir/]</div>
+    <div class="vimcode">cd [path/to/dir/]</div>
 
     <p>
       Перейти в директорию <b>dir</b>, без аргументов - в домашнюю
       директорию.
     </p>
 
-    <div class="vimcode"># cd /</div>
+    <div class="vimcode">cd /</div>
 
     <p>Перейти в корневую директорию.</p>
 
-    <div class="vimcode"># cd ..</div>
+    <div class="vimcode">cd ..</div>
 
     <p>Перейти в директорию на один уровень выше.</p>
 
-    <div class="vimcode"># cd -</div>
+    <div class="vimcode">cd -</div>
 
     <p>Вернуться (в ту директорию, из которой пришел).</p>
 
-    <div class="vimcode">mkdir [./path/to/dir/]</div>
+    <div class="vimcode">mkdir [path/to/dir/]</div>
 
     <p>
       Создать директорию <b>dir</b>.
@@ -202,16 +202,16 @@ user@my-desktop:/root$ ls -la /src
       территории).</p>
 
     <pre class="vimcode">
-# ls --help     однословный ключ
-# ls -h         однобуквенный ключ
+--all       однословный ключ
+-a          однобуквенный ключ
 </pre>
 
     <p>
-      Вывести справку по ключам к команде <b>ls</b>.
+      Вывести вывести скрытые файлы.
     </p>
 
     <pre class="vimcode">
-# ls -l
+ls -l
 total 28
 drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
 -rw-r--r-- 1 root root 1372 Mar 25 22:43 index.jsp
@@ -221,7 +221,7 @@ drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
     <p>Отобразить подробно.</p>
 
     <pre class="vimcode">
-# ls -a
+ls -a
 .  ..  ico  images  index.jsp  style.css  .settings
 </pre>
 
@@ -230,7 +230,7 @@ drwxr-xr-x 5 root root 4096 Mar 25 22:43 images
     </p>
 
     <pre class="vimcode">
-# ls -la
+ls -la
 total 28
 drwxrwxr-x 7 root root 4096 мар 20 22:41 .
 drwxrwxr-x 9 root root 4096 мар 23 22:19 ..
@@ -244,8 +244,8 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
       открытые, так и скрытые файлы).</p>
 
     <pre class="vimcode">
-# ls -l             обычный ключ
-# ls --color=none   параметрический
+ls -l             обычный ключ
+ls --color=none   параметрический
 </pre>
 
     <p>
@@ -259,22 +259,22 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
       путь работает из любого места.</p>
 
     <pre class="vimcode">
-# cd /opt   полный путь
-# cd srs    относительный
-# cd ./bin  относительный
+cd /opt   полный путь
+cd srs    относительный
+cd ./bin  относительный
 </pre>
 
     <p>
       Если путь начинается с <b>/</b>, то используется полный путь
       (перейдем в директорию <b>opt</b>, находящуюся в корневом
       каталоге), иначе (<b> . </b>) - относительный.
-    <div class="vimcode">cp [file] [./path/to/dir/]</div>
+    <div class="vimcode">cp [file] [path/to/dir/]</div>
 
     <p>
       Скопировать <b>file</b> в директорию <b>dir</b>.
     </p>
 
-    <div class="vimcode"># cp file1 file2</div>
+    <div class="vimcode">cp file1 file2</div>
 
     <p>
       <b>file1</b> будет скопирован в <b>file2</b>. При этом, если <b>file2</b>
@@ -331,7 +331,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     <p>Вывести последние 10 строк файла.</p>
 
     <pre class="vimcode">
-# tail -f /var/log/auth.log
+tail -f /var/log/auth.log
 </pre>
 
     <p>
@@ -350,7 +350,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
       столько же возможностей.</p>
 
     <pre class="vimcode">
-# find src -name *.java
+find src -name *.java
 </pre>
 
     <p>
@@ -358,13 +358,13 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     </p>
 
     <pre class="vimcode">
-# find . -size 0c
+find . -size 0c
 </pre>
 
     <p>В текущей директории найти все файлы с нулевым размером.</p>
 
     <pre class="vimcode">
-# find . -name *.tmp -ok rm {} \;
+find . -name *.tmp -ok rm {} \;
 </pre>
 
     <p>Удалить все временные файлы в текущей директории.</p>
@@ -376,7 +376,7 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
       экран.
     </p>
 
-    <div class="vimcode"># echo $PATH</div>
+    <div class="vimcode">echo $PATH</div>
 
     <p>
       В данном случае будет выведено значение переменной <b>PATH</b>:
@@ -387,8 +387,8 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     </p>
 
     <pre class="vimcode">
-# echo first second
-# echo "one parameter"
+echo first second
+echo "one parameter"
 </pre>
 
     <p>
@@ -413,8 +413,8 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
     <p>Перенаправление потока вывода.</p>
 
     <pre class="vimcode">
-# date > file.txt 
-# cat file.txt
+date > file.txt 
+cat file.txt
 </pre>
 
     <p>
@@ -427,9 +427,9 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 
     <pre class="vimcode">
 Читаем содержимое несуществующего файла file.txt
-# cat file.txt
+cat file.txt
 нет такого файла                выводится в консоль
-# cat file.txt 2> note.txt      записывается в файл note.txt
+cat file.txt 2> note.txt        записывается в файл note.txt
 
   Номера потоков данных:
 0: stdin    ввод
@@ -451,8 +451,8 @@ drwxrwxr-x 2 root root 4096 фев 28 21:14 .settings
 
     <div class="vimcode">| (pipe)</div>
 
-    <p>С помощью каналов можно перенаправить поток из одной
-      программы в другую.</p>
+    <p>С помощью каналов можно перенаправить вывод одной команды в ввод другой команды. 
+    Это позволяет комбинировать простые команды для выполнения сложных задач.</p>
 
     <pre class="vimcode">
 alexandr@HONOR:~/jackartaEEWebSite$ find "src" | grep "java"
@@ -514,10 +514,10 @@ drwxr-xr--
     <p>Изменить владельца файла.</p>
 
     <pre class="vimcode">
-# ls -l
+ls -l
 -rwxr-xr-x 1 user user 1150 Mar 25 22:43 file.class
-# chown root:root file.class
-# ls -l
+chown root:root file.class
+ls -l
 -rwxr-xr-x 1 root root 1150 Mar 25 22:43 file.class
 </pre>
 
@@ -531,7 +531,7 @@ drwxr-xr--
 
     <pre class="vimcode">
 -rw-r--r-- 1 root root 1150 Mar 25 22:43 file.class
-# chmod u+rwx,g+rw,o-rwx file.class
+chmod u+rwx,g+rw,o-rwx file.class
         |     |    |
         1     2    3
   Назначить права:
@@ -552,7 +552,7 @@ x - на исполнение
     <p>
       Изменение прав символьным способом.</b>
     <pre class="vimcode">
-# chmod 764 file.class                  изменяем права файла	
+chmod 764 file.class                    изменяем права файла	
 -rwxrw-r--  ... file.class              символы
  111110100                              биты
  |<-          111 = 4+2+1 = 7
@@ -578,18 +578,18 @@ x - на исполнение
     </p>
 
     <pre class="vimcode">
-# ls -l
+ls -l
 -rwxr-xr-x 1 root root 1150 Mar 25 22:43 file.class
    |  |  |
    ---------------------есть право на выполнение файла
 
-# chmod -x file.class   отобрать право (-x)
-# ls -l
+chmod -x file.class     отобрать право (-x)
+ls -l
 -rw-r--r-- 1 root root 1150 Mar 25 22:43 file.class
    |  |  |
    ---------------------нет прав на выполнение файла
 
-# chmod +x file.class   вернуть право (+x)
+chmod +x file.class     вернуть право (+x)
 </pre>
 
     <p>Иногда символьный метод использовать проще. Например,
