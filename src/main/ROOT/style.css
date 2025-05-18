@@ -214,9 +214,3 @@ img.code {
 label {
 	font-size: 1.1em;
 }
-
-@media screen and (max-width: 750px) {
-	body {
-		font-size: 2em;
-	}
-}
