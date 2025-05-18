@@ -11,6 +11,7 @@ body {
 	border-radius: 10px;
 	padding: 10px;
 	margin: 0 auto;
+	font-size: 1em;
 }
 
 body li {
@@ -213,4 +214,10 @@ img.code {
 
 label {
 	font-size: 1.1em;
+}
+
+@media screen and (max-width: 750px) {
+	body {
+		font-size: 1.5em;
+	}
 }
