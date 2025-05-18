@@ -246,4 +246,7 @@ label {
 	.vimcode {
 		font-size: 0.75em;
 	}
+	header, footer {
+		font-size: 2.5em;
+	}
 }
