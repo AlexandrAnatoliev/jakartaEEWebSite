@@ -14,12 +14,24 @@ body {
 	font-size: 1em;
 }
 
-body li {
-	font-family: Gergia, Times, serif;
-	font-size: 1.1em;
-	color: #7A7A7A
+body
+ 
+li
+{
+font-family
+:
+Gergia
+,
+Times
+,
+serif;
+font-size
+:
+1.1em;
+color
+:
+#7A7A7A
 }
-
 header, footer {
 	border-width: 2px;
 	background-color: #333;
@@ -35,6 +47,50 @@ header {
 	width: 90%;
 }
 
+body li {
+	font-family: Gergia, Times, serif;
+	font-size: 1.1em;
+	color: #7A7A7A
+}
+
+header
+,
+footer
+{
+border-width
+:
+2px;
+background-color
+:
+#333;
+border-style
+:
+solid;
+box-shadow
+:
+5px
+5px
+5px
+#777777;
+border-radius
+:
+10px;
+}
+header
+{
+text-align
+:
+center;
+position
+:
+fixed;
+top
+:
+10px;
+width
+:
+90%;
+}
 header a:hover, footer a:hover, a:hover {
 	color: red;
 	text-shadow: 1px 1px 0px #000000;
@@ -219,5 +275,8 @@ label {
 @media screen and (max-width: 1080px) {
 	body {
 		font-size: 1.5em;
+	}
+	.vimcode {
+		font-size: 1em;
 	}
 }
