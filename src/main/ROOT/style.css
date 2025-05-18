@@ -11,6 +11,30 @@ body {
 	border-radius: 10px;
 	padding: 10px;
 	margin: 0 auto;
+	font-size: 1em;
+}
+
+body
+ 
+li {
+	font-family: Gergia, Times, serif;
+	font-size: 1.1em;
+	color: #7A7A7A
+}
+
+header, footer {
+	border-width: 2px;
+	background-color: #333;
+	border-style: solid;
+	box-shadow: 5px 5px 5px #777777;
+	border-radius: 10px;
+}
+
+header {
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	width: 90%;
 }
 
 body li {
@@ -213,4 +237,19 @@ img.code {
 
 label {
 	font-size: 1.1em;
+}
+
+@media screen and (max-width: 1080px) {
+	body {
+		font-size: 1.5em;
+	}
+	.vimcode {
+		font-size: 0.65em;
+	}
+	header, footer {
+		font-size: 1.5em;
+	}
+	.favicon, .github {
+		margin-top: 0.1em;
+	}
 }
