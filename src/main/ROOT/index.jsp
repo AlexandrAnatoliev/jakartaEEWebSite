@@ -77,21 +77,17 @@
   <section>
     <div id="logos" align="center">
       <p>
-        <a href="/devops#linux"><img src="images/logo/linux.svg"
-          class="logo" alt="linux" title="linux" /></a> <a
-          href="/devops#wireguard"><img
-          src="images/logo/wireguard.svg" class="logo" alt="wireguard"
-          title="wireguard" /></a> <a href="/devops#java"><img
-          src="images/logo/java.svg" class="logo" alt="java"
-          title="java" /></a>
+        <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux" /></a> 
+        <a href="/devops#wireguard"><img src="images/logo/wireguard.svg" class="logo" alt="wireguard" title="wireguard" /></a> 
+        <a href="/devops#java"><img src="images/logo/java.svg" class="logo" alt="java" title="java" /></a>
+        <a href="/devops#git"><img src="images/logo/git.svg" class="logo" alt="git" title="git" /></a>
       </p>
     </div>
 
     <aside class="article-preview">
       <h4>Виртуальная частная сеть</h4>
       <p>
-        Краткий гайд по настройке <b>wireguard</b> на своем сервере... <a
-          href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a>
+        Краткий гайд по настройке <b>wireguard</b> на своем сервере... <a href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a>
       </p>
     </aside>
 

@@ -312,6 +312,7 @@ Answer is 4613732
       <li><b>Проект Эйлера 2 задача</b></li>
       <li><a href="/blog/project-euler-3.jsp"><b>Проект
             Эйлера задача 3</b></a></li>
+      <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
     </ul>
   </aside>
 
