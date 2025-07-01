@@ -146,15 +146,11 @@ Fixed
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование
-            файлов по ssh</b></a></li>
-      <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная
-            частная сеть</b></a></li>
-      <li><b>Установка java на linux</b></li>
-      <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция
-            java кода</b></a></li>
-      <li><a href="/blog/project-euler-1.jsp"><b>Проект
-            Эйлера задача 1</b></a></li>
+      <li><a href="/blog/project-euler-2.jsp"><b>Проект
+            Эйлера задача 2</b></a></li>
+      <li><a href="/blog/project-euler-3.jsp"><b>Проект
+            Эйлера задача 3</b></a></li>
+      <li><b>Семантическое версионирование</b></li>
     </ul>
   </aside>
 
