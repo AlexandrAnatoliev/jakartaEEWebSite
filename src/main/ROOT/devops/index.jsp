@@ -107,7 +107,7 @@
       </ul>
     </aside>
 
-    <aside id="java" class="article-preview">
+    <aside id="git" class="article-preview">
       <h4>GIT</h4>
       <ul>
         <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
