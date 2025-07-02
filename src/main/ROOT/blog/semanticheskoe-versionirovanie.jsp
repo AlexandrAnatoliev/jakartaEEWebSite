@@ -151,6 +151,7 @@ Fixed
       <li><a href="/blog/project-euler-3.jsp"><b>Проект
             Эйлера задача 3</b></a></li>
       <li><b>Семантическое версионирование</b></li>
+      <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
     </ul>
   </aside>
 

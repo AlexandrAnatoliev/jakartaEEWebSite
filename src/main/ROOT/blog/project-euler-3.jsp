@@ -505,6 +505,7 @@ Answer is 6857
             Эйлера задача 2</b></a></li>
       <li><b>Проект Эйлера 3 задача</b></li>
       <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
+      <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
     </ul>
   </aside>
 

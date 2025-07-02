@@ -164,11 +164,9 @@ fixed issue #12
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/project-euler-2.jsp"><b>Проект
-            Эйлера задача 2</b></a></li>
-      <li><a href="/blog/project-euler-3.jsp"><b>Проект
-            Эйлера задача 3</b></a></li>
-      <li><b>Семантическое версионирование</b></li>
+      <li><a href="/blog/project-euler-3.jsp"><b>Проект Эйлера задача 3</b></a></li>
+      <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
+      <li><b>Соглашение о коммитах</b></li>
     </ul>
   </aside>
 
