@@ -86,6 +86,16 @@
   </section>
 
   <section>
+    <h3>Клонирование git репозитория</h3>
+
+    <p>Скачать (склонировать) удаленный репозиторий на локальный компьютер:</p>
+
+    <div class="vimcode">
+			git clone https://github.com/example...
+		</div>
+  </section>
+
+  <section>
     <h3>Установка имени и email</h3>
 
 <pre class="vimcode">
@@ -134,13 +144,13 @@ git config --global user.name
   <section>
     <h3>Создание коммитов</h3>
 
-		<p>Добавить <b>file</b> в отслеживаемые (т.е. его изменения будут отслеживаться:</p>
+		<p>Добавить <b>file</b> в отслеживаемые (т.е. его изменения будут отслеживаться):</p>
 
 		<div class="vimcode">
 			git add file
 		</div>
 
-    <p>Добавить все файлы из текущей папки в отслеживаемую зону (кроме указанных в <b>.gitignore</b>:</p>
+    <p>Добавить все файлы из текущей папки в отслеживаемую зону (кроме указанных в <b>.gitignore)</b>:</p>
 
 		<div class="vimcode">
 			git add .
@@ -168,7 +178,7 @@ git config --global user.name
 			git log
 		</div>
 
-		<p>Сокращенный вывод истории коммитов:</p>
+		<p>Сокращенный вывод истории коммитов (по одной строке на каждый коммит):</p>
 
 		<div class="vimcode">
 			git log --oneline
@@ -226,6 +236,16 @@ git config --global user.name
 
 		<div class="vimcode">
 			git switch feature_1
+		</div>
+  </section>
+
+  <section>
+    <h3>Слияние изменений</h3>
+
+    <p>Слияние изменений из указанной ветки (feature_1) в текущую:</p>
+
+		<div class="vimcode">
+			git merge feature_1
 		</div>
   </section>
 
