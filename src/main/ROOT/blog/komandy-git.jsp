@@ -257,6 +257,15 @@ git config --global user.name
 		<div class="vimcode">
 			git pull origin master
 		</div>
+
+    <p>Сохранить логин и пароль для доступа в git репозиторий:</p>
+
+		<div class="vimcode">
+			git config --global credential.helper store 
+		</div>
+
+    <p>После выполнения команды необходимо ввести логин и пароль (например, сделать <b>git push</b>).
+    Введенные данные сохранятся в файле <b>~/.git-credentials</b> и впоследующем не будут запрашиваться.</p>
   </section>
 
   <aside class="article-preview">
