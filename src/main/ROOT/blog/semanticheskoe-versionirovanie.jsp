@@ -152,6 +152,7 @@ Fixed
             Эйлера задача 3</b></a></li>
       <li><b>Семантическое версионирование</b></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
+      <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
     </ul>
   </aside>
 

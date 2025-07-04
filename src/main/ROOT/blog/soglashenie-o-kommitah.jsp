@@ -167,6 +167,7 @@ fixed issue #12
       <li><a href="/blog/project-euler-3.jsp"><b>Проект Эйлера задача 3</b></a></li>
       <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
       <li><b>Соглашение о коммитах</b></li>
+      <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
     </ul>
   </aside>
 
