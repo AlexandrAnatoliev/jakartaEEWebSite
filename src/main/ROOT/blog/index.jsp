@@ -86,7 +86,6 @@
       </p>
     </aside>
 
-  <section>
     <aside class="article-preview">
       <h4>Семантическое версионирование</h4>
       <p>
