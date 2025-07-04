@@ -291,9 +291,9 @@ git config --global user.name
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/project-euler-3.jsp"><b>Проект Эйлера задача 3</b></a></li>
       <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
-      <li><b>Соглашение о коммитах</b></li>
+      <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
+      <li><b>Основные команды git</b></li>
     </ul>
   </aside>
 
