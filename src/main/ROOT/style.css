@@ -197,6 +197,17 @@ img.large {
 	margin: 0px auto;
 }
 
+img.full-screen {
+	width: 620px;
+	height: 324px;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #777777;
+	margin: 0px auto;
+}
+
 img.code {
 	width: 870px;
 	display: block;

@@ -94,20 +94,20 @@
     <p>Создать новую ветку под новую "фичу":</p>
 
 		<div class="vimcode">
-			git branch issue-2_update_readme
+			git branch issue-2_update-readme
 		</div>
 
     <p>Где:
       <ul>
         <li><b>issue-2</b> - номер решаемой задачи (или issue);</li>
-        <li><b>update_readme</b> - ее краткое описание;</li>
+        <li><b>update-readme</b> - ее краткое описание;</li>
       </ul>
     </p>
 
     <p>Переключиться на созданную ветку:<p>
 
 		<div class="vimcode">
-			git switch issue-2_update_readme
+			git switch issue-2_update-readme
 		</div>
 
     <p>Внести необходимые изменения в код (в данном случае - в файл <b>README.md</b>) и добавить изменения для их отслеживания:<p>
@@ -132,12 +132,75 @@
       </p>
     </aside>
 
-    <p>"Запушить" изменения в ветку issue-2_update_readme репозитория origin:</p>
+    <p>"Запушить" изменения в ветку issue-2_update-readme репозитория origin:</p>
 
 		<div class="vimcode">
-			git push origin issue-2_update_readme
+			git push origin issue-2_update-readme
 		</div>
 
+  </section>
+
+  <section>
+    <h3>Пример создания pull request на GitHub</h3>
+
+    <p>Зайдя на <b>GitHub</b> и нажав вкладку <b>master</b>, можно увидеть, 
+    что в репозитории появилась новая ветка <b>issue-2_update-readme</b>:</p>
+
+    <figure>
+      <img alt="Пример использования git: появилась новая ветка"
+        src="/images/primer-git/pic-1.png" class="large">
+    </figure>
+
+    <p>Создать <b>pull request</b> (заявку на слияние Вашего кода с основной веткой <b>master</b>) можно 
+      зайдя во вкладку <b>Pull requests</b> и нажав кнопку <b>New pull request</b>:</p>
+
+    <figure>
+      <img alt="Создать pull request"
+        src="/images/primer-git/pic-2.png" class="full-screen">
+    </figure>
+
+    <p>Выбрать откуда и куда будем "мерджить" (из <b>issue-2_update-readme</b> в <b>master</b>):</p>
+
+    <figure>
+      <img alt="Выбрать откуда и куда будем мерджить"
+        src="/images/primer-git/pic-3.png" class="full-screen">
+    </figure>
+
+    <p>Нажать <b>Create pull request</b>:</p>
+
+    <figure>
+      <img alt="Нажать Create pull request"
+        src="/images/primer-git/pic-4.png" class="full-screen">
+    </figure>
+
+    <p>Далее ссылку на этот <b>pull request</b> можно отправить на проверку. 
+    "Ревьювер" код сможет проверить, собрать, прогнать через свои тесты, запустить на тестовом сервере и т.п.</p>
+
+    <p>Если ревью пройдено, код можно будет "смерджить", нажав на кнопку <b>Merge pull request</b>:</p>
+
+    <figure>
+      <img alt="Если ревью пройдено, код можно будет смерджить"
+        src="/images/primer-git/pic-5.png" class="full-screen">
+    </figure>
+  </section>
+
+  <section>
+    <h3>Вливаем изменения в ветку master</h3>
+
+    <p>К этому моменту Ваши изменения уже "влиты"в основную (<b>master</b>) ветку удаленного <b>git</b> репозитория 
+    и осталось лишь "подтянуть" изменения на свой.</p>
+
+    <p>Переключиться на ветку <b>master</b>:<p>
+
+		<div class="vimcode">
+			git switch master
+		</div>
+
+    <p>Сачиваем внесенные изменения из удаленного репозитория <b>origin</b> в на свой локальный:</p>
+
+		<div class="vimcode">
+			git pull origin master
+		</div>
   </section>
 
   <aside class="article-preview">
