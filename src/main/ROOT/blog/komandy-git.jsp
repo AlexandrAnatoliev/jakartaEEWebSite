@@ -294,6 +294,7 @@ git config --global user.name
       <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
       <li><b>Основные команды git</b></li>
+      <li><a href="/blog/primer-git.jsp"><b>Пример использования git</b></a></li>
     </ul>
   </aside>
 

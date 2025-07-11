@@ -32,9 +32,9 @@
   <%@include file="/style.css" %>
 </style>
 
-<title>java практика: пример работы с удаленным git репозиторием</title>
+<title>java практика: пример использования git</title>
 <meta name="description" content="В качестве примера использования git рассмотрим типичный сценарий работы с удаленным репозиторием: 
-    создание новой ветки, внесение изменений в код, создание pull request на GitHub и merge изменений на основную ветку master.">
+    создание новой ветки, внесение изменений в код, создание pull request на GitHub и слияние (merge) изменений с основной веткой master.">
 </head>
 
 <body>
@@ -61,20 +61,21 @@
   <section>
     <h1 id="top">ПРИМЕР ИСПОЛЬЗОВАНИЯ GIT</h1>
 
-    <p>В качестве примера использования git рассмотрим типичный сценарий работы с удаленным репозиторием: 
-    создание новой ветки, внесение изменений в код, создание pull request на GitHub и merge изменений на основную ветку master.</p>
+    <p>В качестве примера использования <b>git</b> рассмотрим типичный сценарий работы с удаленным репозиторием: 
+    создание новой ветки, внесение изменений в код, создание <b>pull request</b> на <b>GitHub</b> и слияние (<b>merge</b>) изменений с основной веткой <b>master</b>.</p>
   </section>
 
   <section>
-    <h3>Почему нельзя работать в master ветке</h3>
+    <h3>Почему нельзя работать в ветке master</h3>
 
-    <p>Если Вы вносите изменения в код реального проекта, над которым работает не один человек, у Вас возникнет конфликт, как только Вы попытаетесь "запушить" изменения. 
-    Именно поэтому, когда работают над какой то "фичей", не работают в <b>master</b>, а создают отдельную ветку. 
-    Это дает гарантию, что ни Вы никому не помешаете, ни Вам никто не помешает.</p>
+    <p>Если Вы вносите изменения в код реального проекта, над которым работает не один человек, может возникнуть конфликт, 
+    как только Вы попытаетесь отправить (<b>push</b>) изменения. 
+    Именно поэтому, когда работают над новой функциональностью, не работают в <b>master</b>, а создают отдельную ветку. 
+    Это гарантирует, что Вы никому не помешаете и никто не помешает Вам.</p>
   </section>
 
   <section>
-    <h3>Пример работы с удаленным git репозиторием</h3>
+    <h3>Пример работы с удаленным git-репозиторием</h3>
 
     <p>Сначала необходимо получить последние изменения из удаленного репозитория <b>origin</b> в локальный, в ветку <b>master</b>:</p>
 
@@ -91,23 +92,23 @@
       </p>
     </aside>
 
-    <p>Создать новую ветку под новую "фичу":</p>
+    <p>Создать новую ветку для работы над задачей:</p>
 
 		<div class="vimcode">
-			git branch issue-2_update_readme
+			git branch issue-2_update-readme
 		</div>
 
     <p>Где:
       <ul>
-        <li><b>issue-2</b> - номер решаемой задачи (или issue);</li>
-        <li><b>update_readme</b> - ее краткое описание;</li>
+        <li><b>issue-2</b> - номер решаемой задачи (или <b>issue</b>);</li>
+        <li><b>update-readme</b> - ее краткое описание;</li>
       </ul>
     </p>
 
     <p>Переключиться на созданную ветку:<p>
 
 		<div class="vimcode">
-			git switch issue-2_update_readme
+			git switch issue-2_update-readme
 		</div>
 
     <p>Внести необходимые изменения в код (в данном случае - в файл <b>README.md</b>) и добавить изменения для их отслеживания:<p>
@@ -132,20 +133,82 @@
       </p>
     </aside>
 
-    <p>"Запушить" изменения в ветку issue-2_update_readme репозитория origin:</p>
+    <p>Отправить изменения в ветку <b>issue-2_update-readme</b> удаленного репозитория <b>origin</b>:</p>
 
 		<div class="vimcode">
-			git push origin issue-2_update_readme
+			git push origin issue-2_update-readme
 		</div>
 
+  </section>
+
+  <section>
+    <h3>Пример создания pull request на GitHub</h3>
+
+    <p>После отправки изменений на  <b>GitHub</b> во вкладке <b>Branches</b> появится новая ветка <b>issue-2_update-readme</b>:</p>
+
+    <figure>
+      <img alt="Пример использования git: появилась новая ветка"
+        src="/images/primer-git/pic-1.png" class="large">
+    </figure>
+
+    <p>Создать <b>pull request</b> (заявку на слияние Вашего кода с основной веткой <b>master</b>) можно 
+      зайдя во вкладку <b>Pull requests</b> и нажав кнопку <b>New pull request</b>:</p>
+
+    <figure>
+      <img alt="Создать pull request"
+        src="/images/primer-git/pic-2.png" class="full-screen">
+    </figure>
+
+    <p>Выбрать откуда и куда будем "мерджить" (из <b>issue-2_update-readme</b> в <b>master</b>):</p>
+
+    <figure>
+      <img alt="Выбрать откуда и куда будем мерджить"
+        src="/images/primer-git/pic-3.png" class="full-screen">
+    </figure>
+
+    <p>Нажать <b>Create pull request</b>:</p>
+
+    <figure>
+      <img alt="Нажать Create pull request"
+        src="/images/primer-git/pic-4.png" class="full-screen">
+    </figure>
+
+    <p>Далее ссылку на этот <b>pull request</b> можно отправить на проверку. 
+    "Ревьювер" сможет проверить код, собрать его, прогнать через свои тесты, запустить на тестовом сервере и т.п.</p>
+
+    <p>Если ревью пройдено, код можно будет "смерджить", нажав на кнопку <b>Merge pull request</b>:</p>
+
+    <figure>
+      <img alt="Если ревью пройдено, код можно будет смерджить"
+        src="/images/primer-git/pic-5.png" class="full-screen">
+    </figure>
+  </section>
+
+  <section>
+    <h3>Обновление локальной ветки master</h3>
+
+    <p>К этому моменту Ваши изменения уже "влиты" в основную (<b>master</b>) ветку удаленного <b>git</b>-репозитория 
+    и осталось лишь обновить свой локальный репозиторий.</p>
+
+    <p>Переключиться на ветку <b>master</b>:<p>
+
+		<div class="vimcode">
+			git switch master
+		</div>
+
+    <p>Скачиваем внесенные изменения из удаленного репозитория <b>origin</b> на свой локальный репозиторий:</p>
+
+		<div class="vimcode">
+			git pull origin master
+		</div>
   </section>
 
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
-      <li><b>Основные команды git</b></li>
+      <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
+      <li><b>Пример использования git</b></li>
     </ul>
   </aside>
 
