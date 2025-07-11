@@ -113,6 +113,7 @@
         <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
         <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
         <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
+        <li><a href="/blog/primer-git.jsp"><b>Пример использования git</b></a></li>
       </ul>
     </aside>
   </section>
