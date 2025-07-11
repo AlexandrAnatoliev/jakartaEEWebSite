@@ -1,6 +1,6 @@
 https://java-practice.ru
-https://java-practice.ru/devops
-https://java-practice.ru/blog
+https://java-practice.ru/devops/
+https://java-practice.ru/blog/
 https://java-practice.ru/blog/arenda-vps.jsp
 https://java-practice.ru/blog/podklyuchenie-po-ssh-k-vps.jsp
 https://java-practice.ru/blog/komandy-linux-terminala.jsp
