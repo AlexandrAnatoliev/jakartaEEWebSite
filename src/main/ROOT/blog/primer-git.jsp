@@ -206,9 +206,9 @@
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
-      <li><b>Основные команды git</b></li>
+      <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
+      <li><b>Пример использования git</b></li>
     </ul>
   </aside>
 
