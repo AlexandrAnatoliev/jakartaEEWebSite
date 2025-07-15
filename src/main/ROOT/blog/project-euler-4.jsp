@@ -88,53 +88,56 @@
 
   <section>
     <article class="calculator">
-      <h3>Онлайн-калькулятор: "Разложение числа на простые
-        множители"</h3>
+      <h3>Онлайн-калькулятор: "Самый большой палиндром"</h3>
 
       <form method="post">
-        <label for="num">Введите число:</label> <input type="number"
+        <label for="num">Введите максимальное число:</label> <input type="number"
           step="any" id="num" name="num" required><br> <br>
         <input type="submit" value="Посчитать">
       </form>
 
       <%
-      		// Получаем введенные значения из запроса
-      		String numStr = request.getParameter("num");
+      	// Получаем введенные значения из запроса
+      	String numStr = request.getParameter("num");
 
-      		// Проверяем, что параметры не null и не пустые
-      		if (numStr != null && !numStr.isEmpty() && (Double.parseDouble(numStr) > 0)) {
-        		try {
-          			// Преобразуем строки в числа
-          			long number = Long.parseLong(numStr);%>
-      <p>
-        Число <b><%= numStr %></b> раскладывается на множители:
+      	// Проверяем, что параметры не null и не пустые
+      	if (numStr != null && !numStr.isEmpty() && (Double.parseDouble(numStr) > 0)) {
+        	try {
+        // Преобразуем строки в числа
+          int max = Integer.parseInt(numStr);
+          int min = max / 10;
+          int answer = 0;
+          int fact1 = (int) Math.sqrt(max);
+          int maxFact1 = 0;
+          int maxFact2 = 0;%>
 
-        <%while (number % 2 == 0) {%>
-        <%number /= 2;%>
-        <b><%= 2 %></b>
-        <%}%>
-
-        <%for (long i = 3; i * i <= number; i += 2) {%>
-        <%while (number % i == 0) {%>
-        <%number /= i;%>
-        <b><%= i %></b>
-        <%}%>
-        <%}%>
-
-        <%if(number > 1) {%>
-        <b><%= number %></b>
-        <%} %>
-
-      </p>
-
-      <%   } catch (NumberFormatException e) { %>
+      <% 
+          while (answer < fact1 * fact1) {
+            for (int fact2 = fact1; fact1 * fact2 > min; fact2--) {
+              String stringNumber = String.valueOf(fact1 * fact2);
+              if (stringNumber.equals(new StringBuilder(stringNumber).reverse().toString())) {
+                if(answer < fact1 * fact2) {
+                  answer = fact1 * fact2;
+                  maxFact1 = fact1;
+                  maxFact2 = fact2;
+                }
+                break;
+              }
+            }
+          fact1--;
+          }
+      %>
+      
+      <p>Самый большой палиндром меньший <b><%= max %></b> это <b><%= answer %> = <%= maxFact1 %> * <%= maxFact2 %></b></p>
+        
+      <%  } catch (NumberFormatException e) { %>
 
       <!-- Обработка ошибки ввода -->
       <p style="color: red;">Ошибка: Пожалуйста, введите корректные
         числовые значения.</p>
 
       <%  }
-      		}
+      	}
     		%>
     </article>
   </section>
