@@ -105,7 +105,13 @@
         	try {
         // Преобразуем строки в числа
           int max = Integer.parseInt(numStr);
-          int min = max / 10;
+
+          int min = 1;
+          for(int i = max; i > 100; i /= 10)
+          {
+            min *= 10;
+          }
+
           int answer = 0;
           int fact1 = (int) Math.sqrt(max);
           int maxFact1 = 0;
