@@ -239,8 +239,8 @@ project-euler/
     <p>Инициализирую <b>git</b> репозиторий в корневой папке проекта (<b>project-euler/</b>):</p>
 
     <div class="vimcode">
-			git init
-		</div>
+      git init
+    </div>
 
     <p>Небольшая "шпаргалка" по командам <b>git</b>:</p>
 
@@ -253,15 +253,15 @@ project-euler/
 
     <p>Добавляю файл с кодом для отслеживания:<p>
 
-		<div class="vimcode">
-			git add .
-		</div>
+      <div class="vimcode">
+	git add .
+      </div>
 
     <p>Делаю "коммит":</p>
 
-		<div class="vimcode">
-			git commit -m "feat: solve Project Euler problem #4"
-		</div>
+    <div class="vimcode">
+      git commit -m "feat: solve Project Euler problem #4"
+    </div>
 
     <p>Правильно написать "коммит" поможет статья:</p>
 
@@ -273,161 +273,20 @@ project-euler/
       </p>
     </aside>
 
-    <p>Отправлю изменения в ветку <b>main</b> удаленного репозитория (<b>origin</b>):</p>
+    <p>Отправляю изменения в ветку <b>main</b> удаленного репозитория (<b>origin</b>):</p>
 
-		<div class="vimcode">
-			git push origin main
-		</div>
-    <p>Компилирую файлы с исходным кодом:</p>
+    <div class="vimcode">
+      git push origin main
+    </div>
 
-    <div class="vimcode"># javac -d bin/ src/Calculator.java
-      src/Solution.java</div>
+    <p>Поключаюсь через ssh к удаленному vps-серверу. </p>
 
-    <p>Где:
-    <ul>
-      <li><b>-d bin/</b> - куда размещать скомпилированные файлы;</li>
-      <li><b>src/Calculator.java src/Solution.java</b> -
-        расположение компилируемых файлов с исходным кодом;</li>
-    </ul>
-    </p>
+    <div class="vimcode">
+      ssh root@192.123.4.56
+    </div>
 
-    <p>Скомпилированные файлы появились в отдельной папке:</p>
-
-    <pre class="vimcode">
-problem-3/
-  bin/
-    Calculator.class
-    Solution.class
-  src/
-    Calculator.java
-    Solution.java
-</pre>
-
-    <p>
-      Вопросы компиляции <b>java</b>-кода более подробно описаны в
-      статье:
-    </p>
-
-    <aside class="article-preview">
-      <h4>Компиляция java кода</h4>
-      <p>
-        Компиляция <b>java</b> кода без использования <b>ide</b> (одного
-        класса, нескольких, создание <b>jar-файла</b>)... <a
-          href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a>
-      </p>
-    </aside>
-
-    <p>
-      Чтобы создать архив классов, понадобится файл-манифест <b>manifest.mf</b>
-    </p>
-
-    <pre class="vimcode">
-problem-3/
-  bin/
-    Calculator.class
-    Solution.class
-  manifest.mf
-  src/
-    Calculator.java
-    Solution.java
-</pre>
-
-    <p>
-      В нем нужно указать главный класс (содержащий метод <b>main()</b>)
-      и путь к скомпилированным классам:
-    </p>
-
-    <pre class="vimcode">
-main-class: Solution
-class-path: bin/
-</pre>
-
-    <p>
-      Собираю <b>jar-файл</b>:
-    </p>
-
-    <div class="vimcode"># jar -cmf manifest.mf Solution.jar -C
-      bin .</div>
-
-    <p>Где:
-    <ul>
-      <li><b>-cmf manifest.mf</b> - путь к манифесту;</li>
-      <li><b>Solution.jar</b> - название выходного <b>jar-файла</b>;</li>
-      <li><b>-C bin</b> - путь к скомпилированным классам;</li>
-      <li><b> . </b> - путь, куда будет помещен <b>jar-файл</b>
-        (текущая директория);</li>
-    </ul>
-    </p>
-
-    <p>
-      Собранный <b>jar-файл</b> появился в текущей директории:
-    </p>
-
-    <pre class="vimcode">
-problem-3/
-  bin/
-    Calculator.class
-    Solution.class
-  manifest.mf
-  Solution.jar
-  src/
-    Calculator.java
-    Solution.java
-</pre>
-
-    <p>
-      Копирую <b>jar-файл</b> на удаленный сервер:
-    </p>
-
-    <div class="vimcode">$ scp Solution.jar
-      root@192.123.4.56:/root/</div>
-
-    <p>Краткий гайд, если возникнут вопросы:</p>
-
-    <aside class="article-preview">
-      <h4>Копирование файлов по ssh</h4>
-      <p>
-        После аренды виртуального сервера не всегда удобно что-то делать
-        сразу на нем. Чаще всего проект будет делаться на локальном
-        компьютере и лишь потом копироваться сервер... <a
-          href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>читать</b></a>
-      </p>
-    </aside>
-
-    <p>Зашел на сервер:</p>
-
-    <div class="vimcode">$ ssh root@192.123.4.56</div>
-
-    <p>
-      ... и запустил <b>jar-файл:</b>
-    <pre class="vimcode">
-# java -jar Solution.jar 
-Answer is 6857
-</pre>
-
-    <p>
-      Здесь возможно вылезет проблема, заключающаяся в том, что на
-      сервере и компьютере установлены разные версии <b>java</b>.<br />
-      Проверить версию <b>java</b> можно командой:
-    </p>
-
-    <div class="vimcode">java -version</div>
-
-    <p>
-      При необходимости можно установить или выбрать нужные версии и
-      перекомпилировать все заново.<br> Меняем версию <b>java</b>:
-    </p>
-
-    <div class="vimcode">sudo update-alternatives --config java</div>
-
-    <p>
-      ... и компилятора <b>javac</b>:
-    </p>
-
-    <div class="vimcode">sudo update-alternatives --config javac</div>
-
-    <p>Еще несколько полезных статей, чтобы не повторяться:</p>
-
+    <p>Как это сделать было описано ранее:</p>
+    
     <aside class="article-preview">
       <ul>
         <li><a href="/blog/arenda-vps.jsp"><b>Аренда
@@ -440,19 +299,50 @@ Answer is 6857
               команды linux терминала</b></a></li>
       </ul>
     </aside>
+    
+    <p>Клонирую код из удаленного репозитория на сервер:</p>
 
+    <div class="vimcode">
+      git clone https://github.com/YourRepository...
+    </div>
+  
+    <p>Компилирую файлы с исходным кодом (из папки <b>problem-4</b>:</p>
+
+    <div class="vimcode">
+      javac -d bin/ src/Solution.java
+    </div>
+
+    <p>
+      Вопросы компиляции <b>java</b>-кода подробно описаны в статье:
+    </p>
+
+    <aside class="article-preview">
+      <h4>Компиляция java кода</h4>
+      <p>
+        Компиляция <b>java</b> кода без использования <b>ide</b> (одного
+        класса, нескольких, создание <b>jar-файла</b>)... <a
+          href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a>
+      </p>
+    </aside>
+
+    <p>Запускаю скомпилированный файл и получаю искомый ответ:</p>
+    
+    <pre class="vimcode">
+java -cp bin/ Solution 3
+The largest palindrome between 100 and 999 is 906609
+</pre>
+    
     <p>
       В данной программе применил несколько новых конструкций языка <b>java</b>:
     
-    <ul>
-      <li>Параметры командной строки;</li>
-      <li>Разделил код на два класса в двух разных файлах;</li>
-      <li>С помощью конструктора создан объект и вычисления
-        производились с помощью его методов;</li>
-      <li>Применил предопределенный класс <b>Long</b> и его
-        статический метод <b>parseLong()</b>.
-      </li>
-    </ul>
+      <ul>
+	<li>Математическую функцию <b>Math.pow()</b>;</li>
+	<li>Приведение типов <b>(int)</b></li>
+	<li>Прикладной програмный интерфейс класса <b>String</b>;</li>
+	<li>Построение символьных строк при помощи <b>StringBuilder</b>;</li>
+	<li>Оператор прерывания логики программы <b>break</b>;</li>
+	<li>Статические методы.</li>
+      </ul>
     </p>
   </section>
 
