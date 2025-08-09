@@ -89,14 +89,6 @@
       </ul>
     </aside>
 
-    <aside id="wireguard" class="article-preview">
-      <h4>WIREGUARD</h4>
-      <ul>
-        <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная
-              частная сеть</b></a></li>
-      </ul>
-    </aside>
-
     <aside id="java" class="article-preview">
       <h4>JAVA</h4>
       <ul>

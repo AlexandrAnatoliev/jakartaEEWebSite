@@ -186,14 +186,6 @@
     </aside>
 
     <aside class="article-preview">
-      <h4>Виртуальная частная сеть</h4>
-      <p>
-        Краткий гайд по настройке <b>wireguard</b> на своем сервере... <a
-          href="/blog/virtualnaya-chastnaya-set.jsp"><b>читать</b></a>
-      </p>
-    </aside>
-
-    <aside class="article-preview">
       <h4>Копирование файлов по ssh</h4>
       <p>
         После аренды виртуального сервера не всегда удобно что-то делать
