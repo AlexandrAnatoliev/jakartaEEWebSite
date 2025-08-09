@@ -307,8 +307,8 @@ project-dir/
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/virtualnaya-chastnaya-set.jsp"><b>Виртуальная
-            частная сеть</b></a></li>
+      <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование
+            файлов по ssh</b></a></li>
       <li><a href="/blog/ustanovka-java.jsp"><b>Установка
             java на linux</b></a></li>
       <li><b>Компиляция java кода</b></li>
