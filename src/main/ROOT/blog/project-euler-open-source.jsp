@@ -28,17 +28,17 @@ pageEncoding="UTF-8"%>
     <!-- /Yandex.Metrika counter -->
 
     <style type="text/css">
-      <%@include file="/style.css" %>
+<%@include file="/style.css" %>
     </style>
 
     <title>java практика: Project Euler open source проект</title>
 
     <meta name="description"
           content="Project Euler open source - это 
-                   проект, не только помогающий изучить и 
-                   попрактиковать конструкции языка Java,
-                   но и сделать свой первый pull request
-                   на GitHub.">
+                     проект, не только помогающий изучить и 
+                     попрактиковать конструкции языка Java,
+                     но и сделать свой первый pull request
+                     на GitHub.">
   </head>
   <body>
     <header>
@@ -60,5 +60,42 @@ pageEncoding="UTF-8"%>
         </ul>
       </nav>
     </header>
+    <section>
+      <h1 id="top">PROJECT EULER OPEN SOURCE</h1>
+
+      <p><a href="https://github.com/AlexandrAnatoliev/project-euler.git">Project Euler open source</a>
+       - это проект,  не только помогающий 
+       изучить и попрактиковать конструкции языка 
+       Java, но и сделать свой первый pull request 
+       на GitHub.</p>
+    </section>
+    <aside class="article-preview">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="#setup-instructions-ru"><b>Инструкции по установке</b></a></li>
+        <li><a href="#problems-ru"><b>Задачи</b></a></li>
+        <li><a href="#submitting-your-changes-ru"><b>Отправка Ваших Изменений</b></a></li>
+        <li><a href="#contact-ru"><b>Контакты</b></a></li>
+        <li><a href="#requirements-ru"><b>Требования</b></a></li>
+        <li><a href="#list-of-contributors-ru"><b>Список Контрибьютеров</b></a></li>
+      </ul>
+    </aside>
+    <section>
+      <div align="center">
+        <a id="setup-instructions-ru"></a>
+        <h2>Инструкции по Установке</h2>
+      </div>
+
+      1. Сделайте "форк" этого 
+      <a href="https://github.com/AlexandrAnatoliev/project-euler.git">репозитория</a>
+      нажатием кнопки "Fork" в правом верхнем углу страницы.
+      Это создаст копию репозитория на Вашем GitHub 
+      аккаунте.
+      <figure>
+        <img alt="Кнопка Fork"
+        src="/images/project-euler-open-source/fork-button.png" class="large">
+      </figure>
+      
+    </section>
   </body>
 </html>
