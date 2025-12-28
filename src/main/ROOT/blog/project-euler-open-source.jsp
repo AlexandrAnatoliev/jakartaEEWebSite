@@ -77,13 +77,13 @@ pageEncoding="UTF-8"%>
         <li><a href="#submitting-your-changes-ru"><b>Отправка ваших изменений</b></a></li>
         <li><a href="#contact-ru"><b>Контакты</b></a></li>
         <li><a href="#requirements-ru"><b>Требования</b></a></li>
-        <li><a href="#list-of-contributors-ru"><b>Список контрибьютеров</b></a></li>
+        <li><a href="#list-of-contributors-ru"><b>Список контрибьюторов</b></a></li>
       </ul>
     </aside>
     <section>
       <div align="center">
         <a id="setup-instructions-ru"></a>
-        <h2>Инструкции по Установке</h2>
+        <h2>Инструкции по установке</h2>
       </div>
 
 
@@ -135,18 +135,15 @@ git remote add upstream https://github.com/AlexandrAnatoliev/project-euler.git
       username в нем должно быть `AlexandrAnatoliev`,
       а не Ваш собственный username.)</p>
 
-      <p>Добавьте ссылку на свой репозиторий (форк):</p>
-      <pre class="vimcode">
-git remote add upstream https://github.com/<your-username>/project-euler.git
-      </pre>
-
       <p>5. Проверьте ремоуты для своего репозитория:</p>
 
       <pre class="vimcode">
 git remote -v
       </pre>
 
-      <p>Вы должны увидеть origin и upstream ремоуты:</p>
+      <p>Вы должны увидеть origin (добавляется 
+      автоматически при клонировании) и upstream 
+      удаленные репозитории:</p>
 
       <pre class="vimcode">
 origin  https://github.com/<your-username>/project-euler.git (fetch)
@@ -193,7 +190,7 @@ git switch -c fix-issue
       и решить несколько задач. Только не забывайте
       создавать новую ветвь для каждой из них.</p>
 
-      <p>Сначала, выберите задачу, которую Вы хотите решать
+      <p>Сначала выберите задачу, которую Вы хотите решать
       и откройте ее директорию:</p>
 
       <pre class="vimcode">
@@ -207,10 +204,10 @@ project-euler
 └── README.md
       </pre>
 
-      <p>Перейдите в README файл выбранной задачи, чтобы
+      <p>Перейдите в README-файл выбранной задачи, чтобы
       получить информацию об ее сути.</p>
 
-      <p>Создайте директорию для Вашего решения в формате:</p>
+      <p>Создайте директорию для вашего решения в формате:</p>
 
       <pre class="vimcode">
 Solution[номер задачи]-[Ваш github nickname]/
@@ -236,7 +233,7 @@ project-euler
       <p>После этого Вы готовы решать задачу!</p>
 
       <p>Добавьте файлы с исходным кодом в Вашу директорию
-      (Наличие README приветствуется)</p>
+      (Наличие README-файла приветствуется)</p>
 
       <p>Пожалуйста, организуйте репозиторий придерживаясь
       одного из следующих форматов:</p>
@@ -333,7 +330,7 @@ git push origin fix-issue
              src="/images/project-euler-open-source/compare-and-pull-request-button.png" class="large">
       </figure>
 
-      <li>Заполните поля title и description подробностямм
+      <li>Заполните поля title и description подробностями
         о задаче и Вашем ее решении. Вы можете также добавить
         иную информацию, такую как скриншоты, если хотите.</li>
 
@@ -351,17 +348,17 @@ git push origin fix-issue
       </figure>
 
       <p>Поздравляю, Вы сделали свой первый вклад в open 
-      source на GitHub!</p>
+      source проект на GitHub!</p>
 
       <p>Можете расслабиться и подождать пока не сделают
-      ревью Вашего кода. Если все хорошо, Ваш pull request
-      вольют в основную ветку. Если нет, Вам будет 
+      ревью Вашего кода. Если все хорошо, ваш pull request
+      будет принят в основную ветку. Если нет, вам будет 
       предложено внести изменения в Ваш код.</p>
 
-      <p>Помните, что нужно подождать ревью Вашего pull 
-      request, не закрывайте его сами.
-      Если Вас просят сделать изменения, Вы можете
-      коммититить их в ну же самую ветвь, не нужно
+      <p>Помните, что нужно подождать ревью вашего pull 
+      request, не закрывайте его самостоятельно.
+      Если вас просят сделать изменения, вы можете
+      делать коммиты в ту же самую ветвь, не нужно
       закрывать текущий pull request и открывать новый.</p>
     </section>
 
@@ -372,9 +369,9 @@ git push origin fix-issue
       </div>
 
       <p>Столкнувшись с затруднениями, не стесняйтесь
-      открыть issue, написать в
+      открыть issue, написать в раздел 
       <a href="https://github.com/AlexandrAnatoliev/project-euler/discussions/23">Discussions</a>
-      или мне на почту per-1986@list.ru.</p>
+      или связаться со мной по почте per-1986@list.ru.</p>
     </section>
 
     <section>
@@ -390,7 +387,7 @@ git push origin fix-issue
     <section>
       <div align="center">
         <a id="list-of-contributors-ru"></a>
-        <h2>Список Контрибьютеров</h2>
+        <h2>Список контрибьюторов</h2>
       </div>
 
       <p>Огромное спасибо всем, кто контрибьютил
