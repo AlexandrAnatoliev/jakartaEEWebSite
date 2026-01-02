@@ -108,6 +108,14 @@
         <li><a href="/blog/primer-git.jsp"><b>Пример использования git</b></a></li>
       </ul>
     </aside>
+
+    <aside id="git" class="article-preview">
+      <h4>GITHUB</h4>
+      <ul>
+        <li><a href="/blog/project-euler-open-source.jsp">
+                <b>Пример отправки pull request</b></a></li>
+      </ul>
+    </aside>
   </section>
 
   <footer>

@@ -93,6 +93,15 @@
           href="/blog/project-euler-solutions.jsp"><b>читать</b></a>
       </p>
     </aside>
+
+    <aside class="article-preview">
+      <h4>Project Euler open source</h4>
+      <p>Этот проект поможет не только 
+      закрепить знания Java, но и сделать свой 
+      первый pull request на GitHub...
+      <a href="/blog/project-euler-open-source.jsp"><b>читать</b></a>
+      </p>
+    </aside>
   </section>
 
   <footer>
