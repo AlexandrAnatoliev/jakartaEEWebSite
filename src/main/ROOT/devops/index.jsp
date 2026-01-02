@@ -69,9 +69,10 @@
   <section>
     <h1 id="top">DEVOPS И DEVTOOLS</h1>
 
-    <p>На этой странице собраны статьи связанные больше не с самим
-      программированием, а такими вопросами как настройка, отладка и
-      т.п.</p>
+    <p>На этой странице собраны статьи связанные 
+    не столько с самим программированием, 
+    сколько с такими вопросами, как настройка, 
+    отладка и т.п.</p>
   </section>
 
   <section>
@@ -81,11 +82,11 @@
         <li><a href="/blog/arenda-vps.jsp"><b>Аренда
               виртуального сервера</b></a></li>
         <li><a href="/blog/podklyuchenie-po-ssh-k-vps.jsp"><b>Подключение
-              по ssh к виртуальному серверу</b></a></li>
+              по SSH к виртуальному серверу</b></a></li>
         <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные
-              команды linux терминала</b></a></li>
+              команды Linux-терминала</b></a></li>
         <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование
-              файлов по ssh</b></a></li>
+              файлов по SSH</b></a></li>
       </ul>
     </aside>
 
@@ -93,9 +94,9 @@
       <h4>JAVA</h4>
       <ul>
         <li><a href="/blog/ustanovka-java.jsp"><b>Установка
-              java на linux</b></a></li>
+              Java на Linux</b></a></li>
         <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция
-              java кода</b></a></li>
+              Java-кода</b></a></li>
       </ul>
     </aside>
 
@@ -104,8 +105,8 @@
       <ul>
         <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
         <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
-        <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
-        <li><a href="/blog/primer-git.jsp"><b>Пример использования git</b></a></li>
+        <li><a href="/blog/komandy-git.jsp"><b>Основные команды Git</b></a></li>
+        <li><a href="/blog/primer-git.jsp"><b>Пример использования Git</b></a></li>
       </ul>
     </aside>
 
