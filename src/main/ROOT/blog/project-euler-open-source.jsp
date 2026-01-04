@@ -320,26 +320,26 @@ git push origin fix-issue
 
       <p>Перейдите на Ваш "форк" репозитория на GitHub.</p>
 
-      <li>Вы увидите надпись "fix-issue had recent pushes" 
+      <ul><li>Вы увидите надпись "fix-issue had recent pushes" 
         (или как Ваша ветка называется) и кнопку 
-        "Compare & pull request" на ней.</li>
+        "Compare & pull request" на ней.</li></ul>
 
       <figure>
         <img alt="Кнопка Pull Request"
              src="/images/project-euler-open-source/compare-and-pull-request-button.png" class="large">
       </figure>
 
-      <li>Заполните поля title и description подробностями
+      <ul><li>Заполните поля title и description подробностями
         о задаче и Вашем ее решении. Вы можете также добавить
-        иную информацию, такую как скриншоты, если хотите.</li>
+        иную информацию, такую как скриншоты, если хотите.</li></ul>
 
       <figure>
         <img alt="Поля title и description"
              src="/images/project-euler-open-source/title-and-description-boxes.png" class="large">
       </figure>
 
-      <li>В конце нажмите кнопку "Create pull request" 
-        чтобы закончить создание pull request.</li>
+      <ul><li>В конце нажмите кнопку "Create pull request" 
+        чтобы закончить создание pull request.</li></ul>
 
       <figure>
         <img alt="Кнопка Create pull request"
@@ -379,7 +379,7 @@ git push origin fix-issue
         <h2>Требования</h2>
       </div>
 
-      <li>Установленная Java </li>
+      <ul><li>Установленная Java </li></ul>
 
     </section>
 
