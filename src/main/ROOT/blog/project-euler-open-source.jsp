@@ -35,10 +35,10 @@ pageEncoding="UTF-8"%>
 
     <meta name="description"
           content="Project Euler open source - это 
-                             проект, не только помогающий изучить и 
-                             попрактиковать конструкции языка Java,
-                             но и сделать свой первый pull request
-                             на GitHub.">
+                              проект, не только помогающий изучить и 
+                              попрактиковать конструкции языка Java,
+                              но и сделать свой первый pull request
+                              на GitHub.">
   </head>
   <body>
     <header>
@@ -86,7 +86,6 @@ pageEncoding="UTF-8"%>
         <h2>Инструкции по установке</h2>
       </div>
 
-
       <p>1. Сделайте "форк" этого 
       <a href="https://github.com/AlexandrAnatoliev/project-euler.git">репозитория</a>
       нажатием кнопки "Fork" в правом верхнем углу страницы.
@@ -113,22 +112,22 @@ pageEncoding="UTF-8"%>
       <p>Скопируйте из него URL и выполните на своем 
       компьютере команду:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git clone https://github.com/<your-username>/project-euler.git
-      </pre>
+</pre>
 
       <p>3. Перейдите в папку с проектом:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 cd project-euler
-      </pre>
+</pre>
 
       <p>4. Добавьте ссылку на оригинальный репозиторий
       для будущих обновлений:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git remote add upstream https://github.com/AlexandrAnatoliev/project-euler.git
-      </pre>
+</pre>
 
       <p>(Напомню, здесь должен быть URL оригинального
       репозитория, а не "форкнутого" Вами, так что
@@ -137,34 +136,34 @@ git remote add upstream https://github.com/AlexandrAnatoliev/project-euler.git
 
       <p>5. Проверьте ремоуты для своего репозитория:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git remote -v
-      </pre>
+</pre>
 
       <p>Вы должны увидеть origin (добавляется 
       автоматически при клонировании) и upstream 
       удаленные репозитории:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 origin  https://github.com/<your-username>/project-euler.git (fetch)
 origin  https://github.com/<your-username>/project-euler.git (push)
 upstream        https://github.com/AlexandrAnatoliev/project-euler.git (fetch)
 upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
-      </pre>
+</pre>
 
       <p>6. Выполните pull из upstream репозитория в Вашу
       master ветку, чтобы синхронизировать ее с основным
       проектом:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git pull upstream master
-      </pre>
+</pre>
 
       <p>7. Создайте новую ветку командой:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git switch -c fix-issue
-      </pre>
+</pre>
 
       <p>Сейчас Вы готовы начать работать с issue!
       Помните, каждый раз сначала делать pull
@@ -193,7 +192,7 @@ git switch -c fix-issue
       <p>Сначала выберите задачу, которую Вы хотите решать
       и откройте ее директорию:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 project-euler 
 ├── Problem1/
 │   └── README.md
@@ -202,20 +201,20 @@ project-euler
 ├── Problem3/
 │   └── README.md
 └── README.md
-      </pre>
+</pre>
 
       <p>Перейдите в README-файл выбранной задачи, чтобы
       получить информацию об ее сути.</p>
 
       <p>Создайте директорию для вашего решения в формате:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 Solution[номер задачи]-[Ваш github nickname]/
-      </pre>
+</pre>
 
       <p>Например:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 project-euler 
 ├── Problem1/
 │   ├── Solution1-User1/
@@ -228,7 +227,7 @@ project-euler
 │   ├── Solution2-User1/
 │   └── README.md
 └── README.md
-      </pre>
+</pre>
 
       <p>После этого Вы готовы решать задачу!</p>
 
@@ -238,26 +237,26 @@ project-euler
       <p>Пожалуйста, организуйте репозиторий придерживаясь
       одного из следующих форматов:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 Solution1-YourGithubName/
 ├── Main.java       // Ваш исходный код
 └── README.md       // (Опционально) короткое описание или гайд по использованию 
-      </pre>
+</pre>
 
       <p>Если код состоит из нескольких классов:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 Solution1-YourGithubName/
 ├── src/           // Ваш исходный код
 │   ├── Class1.java
 │   ├── Class2.java
 │   └── Main.java
 └── README.md      
-      </pre>
+</pre>
 
       <p>Если есть тесты:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 Solution1-YourGithubName/
 ├── src/           
 │   ├── main/           // Ваш исходный код
@@ -269,7 +268,7 @@ Solution1-YourGithubName/
 │       ├── Class2Test.java
 │       └── MainTest.java
 └── README.md      
-      </pre>
+</pre>
 
       <p> Избегайте лишних файлов (бинарные 
       файлы или метаданные IDE) и проверьте что Ваша
@@ -300,21 +299,21 @@ Solution1-YourGithubName/
 
       <p>1. Добавьте Ваши изменения в отслеживание:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git add файлы-которые-вы-изменили
-      </pre>
+</pre>
 
       <p>2. Сделайте коммит:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git commit -m "Fixed issue"
-      </pre>
+</pre>
 
       <p>3. Отправить изменения в Ваш "форкнутый" репозиторий:</p>
 
-      <pre class="vimcode">
+<pre class="vimcode">
 git push origin fix-issue
-      </pre>
+</pre>
 
       <p>После того как Вы отправили Ваши изменения на 
       GitHub, Вы готовы создать pull request.</p>
