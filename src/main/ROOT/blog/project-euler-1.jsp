@@ -238,7 +238,7 @@ Answer = 233168
       <li><a href="/blog/project-euler-solutions.jsp"><b>Проект
             Эйлера - решенные задачи</b></a></li>
       <li><a href="/blog/project-euler-2.jsp"><b>Проект
-            Эйлера задача 2</b></a></li>
+            Эйлера 2 задача</b></a></li>
     </ul>
   </aside>
 

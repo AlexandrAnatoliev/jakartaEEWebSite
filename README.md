@@ -6,7 +6,7 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.1](https://img.shields.io/badge/Version-0.1.1-orange.svg)
+  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
   
 </div>
 
@@ -76,7 +76,7 @@ tomcat
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.1](https://img.shields.io/badge/Version-0.1.1-orange.svg)
+  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
   
 </div>
 

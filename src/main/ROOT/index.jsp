@@ -80,6 +80,7 @@
         <a href="/devops#linux"><img src="images/logo/linux.svg" class="logo" alt="linux" title="linux" /></a> 
         <a href="/devops#java"><img src="images/logo/java.svg" class="logo" alt="java" title="java" /></a>
         <a href="/devops#git"><img src="images/logo/git.svg" class="logo" alt="git" title="git" /></a>
+        <a href="/devops#github"><img src="images/logo/github.svg" class="logo" alt="github" title="github" /></a>
       </p>
     </div>
 
