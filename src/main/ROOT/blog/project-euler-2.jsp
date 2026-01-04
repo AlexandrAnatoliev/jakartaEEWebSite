@@ -306,7 +306,7 @@ Answer is 4613732
     <h4>Навигация по статьям</h4>
     <ul>
       <li><a href="/blog/project-euler-1.jsp"><b>Проект
-            Эйлера задача 1</b></a></li>
+            Эйлера 1 задача</b></a></li>
       <li><a href="/blog/project-euler-solutions.jsp"><b>Проект
             Эйлера - решенные задачи</b></a></li>
       <li><b>Проект Эйлера 2 задача</b></li>

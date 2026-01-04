@@ -16,3 +16,4 @@ https://java-practice.ru/blog/soglashenie-o-kommitah.jsp
 https://java-practice.ru/blog/komandy-git.jsp
 https://java-practice.ru/blog/primer-git.jsp
 https://java-practice.ru/blog/project-euler-4.jsp
+https://java-practice.ru/blog/project-euler-open-source.jsp

@@ -358,6 +358,7 @@ The largest palindrome between 100 and 999 is 906609
       <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>
       <li><a href="/blog/primer-git.jsp"><b>Пример использования git</b></a></li>
       <li><b>Проект Эйлера 4 задача</b></li>
+      <li><a href="/blog/project-euler-open-source.jsp"><b>Project Euler open source</b></a></li>
     </ul>
   </aside>
 

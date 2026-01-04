@@ -502,7 +502,7 @@ Answer is 6857
       <li><a href="/blog/project-euler-solutions.jsp"><b>Проект
             Эйлера - решенные задачи</b></a></li>
       <li><a href="/blog/project-euler-2.jsp"><b>Проект
-            Эйлера задача 2</b></a></li>
+            Эйлера 2 задача</b></a></li>
       <li><b>Проект Эйлера 3 задача</b></li>
       <li><a href="/blog/semanticheskoe-versionirovanie.jsp"><b>Семантическое версионирование</b></a></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>

@@ -147,9 +147,9 @@ Fixed
     <h4>Навигация по статьям</h4>
     <ul>
       <li><a href="/blog/project-euler-2.jsp"><b>Проект
-            Эйлера задача 2</b></a></li>
+            Эйлера 2 задача</b></a></li>
       <li><a href="/blog/project-euler-3.jsp"><b>Проект
-            Эйлера задача 3</b></a></li>
+            Эйлера 3 задача</b></a></li>
       <li><b>Семантическое версионирование</b></li>
       <li><a href="/blog/soglashenie-o-kommitah.jsp"><b>Соглашение о коммитах</b></a></li>
       <li><a href="/blog/komandy-git.jsp"><b>Основные команды git</b></a></li>

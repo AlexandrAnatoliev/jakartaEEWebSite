@@ -149,14 +149,14 @@ apt install openjdk-11-jre-headless
     <h4>Навигация по статьям</h4>
     <ul>
       <li><a href="/blog/komandy-linux-terminala.jsp"><b>Основные
-            команды linux терминала</b></a></li>
+            команды Linux-терминала</b></a></li>
       <li><a href="/blog/kopirovanie-fajlov-po-ssh.jsp"><b>Копирование
-            файлов по ssh</b></a></li>
-      <li><b>Установка java на linux</b></li>
+            файлов по SSH</b></a></li>
+      <li><b>Установка Java на Linux</b></li>
       <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция
-            java кода</b></a></li>
+            Java кода</b></a></li>
       <li><a href="/blog/project-euler-1.jsp"><b>Проект
-            Эйлера задача 1</b></a></li>
+            Эйлера 1 задача</b></a></li>
     </ul>
   </aside>
 
