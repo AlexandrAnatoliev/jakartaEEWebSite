@@ -34,6 +34,16 @@
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WDGSQZ36B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7WDGSQZ36B');
+</script>
+
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 <style>

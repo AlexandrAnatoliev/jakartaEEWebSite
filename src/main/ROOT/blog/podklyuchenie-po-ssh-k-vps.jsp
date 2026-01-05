@@ -39,6 +39,16 @@
   }
 </style>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WDGSQZ36B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7WDGSQZ36B');
+</script>
+
 <title>java практика: подключение по ssh к vps</title>
 <meta name="description"
   content="Краткий гайд по подключению по ssh к виртуальному серверу (VPS)">
