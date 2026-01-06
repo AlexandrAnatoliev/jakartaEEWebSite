@@ -237,6 +237,25 @@ Answer = 233168
     </p>
   </section>
 
+  <section>
+    <h3>Комьюнити</h3>
+
+    <p>Вы можете поделиться своим вариантом решения
+    с другими, сделав <b>pull request:</b></p>
+
+    <aside class="article-preview">
+      <h4>Project Euler open source</h4>
+      <p>Этот проект поможет не только 
+      закрепить знания Java, но и сделать свой 
+      первый pull request на GitHub...
+      <a href="/blog/project-euler-open-source.jsp"><b>читать</b></a>
+      </p>
+    </aside>
+
+    <p>Также вы можете обсудить задачу и 
+    задать любые вопросы в 
+    <a href="https://github.com/AlexandrAnatoliev/project-euler/discussions/23">Discussions</a>. </p>
+  </section>
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
