@@ -71,13 +71,13 @@
   <section>
     <h1 id="top">ПРОЕКТ ЭЙЛЕРА 1 ЗАДАЧА</h1>
 
-    <p>
-      Решая эту задачу, постарался не только отработать конструкции
-      языка <b>java</b>, но и разобраться с компиляцией программы без
-      использования <b>ide</b>. Как бонус, сделан небольшой <b>онлайн-калькулятор</b>,
-      позволяющий проверить Ваши вычисления, и приведен <b>ответ</b> на
-      задачу.
-    </p>
+    <p> Решая эту задачу, постарался не только 
+    отработать конструкции языка <b>Java</b>, 
+    но и разобраться с компиляцией программы без
+    использования <b>IDE</b>. В качестве бонуса 
+    сделан небольшой <b>онлайн-калькулятор</b>,
+    позволяющий проверить ваши вычисления, и 
+    приведен <b>ответ</b> на задачу.</p>
   </section>
 
   <section>
@@ -94,7 +94,7 @@
 
   <section>
     <article class="calculator">
-      <h3>Онлайн-калькулятор: "Определение делимости двух чисел"</h3>
+      <h3>Онлайн-калькулятор: "Определение кратности двух чисел"</h3>
 
       <form method="post">
         <label for="number1">Введите первое число:</label> <input
@@ -143,24 +143,21 @@
   <section>
     <h3>Описание алгоритма работы программы</h3>
 
-    <pre class="vimcode">
+<pre class="vimcode">
 public class Solution {
   public static void main(String[] args) {
-
     int answer = 0;
-
     for (int num = 1; num < 1000; num++) {
       if ((num % 3) == 0 || (num % 5) == 0)
         answer += num;
-    }
-
     System.out.println("Answer = " + answer);
   }
 }
 </pre>
 
-    <p>Весь алгоритм задачи построен на том, что если два числа
-      делятся нацело, то остаток от их деления равен нулю.</p>
+    <p>Алгоритм решения основан на простом правиле:
+    если число делится нацело, то остаток от его
+    деления равен нулю.</p>
 
     <div class="vimcode">if ((num % 3) == 0 || (num % 5) == 0)</div>
 
@@ -189,46 +186,44 @@ public class Solution {
 
     <p>Запустив скомпилированный файл, получим искомый ответ:</p>
 
-    <pre class="vimcode">
+<pre class="vimcode">
 $ java Solution
 Answer = 233168
 </pre>
 
-    <p>
-      Вопросы компиляции <b>java</b> были подробно описаны ранее, не
-      буду повторяться:
-    </p>
+    <p> Вопросы компиляции <b>Java</b> были 
+    подробно описаны ранее, не буду повторяться:</p>
 
     <aside class="article-preview">
-      <h4>Компиляция java кода</h4>
-      <p>
-        Компиляция <b>java</b> кода без использования <b>ide</b> (одного
-        класса, нескольких, создание <b>jar-файла</b>). <a
-          href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a>
-      </p>
+      <h4>Компиляция Java кода</h4>
+
+      <p> Компиляция <b>Java</b>-кода без использования 
+      <b>IDE</b> (одного класса, нескольких, 
+           создание <b>JAR-файла</b>). 
+           <a href="/blog/kompilyaciya-java-koda.jsp"><b>читать</b></a></p>
     </aside>
 
-    <p>
-      Небольшой гайд по установке <b>java</b> на компьютер:
-    </p>
+    <p> Небольшой гайд по установке <b>Java</b> 
+    на компьютер: </p>
 
     <aside class="article-preview">
-      <h4>Установка java на linux</h4>
-      <p>
-        Небольшой конспект по установке <b>java</b> на <b>linux</b>... <a
-          href="/blog/ustanovka-java.jsp"><b>читать</b></a>
-      </p>
+      <h4>Установка Java на Linux</h4>
+
+      <p>Небольшой конспект по установке <b>Java</b>
+      на <b>Linux</b>... 
+      <a href="/blog/ustanovka-java.jsp"><b>читать</b></a> </p>
     </aside>
 
-    <p>
-      Даже притом, что сложность этой программы уровня <b>Hello
-        world</b>, в ней применен ряд конструкций языка <b>java</b>:<br />
+    <p>Несмотря на то, что сложность этой 
+    программы сравнима с <b>Hello world</b>, 
+    в ней применен ряд конструкций языка <b>Java</b>:<br />
     <ul>
       <li>Объявление и инициализация переменной</li>
       <li>Арифметическая операция <b>%</b></li>
       <li>Сочетание арифметической операции с присваиванием <b>+=</b></li>
       <li>Операция инкремента <b>++</b></li>
-      <li>Операции отношения <b>==</b> и сравнения <b><</b> и <b>||</b></li>
+      <li>Операторы сравнения (<b>==</b>, <b><</b>) 
+        и логический оператор (<b>||</b>)</li>
       <li>Сцепление строки с числом</li>
       <li>Область видимости, вложенные блоки</li>
       <li>Условный оператор <b>if</b></li>
@@ -237,25 +232,41 @@ Answer = 233168
     </p>
   </section>
 
+  <section>
+    <h3>Сообщество</h3>
+
+    <p>Вы можете поделиться своим вариантом решения
+    с другими, сделав <b>pull request:</b></p>
+
+    <aside class="article-preview">
+      <h4>Project Euler open source</h4>
+      <p>Этот проект поможет не только 
+      закрепить знания Java, но и создать свой 
+      первый pull request на GitHub...
+      <a href="/blog/project-euler-open-source.jsp"><b>читать</b></a></p>
+    </aside>
+
+    <p>Также вы можете обсудить задачу и 
+    задать любые вопросы в 
+    <a href="https://github.com/AlexandrAnatoliev/project-euler/discussions/23">Discussions</a>. </p>
+  </section>
   <aside class="article-preview">
     <h4>Навигация по статьям</h4>
     <ul>
-      <li><a href="/blog/ustanovka-java.jsp"><b>Установка
-            java на linux</b></a></li>
-      <li><a href="/blog/kompilyaciya-java-koda.jsp"><b>Компиляция
-            java кода</b></a></li>
+      <li><a href="/blog/ustanovka-java.jsp">
+          <b>Установка Java на Linux</b></a></li>
+      <li><a href="/blog/kompilyaciya-java-koda.jsp">
+          <b>Компиляция Java-кода</b></a></li>
       <li><b>Проект Эйлера 1 задача</b></li>
-      <li><a href="/blog/project-euler-solutions.jsp"><b>Проект
-            Эйлера - решенные задачи</b></a></li>
-      <li><a href="/blog/project-euler-2.jsp"><b>Проект
-            Эйлера 2 задача</b></a></li>
+      <li><a href="/blog/project-euler-solutions.jsp">
+          <b>Проект Эйлера - решенные задачи</b></a></li>
+      <li><a href="/blog/project-euler-2.jsp">
+          <b>Проект Эйлера 2 задача</b></a></li>
     </ul>
   </aside>
 
   <footer>
-    <ul>
-      <li><a href="#top"><b>Наверх</b></a></li>
-    </ul>
+    <ul><li><a href="#top"><b>Наверх</b></a></li></ul>
   </footer>
 </body>
 </html>
